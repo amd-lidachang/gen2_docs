@@ -40,7 +40,9 @@ html_last_updated_fmt = 'April 17, 2025'
 # -- General configuration ---------------------------------------------------
 
 html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "ryzenai.docs.amd.com")
-html_context = {}
+html_context = {
+"version_list": [],
+}
 if os.environ.get("READTHEDOCS", "") == "True":
     html_context["READTHEDOCS"] = True
 
@@ -158,8 +160,8 @@ highlight_language = 'none'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-##html_theme = 'karma_sphinx_theme'
-html_theme = 'rocm_docs_theme'
+html_theme = 'karma_sphinx_theme'
+#html_theme = 'rocm_docs_theme'
 ##html_theme_path = ["./_themes"]
 
 

@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="classrunner_1_1_v_a_r_t" kind="class"><name>runner::VART</name>
+    <member refid="classrunner_1_1_v_a_r_t_1a5f902080cdaea3e0b5488745da2c9481" kind="variable"><name>runner</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1a382684ca5b6c6b7cb376d543fd1ee4c7" kind="function"><name>__init__</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1a2cb628515116fb559701021f5f64d60a" kind="function"><name>init_out_arrays</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1a80fd0415e14eb50bc3d695a9dffdde8d" kind="function"><name>alloc_native_bufs</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1af5efa7f75dd7942076c652c58b3cf744" kind="function"><name>get_input_shapes</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1a947620d4226b51fc70e32f1adf30fff2" kind="function"><name>get_input_shape_formats</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1afa9da19f54550284b5eae277752cb3ad" kind="function"><name>get_output_shape_formats</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1a0a2fe7b7cca1bc60f10c884ba0a19aeb" kind="function"><name>get_input_types</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1aa54d69fde808dcb1ab783e6c8c826e18" kind="function"><name>set_input_native_formats</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1ac952a22f707fe8d12a6751645bc8014b" kind="function"><name>set_output_native_formats</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1a7f1c53d1fca2aa5518d41fc04633919b" kind="function"><name>get_input_coeffs</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1a4c0b13d223de37f65a74e66a2f205a18" kind="function"><name>get_output_coeffs</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1aba2fc5ce575ab798a60d6e1ac620833e" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="structvart_1_1_job_handle" kind="struct"><name>vart::JobHandle</name>
+    <member refid="structvart_1_1_job_handle_1a5785f14a45689073b3c1ad14d78c6a1c" kind="variable"><name>status</name></member>
+    <member refid="structvart_1_1_job_handle_1a44b85d3843ea93724e325cc4a211ec1d" kind="variable"><name>job_id</name></member>
+  </compound>
+  <compound refid="classvart_1_1_npu_tensor" kind="class"><name>vart::NpuTensor</name>
+    <member refid="classvart_1_1_npu_tensor_1af44c058ad62bf7788927b3beb1e60e12" kind="variable"><name>info_</name></member>
+    <member refid="classvart_1_1_npu_tensor_1a75ca9094d891d3163928f33977014e37" kind="variable"><name>buffer_</name></member>
+    <member refid="classvart_1_1_npu_tensor_1a782677c9addc82622fecd37dd99dc711" kind="variable"><name>memory_type_</name></member>
+    <member refid="classvart_1_1_npu_tensor_1ae592f0af41317580d48166b48140147e" kind="variable"><name>type_</name></member>
+    <member refid="classvart_1_1_npu_tensor_1af5ab2b2704a0cf74ad88f2f6db31e163" kind="function"><name>NpuTensor</name></member>
+    <member refid="classvart_1_1_npu_tensor_1aec8d7fc6488dbd28fe30215660df18bb" kind="function"><name>NpuTensor</name></member>
+    <member refid="classvart_1_1_npu_tensor_1ac9001b11221ff783d6ff4b0f217b4c16" kind="function"><name>NpuTensor</name></member>
+    <member refid="classvart_1_1_npu_tensor_1af52310927e87f2390cc4db670e473f59" kind="function"><name>operator=</name></member>
+    <member refid="classvart_1_1_npu_tensor_1afa670adeba294d331a0d26594f48e84d" kind="function"><name>NpuTensor</name></member>
+    <member refid="classvart_1_1_npu_tensor_1a95492a0145baf2e8bbd45bf9af78ef99" kind="function"><name>operator=</name></member>
+    <member refid="classvart_1_1_npu_tensor_1a6ecb12c0d8a1f0586b9072995ec48e07" kind="function"><name>get_buffer</name></member>
+    <member refid="classvart_1_1_npu_tensor_1a27f7459a75c1917dc0e4e36edc6fcfc8" kind="function"><name>get_info</name></member>
+    <member refid="classvart_1_1_npu_tensor_1a0e786197c614a0aa7f38f91d024af6dc" kind="function"><name>get_tensor_type</name></member>
+    <member refid="classvart_1_1_npu_tensor_1a73ba908190729e802faab40f810c6381" kind="function"><name>get_memory_type</name></member>
+    <member refid="classvart_1_1_npu_tensor_1a8c1584b58fcbef5c95d26385aaa35797" kind="function"><name>print_info</name></member>
+  </compound>
+  <compound refid="structvart_1_1_npu_tensor_info" kind="struct"><name>vart::NpuTensorInfo</name>
+    <member refid="structvart_1_1_npu_tensor_info_1ab74e6bf80237ddc4109968cedc58c151" kind="variable"><name>name</name></member>
+    <member refid="structvart_1_1_npu_tensor_info_1ac2ad7f431e3446fddcd9b6b9f93c4c14" kind="variable"><name>data_type</name></member>
+    <member refid="structvart_1_1_npu_tensor_info_1aeb6b90acb33f1d77b2974f6cf5e505ea" kind="variable"><name>memory_layout</name></member>
+    <member refid="structvart_1_1_npu_tensor_info_1ae4a44cd3721e0c607925c4fb88e93360" kind="variable"><name>memory_layout_order</name></member>
+    <member refid="structvart_1_1_npu_tensor_info_1aa3d6656320f1a7278c0c2c7fdf07617c" kind="variable"><name>size</name></member>
+    <member refid="structvart_1_1_npu_tensor_info_1ad5a02330f66e8f949f78c456e0686a51" kind="variable"><name>size_in_bytes</name></member>
+    <member refid="structvart_1_1_npu_tensor_info_1a45cde9abb508c62d67c3bb2b9bf566a5" kind="variable"><name>shape</name></member>
+    <member refid="structvart_1_1_npu_tensor_info_1a815021df904d32a73e6c8a8d1bdd7064" kind="variable"><name>strides</name></member>
+    <member refid="structvart_1_1_npu_tensor_info_1acd0f82d3c49b8a5dd436d4003c44b713" kind="function"><name>print</name></member>
+  </compound>
+  <compound refid="structvart_1_1_quant_parameters" kind="struct"><name>vart::QuantParameters</name>
+    <member refid="structvart_1_1_quant_parameters_1acec6d8ad52a28972fa74e071c1a63b6a" kind="variable"><name>scale</name></member>
+    <member refid="structvart_1_1_quant_parameters_1a1091e77b7105f15ac2445c1c7f77f549" kind="variable"><name>zero_point</name></member>
+    <member refid="structvart_1_1_quant_parameters_1ac54391f3e34f6077c576edde0021bd7b" kind="variable"><name>rounding_mode</name></member>
+  </compound>
+  <compound refid="classvart_1_1_runner" kind="class"><name>vart::Runner</name>
+    <member refid="classvart_1_1_runner_1afb125477af0423b4df8740e151c9fc7f" kind="typedef"><name>ExecuteAsyncCallback</name></member>
+    <member refid="classvart_1_1_runner_1a6a3ca49a2d60ca67238ad1e5ea80f2ab" kind="function"><name>Runner</name></member>
+    <member refid="classvart_1_1_runner_1a5682a18df20288c1de981ab2ca71cc3b" kind="function"><name>~Runner</name></member>
+    <member refid="classvart_1_1_runner_1a531cc4202e8f2d719afade557b260765" kind="function"><name>get_tensors_info</name></member>
+    <member refid="classvart_1_1_runner_1a9bf506aae3d036df23fd6e7a8e33854e" kind="function"><name>get_tensor_info_by_name</name></member>
+    <member refid="classvart_1_1_runner_1ab26a80f1b026365f3daeb1097993d9f7" kind="function"><name>get_quant_parameters</name></member>
+    <member refid="classvart_1_1_runner_1a4d189bbdc89286eb2ca17ac3da6f14d1" kind="function"><name>get_num_input_tensors</name></member>
+    <member refid="classvart_1_1_runner_1ab9862ef89dceca3e8890b754238ea872" kind="function"><name>get_num_output_tensors</name></member>
+    <member refid="classvart_1_1_runner_1a38797341425a3cbc58f783ee6a0920fb" kind="function"><name>get_batch_size</name></member>
+    <member refid="classvart_1_1_runner_1a73b67eeafdd837710322b6535fad8a29" kind="function"><name>execute</name></member>
+    <member refid="classvart_1_1_runner_1ab555d9eee7e0292ef3a5316b77c0d1eb" kind="function"><name>execute_async</name></member>
+    <member refid="classvart_1_1_runner_1a186ec9a8aa9b8d14752bdc38586e149c" kind="function"><name>wait</name></member>
+    <member refid="classvart_1_1_runner_1afbfbbcb2c7e7ca7d7c642b1c6f33be61" kind="function"><name>execute_async</name></member>
+  </compound>
+  <compound refid="classvart_1_1_runner_factory" kind="class"><name>vart::RunnerFactory</name>
+    <member refid="classvart_1_1_runner_factory_1a784ef44c7c8a112893a6629ba87b27e4" kind="function"><name>create_runner</name></member>
+  </compound>
+  <compound refid="namespacecreate__graph__runner" kind="namespace"><name>create_graph_runner</name>
+    <member refid="namespacecreate__graph__runner_1a7d3dc31000dc6f8f07c63b12ff8653eb" kind="function"><name>create_graph_runner</name></member>
+  </compound>
+  <compound refid="namespacecreate__runner" kind="namespace"><name>create_runner</name>
+    <member refid="namespacecreate__runner_1a193166e2ab3849ed53a8f05b150dbe6d" kind="function"><name>create_runner</name></member>
+  </compound>
+  <compound refid="namespaceexecute__async" kind="namespace"><name>execute_async</name>
+    <member refid="namespaceexecute__async_1a9343c2de55549abc41959649eb50ca2b" kind="function"><name>execute_async</name></member>
+  </compound>
+  <compound refid="namespaceget__input__tensors" kind="namespace"><name>get_input_tensors</name>
+    <member refid="namespaceget__input__tensors_1a90cf14f9034ee6ac6a081db034bc67a1" kind="function"><name>get_input_tensors</name></member>
+  </compound>
+  <compound refid="namespaceget__inputs" kind="namespace"><name>get_inputs</name>
+    <member refid="namespaceget__inputs_1a6c36d0087f6a1ec18a438204bbcb01ff" kind="function"><name>get_inputs</name></member>
+  </compound>
+  <compound refid="namespaceget__output__tensors" kind="namespace"><name>get_output_tensors</name>
+    <member refid="namespaceget__output__tensors_1a3d0bbdfb1a80867865b8e89583f9ba7e" kind="function"><name>get_output_tensors</name></member>
+  </compound>
+  <compound refid="namespaceget__outputs" kind="namespace"><name>get_outputs</name>
+    <member refid="namespaceget__outputs_1aa5a4b5dbfba1fb50a4b67b8d8322f74f" kind="function"><name>get_outputs</name></member>
+  </compound>
+  <compound refid="namespacerunner" kind="namespace"><name>runner</name>
+  </compound>
+  <compound refid="namespacerunner__example" kind="namespace"><name>runner_example</name>
+  </compound>
+  <compound refid="namespacerunnerext__example" kind="namespace"><name>runnerext_example</name>
+  </compound>
+  <compound refid="namespacevart" kind="namespace"><name>vart</name>
+    <member refid="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6" kind="enum"><name>DataType</name></member>
+    <member refid="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6a696b031073e74bf2cb98e5ef201d4aa3" kind="enumvalue"><name>UNKNOWN</name></member>
+    <member refid="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6aee9d73311ff0658494edfff14c3ec1e3" kind="enumvalue"><name>INT8</name></member>
+    <member refid="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6aecfc091ed2a607335524c8389cfa41b5" kind="enumvalue"><name>UINT8</name></member>
+    <member refid="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6a5f90af42814c0a419d715d43ae54fd7a" kind="enumvalue"><name>INT16</name></member>
+    <member refid="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6a48d8f1a723d44ff4a87db1bb6c551c62" kind="enumvalue"><name>UINT16</name></member>
+    <member refid="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6af656bbf613964dcf710b771b0918ab30" kind="enumvalue"><name>BF16</name></member>
+    <member refid="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6aa4bf99d6945c25077fd6660d536af8a0" kind="enumvalue"><name>FP16</name></member>
+    <member refid="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6a967d280b5c16d95f2947647dd2ca6cc2" kind="enumvalue"><name>FLOAT32</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7" kind="enum"><name>MemoryLayout</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a696b031073e74bf2cb98e5ef201d4aa3" kind="enumvalue"><name>UNKNOWN</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a9871f9b486513e716ce74bf6363efb21" kind="enumvalue"><name>NHW</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7ad066db54b89b0912e7e7c6da51e2da51" kind="enumvalue"><name>NHWC</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a6b99f356fe3b30a2a850b5ea897c289f" kind="enumvalue"><name>NCHW</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a471afb8c5bc3825e0c0bc64a0a23fb53" kind="enumvalue"><name>NHWC4</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a384d83fdd6181e8fe719f67083039618" kind="enumvalue"><name>NC4HW4</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a3993b6164e2f8d94185e27fdf9624014" kind="enumvalue"><name>NC8HW8</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a1ba356ddb38e75832d291d2827ff3fb9" kind="enumvalue"><name>HCWNC4</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a8890afe61b88d400ded8f14577178339" kind="enumvalue"><name>HCWNC8</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7ac942dc2a9f958acddc67e11472d3ca0b" kind="enumvalue"><name>GENERIC</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a462bfa9dfea81692463ecb192183dd01" kind="enum"><name>MemoryType</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a462bfa9dfea81692463ecb192183dd01a696b031073e74bf2cb98e5ef201d4aa3" kind="enumvalue"><name>UNKNOWN</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a462bfa9dfea81692463ecb192183dd01ae10b6ab6a278644ce40631f62f360b6d" kind="enumvalue"><name>DEVICE</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a462bfa9dfea81692463ecb192183dd01ab9361011891280a44d85b967739cc6a5" kind="enumvalue"><name>HOST</name></member>
+    <member refid="vart__npu__tensor_8hpp_1af96612dbef376e428089af3967a92593" kind="enum"><name>TensorDirection</name></member>
+    <member refid="vart__npu__tensor_8hpp_1af96612dbef376e428089af3967a92593aa84cc046d48610b05c21fd3670d0c829" kind="enumvalue"><name>INPUT</name></member>
+    <member refid="vart__npu__tensor_8hpp_1af96612dbef376e428089af3967a92593a50a87f0d71f7221582dad4bf507a0f34" kind="enumvalue"><name>OUTPUT</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a687cdefe1dea4afccff21e37ca3ce7c6" kind="enum"><name>TensorType</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a687cdefe1dea4afccff21e37ca3ce7c6a2b55387dd066c5bac646ac61543d152d" kind="enumvalue"><name>CPU</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a687cdefe1dea4afccff21e37ca3ce7c6a4bd2241a3a809d3cc2bb28e951cc183a" kind="enumvalue"><name>HW</name></member>
+    <member refid="vart__runner__factory_8hpp_1a70a6ca729d777c5dfe7306cdcf6bf2a6" kind="enum"><name>RunnerType</name></member>
+    <member refid="vart__runner__factory_8hpp_1a70a6ca729d777c5dfe7306cdcf6bf2a6ac328cedf35cf05e3021c9828f23ba541" kind="enumvalue"><name>VAIML</name></member>
+    <member refid="vart__runner__factory_8hpp_1a5959c934b204c7bcb6766cfaea8ae101" kind="enum"><name>RoundingMode</name></member>
+    <member refid="vart__runner__factory_8hpp_1a5959c934b204c7bcb6766cfaea8ae101a696b031073e74bf2cb98e5ef201d4aa3" kind="enumvalue"><name>UNKNOWN</name></member>
+    <member refid="vart__runner__factory_8hpp_1a5959c934b204c7bcb6766cfaea8ae101a7fd6445dda9c0adea175600ee65cc316" kind="enumvalue"><name>ROUND_TO_NEAREST_EVEN</name></member>
+    <member refid="vart__runner__factory_8hpp_1a5959c934b204c7bcb6766cfaea8ae101ae2495278943208450243de03efbe0607" kind="enumvalue"><name>ROUND_TOWARD_ZERO</name></member>
+    <member refid="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113" kind="enum"><name>StatusCode</name></member>
+    <member refid="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113ad0749aaba8b833466dfcbb0428e4f89c" kind="enumvalue"><name>SUCCESS</name></member>
+    <member refid="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113a36fc6065a3e970bc3e6b2e59da52bf2a" kind="enumvalue"><name>FAILURE</name></member>
+    <member refid="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113ac063281d4adc16ebccfec66aa885b4dd" kind="enumvalue"><name>INVALID_INPUT</name></member>
+    <member refid="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113a772ab551fe4d567e5cbfac7cf76c9ace" kind="enumvalue"><name>INVALID_OUTPUT</name></member>
+    <member refid="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113ac56ddb8056b120c9d5fee05981f219c6" kind="enumvalue"><name>OUT_OF_MEMORY</name></member>
+    <member refid="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113a62be47fdd89da032cf78dfce82239579" kind="enumvalue"><name>RUNTIME_ERROR</name></member>
+    <member refid="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113a070a0fb40f6c308ab544b227660aadff" kind="enumvalue"><name>TIMEOUT</name></member>
+    <member refid="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113ae8ae983711de90edc09f13df02eb695e" kind="enumvalue"><name>DEVICE_ERROR</name></member>
+  </compound>
+  <compound refid="namespacewait" kind="namespace"><name>wait</name>
+    <member refid="namespacewait_1a9dd979228e0a14a50ef3e2ee0206a5f6" kind="function"><name>wait</name></member>
+  </compound>
+  <compound refid="vart__npu__tensor_8hpp" kind="file"><name>vart_npu_tensor.hpp</name>
+    <member refid="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6" kind="enum"><name>DataType</name></member>
+    <member refid="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6a696b031073e74bf2cb98e5ef201d4aa3" kind="enumvalue"><name>UNKNOWN</name></member>
+    <member refid="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6aee9d73311ff0658494edfff14c3ec1e3" kind="enumvalue"><name>INT8</name></member>
+    <member refid="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6aecfc091ed2a607335524c8389cfa41b5" kind="enumvalue"><name>UINT8</name></member>
+    <member refid="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6a5f90af42814c0a419d715d43ae54fd7a" kind="enumvalue"><name>INT16</name></member>
+    <member refid="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6a48d8f1a723d44ff4a87db1bb6c551c62" kind="enumvalue"><name>UINT16</name></member>
+    <member refid="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6af656bbf613964dcf710b771b0918ab30" kind="enumvalue"><name>BF16</name></member>
+    <member refid="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6aa4bf99d6945c25077fd6660d536af8a0" kind="enumvalue"><name>FP16</name></member>
+    <member refid="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6a967d280b5c16d95f2947647dd2ca6cc2" kind="enumvalue"><name>FLOAT32</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7" kind="enum"><name>MemoryLayout</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a696b031073e74bf2cb98e5ef201d4aa3" kind="enumvalue"><name>UNKNOWN</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a9871f9b486513e716ce74bf6363efb21" kind="enumvalue"><name>NHW</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7ad066db54b89b0912e7e7c6da51e2da51" kind="enumvalue"><name>NHWC</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a6b99f356fe3b30a2a850b5ea897c289f" kind="enumvalue"><name>NCHW</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a471afb8c5bc3825e0c0bc64a0a23fb53" kind="enumvalue"><name>NHWC4</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a384d83fdd6181e8fe719f67083039618" kind="enumvalue"><name>NC4HW4</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a3993b6164e2f8d94185e27fdf9624014" kind="enumvalue"><name>NC8HW8</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a1ba356ddb38e75832d291d2827ff3fb9" kind="enumvalue"><name>HCWNC4</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a8890afe61b88d400ded8f14577178339" kind="enumvalue"><name>HCWNC8</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7ac942dc2a9f958acddc67e11472d3ca0b" kind="enumvalue"><name>GENERIC</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a462bfa9dfea81692463ecb192183dd01" kind="enum"><name>MemoryType</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a462bfa9dfea81692463ecb192183dd01a696b031073e74bf2cb98e5ef201d4aa3" kind="enumvalue"><name>UNKNOWN</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a462bfa9dfea81692463ecb192183dd01ae10b6ab6a278644ce40631f62f360b6d" kind="enumvalue"><name>DEVICE</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a462bfa9dfea81692463ecb192183dd01ab9361011891280a44d85b967739cc6a5" kind="enumvalue"><name>HOST</name></member>
+    <member refid="vart__npu__tensor_8hpp_1af96612dbef376e428089af3967a92593" kind="enum"><name>TensorDirection</name></member>
+    <member refid="vart__npu__tensor_8hpp_1af96612dbef376e428089af3967a92593aa84cc046d48610b05c21fd3670d0c829" kind="enumvalue"><name>INPUT</name></member>
+    <member refid="vart__npu__tensor_8hpp_1af96612dbef376e428089af3967a92593a50a87f0d71f7221582dad4bf507a0f34" kind="enumvalue"><name>OUTPUT</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a687cdefe1dea4afccff21e37ca3ce7c6" kind="enum"><name>TensorType</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a687cdefe1dea4afccff21e37ca3ce7c6a2b55387dd066c5bac646ac61543d152d" kind="enumvalue"><name>CPU</name></member>
+    <member refid="vart__npu__tensor_8hpp_1a687cdefe1dea4afccff21e37ca3ce7c6a4bd2241a3a809d3cc2bb28e951cc183a" kind="enumvalue"><name>HW</name></member>
+  </compound>
+  <compound refid="vart__runner__factory_8hpp" kind="file"><name>vart_runner_factory.hpp</name>
+    <member refid="vart__runner__factory_8hpp_1a70a6ca729d777c5dfe7306cdcf6bf2a6" kind="enum"><name>RunnerType</name></member>
+    <member refid="vart__runner__factory_8hpp_1a70a6ca729d777c5dfe7306cdcf6bf2a6ac328cedf35cf05e3021c9828f23ba541" kind="enumvalue"><name>VAIML</name></member>
+    <member refid="vart__runner__factory_8hpp_1a5959c934b204c7bcb6766cfaea8ae101" kind="enum"><name>RoundingMode</name></member>
+    <member refid="vart__runner__factory_8hpp_1a5959c934b204c7bcb6766cfaea8ae101a696b031073e74bf2cb98e5ef201d4aa3" kind="enumvalue"><name>UNKNOWN</name></member>
+    <member refid="vart__runner__factory_8hpp_1a5959c934b204c7bcb6766cfaea8ae101a7fd6445dda9c0adea175600ee65cc316" kind="enumvalue"><name>ROUND_TO_NEAREST_EVEN</name></member>
+    <member refid="vart__runner__factory_8hpp_1a5959c934b204c7bcb6766cfaea8ae101ae2495278943208450243de03efbe0607" kind="enumvalue"><name>ROUND_TOWARD_ZERO</name></member>
+    <member refid="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113" kind="enum"><name>StatusCode</name></member>
+    <member refid="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113ad0749aaba8b833466dfcbb0428e4f89c" kind="enumvalue"><name>SUCCESS</name></member>
+    <member refid="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113a36fc6065a3e970bc3e6b2e59da52bf2a" kind="enumvalue"><name>FAILURE</name></member>
+    <member refid="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113ac063281d4adc16ebccfec66aa885b4dd" kind="enumvalue"><name>INVALID_INPUT</name></member>
+    <member refid="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113a772ab551fe4d567e5cbfac7cf76c9ace" kind="enumvalue"><name>INVALID_OUTPUT</name></member>
+    <member refid="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113ac56ddb8056b120c9d5fee05981f219c6" kind="enumvalue"><name>OUT_OF_MEMORY</name></member>
+    <member refid="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113a62be47fdd89da032cf78dfce82239579" kind="enumvalue"><name>RUNTIME_ERROR</name></member>
+    <member refid="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113a070a0fb40f6c308ab544b227660aadff" kind="enumvalue"><name>TIMEOUT</name></member>
+    <member refid="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113ae8ae983711de90edc09f13df02eb695e" kind="enumvalue"><name>DEVICE_ERROR</name></member>
+  </compound>
+  <compound refid="create__graph__runner_8py" kind="file"><name>create_graph_runner.py</name>
+    <member refid="namespacecreate__graph__runner_1a7d3dc31000dc6f8f07c63b12ff8653eb" kind="function"><name>create_graph_runner</name></member>
+  </compound>
+  <compound refid="create__runner_8py" kind="file"><name>create_runner.py</name>
+    <member refid="namespacecreate__runner_1a193166e2ab3849ed53a8f05b150dbe6d" kind="function"><name>create_runner</name></member>
+  </compound>
+  <compound refid="execute__async_8py" kind="file"><name>execute_async.py</name>
+    <member refid="namespaceexecute__async_1a9343c2de55549abc41959649eb50ca2b" kind="function"><name>execute_async</name></member>
+  </compound>
+  <compound refid="get__input__tensors_8py" kind="file"><name>get_input_tensors.py</name>
+    <member refid="namespaceget__input__tensors_1a90cf14f9034ee6ac6a081db034bc67a1" kind="function"><name>get_input_tensors</name></member>
+  </compound>
+  <compound refid="get__inputs_8py" kind="file"><name>get_inputs.py</name>
+    <member refid="namespaceget__inputs_1a6c36d0087f6a1ec18a438204bbcb01ff" kind="function"><name>get_inputs</name></member>
+  </compound>
+  <compound refid="get__output__tensors_8py" kind="file"><name>get_output_tensors.py</name>
+    <member refid="namespaceget__output__tensors_1a3d0bbdfb1a80867865b8e89583f9ba7e" kind="function"><name>get_output_tensors</name></member>
+  </compound>
+  <compound refid="get__outputs_8py" kind="file"><name>get_outputs.py</name>
+    <member refid="namespaceget__outputs_1aa5a4b5dbfba1fb50a4b67b8d8322f74f" kind="function"><name>get_outputs</name></member>
+  </compound>
+  <compound refid="runner_8py" kind="file"><name>runner.py</name>
+  </compound>
+  <compound refid="runner__example_8py" kind="file"><name>runner_example.py</name>
+  </compound>
+  <compound refid="runnerext__example_8py" kind="file"><name>runnerext_example.py</name>
+  </compound>
+  <compound refid="wait_8py" kind="file"><name>wait.py</name>
+    <member refid="namespacewait_1a9dd979228e0a14a50ef3e2ee0206a5f6" kind="function"><name>wait</name></member>
+  </compound>
+  <compound refid="dir_c8195319c423143631ce95767fadc48a" kind="dir"><name>cppdoc</name>
+  </compound>
+  <compound refid="dir_6a3d52cad6588f4578ad9af4d2ee7abf" kind="dir"><name>pydoc</name>
+  </compound>
+</doxygenindex>

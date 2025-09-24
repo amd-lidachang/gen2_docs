@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classvart_1_1_device" kind="class" language="C++" prot="public">
+    <compoundname>vart::Device</compoundname>
+    <includes local="no">vart_device.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvart_1_1_device_1a6b0a545d0502bddb6d4ec2a251017bad" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; DeviceImplBase &gt;</type>
+        <definition>std::shared_ptr&lt;DeviceImplBase&gt; pimpl</definition>
+        <argsstring></argsstring>
+        <name>pimpl</name>
+        <qualifiedname>vart::Device::pimpl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_device.hpp" line="84" column="19" bodyfile="cppdoc/vart_device.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classvart_1_1_device_1a4d41b172a672ff3a9e65c8ae3a98e515" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classvart_1_1_device" kindref="compound">Device</ref> &gt;</type>
+        <definition>static std::shared_ptr&lt; Device &gt; get_device_hdl</definition>
+        <argsstring>(const int32_t dev_idx, const std::string &amp;xclbin_loc)</argsstring>
+        <name>get_device_hdl</name>
+        <qualifiedname>vart::Device::get_device_hdl</qualifiedname>
+        <param>
+          <type>const int32_t</type>
+          <declname>dev_idx</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>xclbin_loc</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classvart_1_1_device_1a4d41b172a672ff3a9e65c8ae3a98e515" kindref="member">get_device_hdl()</ref> - Creates a Device() instance if not created earlier, else return an existing instance for given device index and xclbin. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classvart_1_1_device" kindref="compound">Device</ref> index on which XCLBIN is to be loaded.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xclbin_loc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>XCLBIN path.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns a <ref refid="classvart_1_1_device" kindref="compound">Device</ref> pointer created using given dev_idx, xclbin_loc</para>
+</simplesect>
+The following criteria is the basis for either to create a new <ref refid="classvart_1_1_device" kindref="compound">Device</ref> instance or not:</para>
+<para><programlisting><codeline><highlight class="normal">------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>dev_idx<sp/><sp/><sp/><sp/>|<sp/>xclbin<sp/>|<sp/><sp/><sp/>Result<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Exists<sp/><sp/><sp/><sp/><sp/>|<sp/>Exists<sp/>|<sp/>Returns<sp/>an<sp/>existing<sp/>Device<sp/>instance|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>creates<sp/>a<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Device<sp/>instance<sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Exists<sp/><sp/><sp/><sp/><sp/>|<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>Returns<sp/>error<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Exists<sp/>|<sp/>creates<sp/>a<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Device<sp/>instance<sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">------------------------------------------------------------</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_device.hpp" line="61" column="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvart_1_1_device_1a7be415d1274b46fb53157ed1dcf20feb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::shared_ptr&lt; DeviceImplBase &gt; &amp;</type>
+        <definition>const std::shared_ptr&lt; DeviceImplBase &gt; &amp; get_pimpl_handle</definition>
+        <argsstring>() const</argsstring>
+        <name>get_pimpl_handle</name>
+        <qualifiedname>vart::Device::get_pimpl_handle</qualifiedname>
+        <briefdescription>
+<para><ref refid="classvart_1_1_device_1a7be415d1274b46fb53157ed1dcf20feb" kindref="member">get_pimpl_handle()</ref> - Retrieves pointer to <ref refid="classvart_1_1_device" kindref="compound">Device</ref> implementation Base class </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns a constant reference of pointer to implementation class. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_device.hpp" line="70" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_device_1a64c8df9b03cf9634375e7754173f86de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t get_device_index</definition>
+        <argsstring>() const</argsstring>
+        <name>get_device_index</name>
+        <qualifiedname>vart::Device::get_device_index</qualifiedname>
+        <briefdescription>
+<para><ref refid="classvart_1_1_device_1a64c8df9b03cf9634375e7754173f86de" kindref="member">get_device_index()</ref> - Retrieves device index of current instance </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns the device index </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_device.hpp" line="78" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_device_1a0dfdad1a0e50492309cb5af209f060be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Device</definition>
+        <argsstring>()=delete</argsstring>
+        <name>Device</name>
+        <qualifiedname>vart::Device::Device</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_device.hpp" line="79" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_device_1ad8a35430ed29c3b0f822a93ece88ef8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>~Device</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Device</name>
+        <qualifiedname>vart::Device::~Device</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_device.hpp" line="80" column="3"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classvart_1_1_device_1a0a3af57b8f86798b3caddf73a407dd94" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Device</definition>
+        <argsstring>(std::shared_ptr&lt; DeviceImplBase &gt; pimpl_hdl)</argsstring>
+        <name>Device</name>
+        <qualifiedname>vart::Device::Device</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; DeviceImplBase &gt;</type>
+          <declname>pimpl_hdl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_device.hpp" line="83" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module manages the hardware context and loading of xclbin on to the device. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Please check API documentation for more information. Any module utilizing hardware acceleration requires an instance of the <ref refid="classvart_1_1_device" kindref="compound">Device</ref> class. </para>
+    </detaileddescription>
+    <location file="cppdoc/vart_device.hpp" line="32" column="1" bodyfile="cppdoc/vart_device.hpp" bodystart="32" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classvart_1_1_device_1a0dfdad1a0e50492309cb5af209f060be" prot="public" virt="non-virtual"><scope>vart::Device</scope><name>Device</name></member>
+      <member refid="classvart_1_1_device_1a0a3af57b8f86798b3caddf73a407dd94" prot="private" virt="non-virtual"><scope>vart::Device</scope><name>Device</name></member>
+      <member refid="classvart_1_1_device_1a4d41b172a672ff3a9e65c8ae3a98e515" prot="public" virt="non-virtual"><scope>vart::Device</scope><name>get_device_hdl</name></member>
+      <member refid="classvart_1_1_device_1a64c8df9b03cf9634375e7754173f86de" prot="public" virt="non-virtual"><scope>vart::Device</scope><name>get_device_index</name></member>
+      <member refid="classvart_1_1_device_1a7be415d1274b46fb53157ed1dcf20feb" prot="public" virt="non-virtual"><scope>vart::Device</scope><name>get_pimpl_handle</name></member>
+      <member refid="classvart_1_1_device_1a6b0a545d0502bddb6d4ec2a251017bad" prot="private" virt="non-virtual"><scope>vart::Device</scope><name>pimpl</name></member>
+      <member refid="classvart_1_1_device_1ad8a35430ed29c3b0f822a93ece88ef8d" prot="public" virt="non-virtual"><scope>vart::Device</scope><name>~Device</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

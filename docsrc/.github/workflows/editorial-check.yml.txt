@@ -1,0 +1,24 @@
+name: Editorial Check (Microsoft Style)
+
+on:
+  pull_request:
+    branches: [feb-release]  # Change to your default branch if not 'main'
+
+jobs:
+  vale:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Run Vale with Microsoft Style
+      - name: Run Vale Linter
+        uses: errata-ai/vale-action@master
+        with:
+          files: '*.rst'  # Check reStructuredText files instead of Markdown
+          styles: |
+            https://github.com/errata-ai/Microsoft/releases/latest/download/Microsoft.zip
+          reporter: github-pr-check  # Show results in PR checks
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

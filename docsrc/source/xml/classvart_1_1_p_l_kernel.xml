@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classvart_1_1_p_l_kernel" kind="class" language="C++" prot="public">
+    <compoundname>vart::PLKernel</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvart_1_1_p_l_kernel_1af86527422cfa4fb97021c3204cbd2faa" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; PLKernelImplBase &gt;</type>
+        <definition>std::shared_ptr&lt;PLKernelImplBase&gt; pimpl</definition>
+        <argsstring></argsstring>
+        <name>pimpl</name>
+        <qualifiedname>vart::PLKernel::pimpl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_plkernel.hpp" line="129" column="19" bodyfile="cppdoc/vart_plkernel.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_p_l_kernel_1a415c928f2d02cf8a20702b68540e2241" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool enable_profiling</definition>
+        <argsstring></argsstring>
+        <name>enable_profiling</name>
+        <qualifiedname>vart::PLKernel::enable_profiling</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_plkernel.hpp" line="130" column="8" bodyfile="cppdoc/vart_plkernel.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_p_l_kernel_1a43639f02afc69e4f717b2bb4f34c1cab" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::chrono::high_resolution_clock::time_point &gt;</type>
+        <definition>std::vector&lt;std::chrono::high_resolution_clock::time_point&gt; profile_start_time</definition>
+        <argsstring></argsstring>
+        <name>profile_start_time</name>
+        <qualifiedname>vart::PLKernel::profile_start_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_plkernel.hpp" line="131" column="15" bodyfile="cppdoc/vart_plkernel.hpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_p_l_kernel_1a2a754e27965b28aef05cb6165089aceb" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::chrono::high_resolution_clock::time_point &gt;</type>
+        <definition>std::vector&lt;std::chrono::high_resolution_clock::time_point&gt; profile_end_time</definition>
+        <argsstring></argsstring>
+        <name>profile_end_time</name>
+        <qualifiedname>vart::PLKernel::profile_end_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_plkernel.hpp" line="132" column="15" bodyfile="cppdoc/vart_plkernel.hpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvart_1_1_p_l_kernel_1a95ca67b3cc0f663b8d5b48454376565c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PLKernel</definition>
+        <argsstring>(PLKernelImplType type, const std::string &amp;kernel_name, std::string &amp;json_data, std::shared_ptr&lt; Device &gt; device)</argsstring>
+        <name>PLKernel</name>
+        <qualifiedname>vart::PLKernel::PLKernel</qualifiedname>
+        <param>
+          <type>PLKernelImplType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>kernel_name</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>json_data</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classvart_1_1_device" kindref="compound">Device</ref> &gt;</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+<para>PLKernel() - Constructs a PLKernel object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the kernel implementation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>kernel_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the kernel. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>json_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The JSON data for the kernel configuration. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The device on which the kernel will run. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_plkernel.hpp" line="47" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_p_l_kernel_1a07e55ad90df68fc22cb8baf51f4db9a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PLKernel</definition>
+        <argsstring>(std::shared_ptr&lt; PLKernelImplBase &gt; ptr)</argsstring>
+        <name>PLKernel</name>
+        <qualifiedname>vart::PLKernel::PLKernel</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; PLKernelImplBase &gt;</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>PLKernel() - Constructs a PLKernel object with a given implementation pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A shared pointer to the kernel implementation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_plkernel.hpp" line="56" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_p_l_kernel_1ae9c9ddc6a61b33b9d84b8f9f2ec5d2d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>~PLKernel</definition>
+        <argsstring>()</argsstring>
+        <name>~PLKernel</name>
+        <qualifiedname>vart::PLKernel::~PLKernel</qualifiedname>
+        <briefdescription>
+<para>~PLKernel() - Destructs a PLKernel object </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_plkernel.hpp" line="61" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_p_l_kernel_1a71f415b4b8a10348a49bc6b9d44cc749" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::shared_ptr&lt; PLKernelImplBase &gt; &amp;</type>
+        <definition>const std::shared_ptr&lt; PLKernelImplBase &gt; &amp; get_pimpl_handle</definition>
+        <argsstring>() const</argsstring>
+        <name>get_pimpl_handle</name>
+        <qualifiedname>vart::PLKernel::get_pimpl_handle</qualifiedname>
+        <briefdescription>
+<para>get_pimpl_handle() - Gives pointer to implementation class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns a constant reference of pointer to implementation class. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_plkernel.hpp" line="69" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_p_l_kernel_1a4dab889a23e0349b5c9583538a378162" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void process</definition>
+        <argsstring>(Args &amp;&amp;... args)</argsstring>
+        <name>process</name>
+        <qualifiedname>vart::PLKernel::process</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Process() - Set and process the given arguments on Kernel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic template arguments </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arguments to be processed. Arguments specified to program as kernel arguments in sequence. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_plkernel.hpp" line="79" column="20" bodyfile="cppdoc/vart_plkernel.hpp" bodystart="79" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_p_l_kernel_1a968a65694c55b402e66f3ab2c47b4880" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int wait</definition>
+        <argsstring>(unsigned int timeout)</argsstring>
+        <name>wait</name>
+        <qualifiedname>vart::PLKernel::wait</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+<para>wait() - Waits for the kernel to complete processing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The timeout value in milliseconds. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An integer indicating the status. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_plkernel.hpp" line="100" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_p_l_kernel_1af23442ffb5aa622ee0fd6bc823527db6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename PLKernelAnyInfo</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void set_config</definition>
+        <argsstring>(PLKernelAnyInfo &amp;info)</argsstring>
+        <name>set_config</name>
+        <qualifiedname>vart::PLKernel::set_config</qualifiedname>
+        <param>
+          <type>PLKernelAnyInfo &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>set_config() - Sets the configuration for the kernel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>PLKernelAnyInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the configuration information. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The configuration information. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_plkernel.hpp" line="110" column="20" bodyfile="cppdoc/vart_plkernel.hpp" bodystart="110" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_p_l_kernel_1a8807f96ef721f62737fda0f7d83512cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename PLKernelAnyInfo</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_config</definition>
+        <argsstring>(PLKernelAnyInfo &amp;info)</argsstring>
+        <name>get_config</name>
+        <qualifiedname>vart::PLKernel::get_config</qualifiedname>
+        <param>
+          <type>PLKernelAnyInfo &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>get_config() - Gets the configuration of the kernel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>PLKernelAnyInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the configuration information. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The configuration information. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_plkernel.hpp" line="122" column="20" bodyfile="cppdoc/vart_plkernel.hpp" bodystart="122" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cppdoc/vart_plkernel.hpp" line="33" column="1" bodyfile="cppdoc/vart_plkernel.hpp" bodystart="33" bodyend="133"/>
+    <listofallmembers>
+      <member refid="classvart_1_1_p_l_kernel_1a415c928f2d02cf8a20702b68540e2241" prot="private" virt="non-virtual"><scope>vart::PLKernel</scope><name>enable_profiling</name></member>
+      <member refid="classvart_1_1_p_l_kernel_1a8807f96ef721f62737fda0f7d83512cf" prot="public" virt="non-virtual"><scope>vart::PLKernel</scope><name>get_config</name></member>
+      <member refid="classvart_1_1_p_l_kernel_1a71f415b4b8a10348a49bc6b9d44cc749" prot="public" virt="non-virtual"><scope>vart::PLKernel</scope><name>get_pimpl_handle</name></member>
+      <member refid="classvart_1_1_p_l_kernel_1af86527422cfa4fb97021c3204cbd2faa" prot="private" virt="non-virtual"><scope>vart::PLKernel</scope><name>pimpl</name></member>
+      <member refid="classvart_1_1_p_l_kernel_1a95ca67b3cc0f663b8d5b48454376565c" prot="public" virt="non-virtual"><scope>vart::PLKernel</scope><name>PLKernel</name></member>
+      <member refid="classvart_1_1_p_l_kernel_1a07e55ad90df68fc22cb8baf51f4db9a3" prot="public" virt="non-virtual"><scope>vart::PLKernel</scope><name>PLKernel</name></member>
+      <member refid="classvart_1_1_p_l_kernel_1a4dab889a23e0349b5c9583538a378162" prot="public" virt="non-virtual"><scope>vart::PLKernel</scope><name>process</name></member>
+      <member refid="classvart_1_1_p_l_kernel_1a2a754e27965b28aef05cb6165089aceb" prot="private" virt="non-virtual"><scope>vart::PLKernel</scope><name>profile_end_time</name></member>
+      <member refid="classvart_1_1_p_l_kernel_1a43639f02afc69e4f717b2bb4f34c1cab" prot="private" virt="non-virtual"><scope>vart::PLKernel</scope><name>profile_start_time</name></member>
+      <member refid="classvart_1_1_p_l_kernel_1af23442ffb5aa622ee0fd6bc823527db6" prot="public" virt="non-virtual"><scope>vart::PLKernel</scope><name>set_config</name></member>
+      <member refid="classvart_1_1_p_l_kernel_1a968a65694c55b402e66f3ab2c47b4880" prot="public" virt="non-virtual"><scope>vart::PLKernel</scope><name>wait</name></member>
+      <member refid="classvart_1_1_p_l_kernel_1ae9c9ddc6a61b33b9d84b8f9f2ec5d2d3" prot="public" virt="non-virtual"><scope>vart::PLKernel</scope><name>~PLKernel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

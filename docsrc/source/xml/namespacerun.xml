@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespacerun" kind="namespace" language="Python">
+    <compoundname>run</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacerun_1a17e8846847d389b1fd3323550575df0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>run</definition>
+        <argsstring>(self, inputs)</argsstring>
+        <name>run</name>
+        <qualifiedname>run.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>inputs</type>
+          <defname>inputs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pydoc/run.py" line="27" column="1" bodyfile="pydoc/run.py" bodystart="27" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>    @brief Executes the runner with the given inputs.
+
+    @param inputs list or ndarray. Input data to be processed by the runner.
+                  If a list, it should contain data for each input tensor.
+                  If a single ndarray, it is assigned to the first input tensor.
+
+    @return list. The output tensors after processing.
+
+    Sample code:
+
+    @code
+      # Create graph runner instance
+      graph = xir.Graph.deserialize(xmodel_file)
+      runner = vitis_ai_library.GraphRunner.create_graph_runner(graph)
+
+      # Prepare input data
+      input_data = np.random.randn(*runner.get_input_shapes()[0])
+      
+      # Run inference
+      output_data = runner.run([input_data])
+
+      # Process output
+      result = np.asarray(output_data[0])
+    @endcode
+</verbatim> </para>
+    </detaileddescription>
+    <location file="pydoc/run.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

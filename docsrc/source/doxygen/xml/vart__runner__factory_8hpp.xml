@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="vart__runner__factory_8hpp" kind="file" language="C++">
+    <compoundname>vart_runner_factory.hpp</compoundname>
+    <includes local="no">any</includes>
+    <includes local="no">cstdint</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">string</includes>
+    <includes local="no">unordered_map</includes>
+    <includes local="no">vector</includes>
+    <includes refid="vart__npu__tensor_8hpp" local="yes">vart_npu_tensor.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>vart_runner_factory.hpp</label>
+        <link refid="vart__runner__factory_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>any</label>
+      </node>
+      <node id="3">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>functional</label>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>memory</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>unordered_map</label>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structvart_1_1_quant_parameters" prot="public">vart::QuantParameters</innerclass>
+    <innerclass refid="structvart_1_1_job_handle" prot="public">vart::JobHandle</innerclass>
+    <innerclass refid="classvart_1_1_runner" prot="public">vart::Runner</innerclass>
+    <innerclass refid="classvart_1_1_runner_factory" prot="public">vart::RunnerFactory</innerclass>
+    <innernamespace refid="namespacevart">vart</innernamespace>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="vart__runner__factory_8hpp_1a70a6ca729d777c5dfe7306cdcf6bf2a6" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>RunnerType</name>
+        <qualifiedname>vart::RunnerType</qualifiedname>
+        <enumvalue id="vart__runner__factory_8hpp_1a70a6ca729d777c5dfe7306cdcf6bf2a6ac328cedf35cf05e3021c9828f23ba541" prot="public">
+          <name>VAIML</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumerates the types of runner implementations supported. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This enumeration specifies the different runner types available for model inference. RunnerType identifies the backend or solution used to execute the model.</para>
+<para><itemizedlist>
+<listitem><para>VAIML: VAIML-based runner implementation. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="42" column="1" bodyfile="cppdoc/vart_runner_factory.hpp" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="enum" id="vart__runner__factory_8hpp_1a5959c934b204c7bcb6766cfaea8ae101" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>RoundingMode</name>
+        <qualifiedname>vart::RoundingMode</qualifiedname>
+        <enumvalue id="vart__runner__factory_8hpp_1a5959c934b204c7bcb6766cfaea8ae101a696b031073e74bf2cb98e5ef201d4aa3" prot="public">
+          <name>UNKNOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__runner__factory_8hpp_1a5959c934b204c7bcb6766cfaea8ae101a7fd6445dda9c0adea175600ee65cc316" prot="public">
+          <name>ROUND_TO_NEAREST_EVEN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__runner__factory_8hpp_1a5959c934b204c7bcb6766cfaea8ae101ae2495278943208450243de03efbe0607" prot="public">
+          <name>ROUND_TOWARD_ZERO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumerates the rounding modes used in quantization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the different rounding modes that can be applied during quantization, such as rounding to nearest even or truncating towards zero.</para>
+<para><itemizedlist>
+<listitem><para>UNKNOWN: Unknown rounding mode.</para>
+</listitem><listitem><para>ROUND_TO_NEAREST_EVEN: Round to nearest even value.</para>
+</listitem><listitem><para>ROUND_TOWARD_ZERO: Truncate towards zero (no rounding). </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="55" column="1" bodyfile="cppdoc/vart_runner_factory.hpp" bodystart="55" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="enum" id="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>StatusCode</name>
+        <qualifiedname>vart::StatusCode</qualifiedname>
+        <enumvalue id="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113ad0749aaba8b833466dfcbb0428e4f89c" prot="public">
+          <name>SUCCESS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113a36fc6065a3e970bc3e6b2e59da52bf2a" prot="public">
+          <name>FAILURE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113ac063281d4adc16ebccfec66aa885b4dd" prot="public">
+          <name>INVALID_INPUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113a772ab551fe4d567e5cbfac7cf76c9ace" prot="public">
+          <name>INVALID_OUTPUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113ac56ddb8056b120c9d5fee05981f219c6" prot="public">
+          <name>OUT_OF_MEMORY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113a62be47fdd89da032cf78dfce82239579" prot="public">
+          <name>RUNTIME_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113a070a0fb40f6c308ab544b227660aadff" prot="public">
+          <name>TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113ae8ae983711de90edc09f13df02eb695e" prot="public">
+          <name>DEVICE_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumerates the status codes used in the VART. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the various status codes that can be returned by VART functions, indicating the success or failure of an operation.</para>
+<para><itemizedlist>
+<listitem><para>SUCCESS: Operation completed successfully.</para>
+</listitem><listitem><para>FAILURE: Operation failed.</para>
+</listitem><listitem><para>INVALID_INPUT: Invalid input parameters.</para>
+</listitem><listitem><para>INVALID_OUTPUT: Invalid output parameters.</para>
+</listitem><listitem><para>OUT_OF_MEMORY: Memory allocation failed.</para>
+</listitem><listitem><para>RUNTIME_ERROR: Runtime error occurred.</para>
+</listitem><listitem><para>TIMEOUT: Operation timed out.</para>
+</listitem><listitem><para>DEVICE_ERROR: Device-specific error occurred. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="97" column="1" bodyfile="cppdoc/vart_runner_factory.hpp" bodystart="97" bodyend="106"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2025<sp/>Advanced<sp/>Micro<sp/>Devices,<sp/>Inc.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;any&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;vart_npu_tensor.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">vart<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>RunnerType<sp/>{<sp/>VAIML<sp/>};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>RoundingMode<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>UNKNOWN,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>ROUND_TO_NEAREST_EVEN,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>ROUND_TOWARD_ZERO,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="structvart_1_1_quant_parameters" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvart_1_1_quant_parameters" kindref="compound">QuantParameters</ref><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structvart_1_1_quant_parameters_1acec6d8ad52a28972fa74e071c1a63b6a" kindref="member">scale</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>int32_t<sp/><ref refid="structvart_1_1_quant_parameters_1a1091e77b7105f15ac2445c1c7f77f549" kindref="member">zero_point</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>RoundingMode<sp/><ref refid="structvart_1_1_quant_parameters_1ac54391f3e34f6077c576edde0021bd7b" kindref="member">rounding_mode</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>StatusCode<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>SUCCESS<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>FAILURE,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>INVALID_INPUT,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>INVALID_OUTPUT,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>OUT_OF_MEMORY,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>RUNTIME_ERROR,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>TIMEOUT,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>DEVICE_ERROR</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="structvart_1_1_job_handle" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvart_1_1_job_handle" kindref="compound">JobHandle</ref><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>StatusCode<sp/>status;<sp/><sp/></highlight><highlight class="comment">//<sp/>Submission<sp/>status<sp/>of<sp/>the<sp/>job.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="structvart_1_1_job_handle_1a44b85d3843ea93724e325cc4a211ec1d" kindref="member">job_id</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Unique<sp/>identifier<sp/>for<sp/>the<sp/>job.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="classvart_1_1_runner" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvart_1_1_runner" kindref="compound">Runner</ref><sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner" kindref="compound">Runner</ref>(</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>model_path,</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>std::any&gt;&amp;<sp/>options<sp/>=<sp/>{})<sp/>{}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1a5682a18df20288c1de981ab2ca71cc3b" kindref="member">~Runner</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;NpuTensorInfo&gt;&amp;<sp/><ref refid="classvart_1_1_runner_1a531cc4202e8f2d719afade557b260765" kindref="member">get_tensors_info</ref>(</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TensorDirection&amp;<sp/>direction,</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TensorType&amp;<sp/>type)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvart_1_1_npu_tensor_info" kindref="compound">NpuTensorInfo</ref>&amp;<sp/><ref refid="classvart_1_1_runner_1a9bf506aae3d036df23fd6e7a8e33854e" kindref="member">get_tensor_info_by_name</ref>(</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>tensor_name,</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TensorType&amp;<sp/>type)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvart_1_1_quant_parameters" kindref="compound">QuantParameters</ref>&amp;<sp/><ref refid="classvart_1_1_runner_1ab26a80f1b026365f3daeb1097993d9f7" kindref="member">get_quant_parameters</ref>(</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>tensor_name)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1a4d189bbdc89286eb2ca17ac3da6f14d1" kindref="member">get_num_input_tensors</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1ab9862ef89dceca3e8890b754238ea872" kindref="member">get_num_output_tensors</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1a38797341425a3cbc58f783ee6a0920fb" kindref="member">get_batch_size</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>StatusCode<sp/><ref refid="classvart_1_1_runner_1a73b67eeafdd837710322b6535fad8a29" kindref="member">execute</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::vector&lt;NpuTensor&gt;&gt;&amp;<sp/>inputs,</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;NpuTensor&gt;&gt;&amp;<sp/>outputs)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structvart_1_1_job_handle" kindref="compound">JobHandle</ref><sp/><ref refid="namespaceexecute__async" kindref="compound">execute_async</ref>(</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::vector&lt;NpuTensor&gt;&gt;&amp;<sp/>inputs,</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;NpuTensor&gt;&gt;&amp;<sp/>outputs)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>StatusCode<sp/><ref refid="namespacewait" kindref="compound">wait</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvart_1_1_job_handle" kindref="compound">JobHandle</ref>&amp;<sp/>job_handle,</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classvart_1_1_runner_1afb125477af0423b4df8740e151c9fc7f" kindref="member">ExecuteAsyncCallback</ref><sp/>=<sp/>std::function&lt;void(StatusCode)&gt;;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>StatusCode<sp/><ref refid="namespaceexecute__async" kindref="compound">execute_async</ref>(</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::vector&lt;NpuTensor&gt;&gt;&amp;<sp/>inputs,</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;NpuTensor&gt;&gt;&amp;<sp/>outputs,</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvart_1_1_runner_1afb125477af0423b4df8740e151c9fc7f" kindref="member">ExecuteAsyncCallback</ref><sp/>cb,</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347" refid="classvart_1_1_runner_factory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvart_1_1_runner_factory" kindref="compound">RunnerFactory</ref><sp/>{</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;Runner&gt;<sp/><ref refid="namespacecreate__runner" kindref="compound">create_runner</ref>(</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>RunnerType<sp/>device,</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>model_path,</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>std::any&gt;&amp;<sp/>options<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="368"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vart</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="cppdoc/vart_runner_factory.hpp"/>
+  </compounddef>
+</doxygen>

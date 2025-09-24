@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_c8195319c423143631ce95767fadc48a" kind="dir">
+    <compoundname>cppdoc</compoundname>
+    <innerfile refid="runner_8h">runner.h</innerfile>
+    <innerfile refid="vart__device_8hpp">vart_device.hpp</innerfile>
+    <innerfile refid="vart__inferresult_8hpp">vart_inferresult.hpp</innerfile>
+    <innerfile refid="vart__logger_8hpp">vart_logger.hpp</innerfile>
+    <innerfile refid="vart__memory_8hpp">vart_memory.hpp</innerfile>
+    <innerfile refid="vart__metaconvert_8hpp">vart_metaconvert.hpp</innerfile>
+    <innerfile refid="vart__overlay_8hpp">vart_overlay.hpp</innerfile>
+    <innerfile refid="vart__plkernel_8hpp">vart_plkernel.hpp</innerfile>
+    <innerfile refid="vart__postprocess_8hpp">vart_postprocess.hpp</innerfile>
+    <innerfile refid="vart__preprocess_8hpp">vart_preprocess.hpp</innerfile>
+    <innerfile refid="vart__videoframe_8hpp">vart_videoframe.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cppdoc/"/>
+  </compounddef>
+</doxygen>

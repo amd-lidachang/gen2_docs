@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_a4a501198cc0f844caa6a6d23745e649" kind="dir">
+    <compoundname>zebra_embedded</compoundname>
+    <innerdir refid="dir_d0aff1a4909baee3c2f6345531106d35">npu_runner</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/"/>
+  </compounddef>
+</doxygen>

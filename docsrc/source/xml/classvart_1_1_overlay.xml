@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classvart_1_1_overlay" kind="class" language="C++" prot="public">
+    <compoundname>vart::Overlay</compoundname>
+    <includes local="no">vart_overlay.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvart_1_1_overlay_1a252f34ce60c3f08525b02b21a2cc70d5" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; OverlayImplBase &gt;</type>
+        <definition>std::shared_ptr&lt;OverlayImplBase&gt; pimpl</definition>
+        <argsstring></argsstring>
+        <name>pimpl</name>
+        <qualifiedname>vart::Overlay::pimpl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_overlay.hpp" line="80" column="19" bodyfile="cppdoc/vart_overlay.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvart_1_1_overlay_1a0247a26bc475d7ecfdd98b49197e9477" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Overlay</definition>
+        <argsstring>()=delete</argsstring>
+        <name>Overlay</name>
+        <qualifiedname>vart::Overlay::Overlay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_overlay.hpp" line="37" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_overlay_1ab1ade41d89d4cf7cadd503088067e60e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Overlay</definition>
+        <argsstring>(OverlayImplType overlay_impl_type, std::shared_ptr&lt; Device &gt; device)</argsstring>
+        <name>Overlay</name>
+        <qualifiedname>vart::Overlay::Overlay</qualifiedname>
+        <param>
+          <type>OverlayImplType</type>
+          <declname>overlay_impl_type</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classvart_1_1_device" kindref="compound">Device</ref> &gt;</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+<para>Overlay() - Constructor for creating an overlay instance, which accepts input type and device instance parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>overlay_impl_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum class to specify which type of overlay implementation to use</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classvart_1_1_device" kindref="compound">Device</ref> handle to be used by implementation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_overlay.hpp" line="49" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_overlay_1a7a8fd1e4f8aca8cf55cafc8d318de557" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Overlay</definition>
+        <argsstring>(std::shared_ptr&lt; OverlayImplBase &gt; ptr)</argsstring>
+        <name>Overlay</name>
+        <qualifiedname>vart::Overlay::Overlay</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; OverlayImplBase &gt;</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Overlay() - Constructor for creating an overlay instance, which accepts user defined pimpl parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to user&apos;s implementation instance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_overlay.hpp" line="58" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_overlay_1a26c7c14b0a527826f53381942d0d3b5b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::shared_ptr&lt; OverlayImplBase &gt; &amp;</type>
+        <definition>const std::shared_ptr&lt; OverlayImplBase &gt; &amp; get_pimpl_handle</definition>
+        <argsstring>() const</argsstring>
+        <name>get_pimpl_handle</name>
+        <qualifiedname>vart::Overlay::get_pimpl_handle</qualifiedname>
+        <briefdescription>
+<para><ref refid="classvart_1_1_overlay_1a26c7c14b0a527826f53381942d0d3b5b" kindref="member">get_pimpl_handle()</ref> - Retrieves pointer to implementation class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns a constant reference of pointer to implementation class. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_overlay.hpp" line="66" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_overlay_1a0db0bec75af3c8d88450f50516cfd154" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void draw_overlay</definition>
+        <argsstring>(VideoFrame &amp;frame, OverlayShapeInfo &amp;shape_info)</argsstring>
+        <name>draw_overlay</name>
+        <qualifiedname>vart::Overlay::draw_overlay</qualifiedname>
+        <param>
+          <type><ref refid="classvart_1_1_video_frame" kindref="compound">VideoFrame</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>OverlayShapeInfo &amp;</type>
+          <declname>shape_info</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classvart_1_1_overlay_1a0db0bec75af3c8d88450f50516cfd154" kindref="member">draw_overlay()</ref> - Draws the input overlay information on to the frame </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>video frame on which drawing operation to be performed</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>shape_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information used in drawing operation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_overlay.hpp" line="77" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module facilitates the overlay of annotations onto the video frame, currently overlay utilizes OpenCV library to draw on frames, which is software based. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classvart_1_1_overlay" kindref="compound">Overlay</ref> supports drawing of bounding boxes, text, lines, arrows, circles and polygons on frames. Application can also incorporate custom implementation using base class. </para>
+    </detaileddescription>
+    <location file="cppdoc/vart_overlay.hpp" line="35" column="1" bodyfile="cppdoc/vart_overlay.hpp" bodystart="35" bodyend="81"/>
+    <listofallmembers>
+      <member refid="classvart_1_1_overlay_1a0db0bec75af3c8d88450f50516cfd154" prot="public" virt="non-virtual"><scope>vart::Overlay</scope><name>draw_overlay</name></member>
+      <member refid="classvart_1_1_overlay_1a26c7c14b0a527826f53381942d0d3b5b" prot="public" virt="non-virtual"><scope>vart::Overlay</scope><name>get_pimpl_handle</name></member>
+      <member refid="classvart_1_1_overlay_1a0247a26bc475d7ecfdd98b49197e9477" prot="public" virt="non-virtual"><scope>vart::Overlay</scope><name>Overlay</name></member>
+      <member refid="classvart_1_1_overlay_1ab1ade41d89d4cf7cadd503088067e60e" prot="public" virt="non-virtual"><scope>vart::Overlay</scope><name>Overlay</name></member>
+      <member refid="classvart_1_1_overlay_1a7a8fd1e4f8aca8cf55cafc8d318de557" prot="public" virt="non-virtual"><scope>vart::Overlay</scope><name>Overlay</name></member>
+      <member refid="classvart_1_1_overlay_1a252f34ce60c3f08525b02b21a2cc70d5" prot="private" virt="non-virtual"><scope>vart::Overlay</scope><name>pimpl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

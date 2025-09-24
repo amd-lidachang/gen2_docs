@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classvart_1_1_logger" kind="class" language="C++" prot="public">
+    <compoundname>vart::Logger</compoundname>
+    <includes local="no">vart_logger.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvart_1_1_logger_1a3f64d3476d6b9292715933b774733cec" prot="private" static="no" mutable="no">
+        <type>LogLevel</type>
+        <definition>LogLevel global_log_level</definition>
+        <argsstring></argsstring>
+        <name>global_log_level</name>
+        <qualifiedname>vart::Logger::global_log_level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_logger.hpp" line="150" column="12" bodyfile="cppdoc/vart_logger.hpp" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_logger_1a853c8cf2ecbe6ef4b9cc07263369dbdc" prot="private" static="no" mutable="no">
+        <type>LogLevel</type>
+        <definition>LogLevel level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <qualifiedname>vart::Logger::level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_logger.hpp" line="151" column="12" bodyfile="cppdoc/vart_logger.hpp" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_logger_1a10478adb47906eaf63330d3762bf592f" prot="private" static="no" mutable="no">
+        <type>LogType</type>
+        <definition>LogType type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>vart::Logger::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_logger.hpp" line="152" column="11" bodyfile="cppdoc/vart_logger.hpp" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_logger_1a8a196f44b36100c7fa651b7cd165a8d8" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex reg_mutex</definition>
+        <argsstring></argsstring>
+        <name>reg_mutex</name>
+        <qualifiedname>vart::Logger::reg_mutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_logger.hpp" line="153" column="14" bodyfile="cppdoc/vart_logger.hpp" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_logger_1a7aa000dbc5ce63e0803476366e35c7b7" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex log_mutex</definition>
+        <argsstring></argsstring>
+        <name>log_mutex</name>
+        <qualifiedname>vart::Logger::log_mutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_logger.hpp" line="154" column="14" bodyfile="cppdoc/vart_logger.hpp" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_logger_1af89aafa4b0f86c179ba512e1a5a3370e" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::tuple&lt; int16_t, uint16_t &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::tuple&lt;int16_t, uint16_t&gt; &gt; vart_components</definition>
+        <argsstring></argsstring>
+        <name>vart_components</name>
+        <qualifiedname>vart::Logger::vart_components</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_logger.hpp" line="155" column="12" bodyfile="cppdoc/vart_logger.hpp" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_logger_1a85af9e393bd6ffd4ae0bf4292a909022" prot="private" static="no" mutable="no">
+        <type>std::chrono::high_resolution_clock::time_point</type>
+        <definition>std::chrono::high_resolution_clock::time_point logger_start_time</definition>
+        <argsstring></argsstring>
+        <name>logger_start_time</name>
+        <qualifiedname>vart::Logger::logger_start_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_logger.hpp" line="156" column="50" bodyfile="cppdoc/vart_logger.hpp" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_logger_1a075c7553f10c046a5a62eb5d77645f32" prot="private" static="no" mutable="no">
+        <type>std::FILE *</type>
+        <definition>std::FILE* log_file</definition>
+        <argsstring></argsstring>
+        <name>log_file</name>
+        <qualifiedname>vart::Logger::log_file</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_logger.hpp" line="157" column="13" bodyfile="cppdoc/vart_logger.hpp" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classvart_1_1_logger_1a331ac3fbdf05c568da9fe4bc1c5c401a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classvart_1_1_logger" kindref="compound">Logger</ref> &amp;</type>
+        <definition>static Logger &amp; get_instance</definition>
+        <argsstring>()</argsstring>
+        <name>get_instance</name>
+        <qualifiedname>vart::Logger::get_instance</qualifiedname>
+        <briefdescription>
+<para><ref refid="classvart_1_1_logger_1a331ac3fbdf05c568da9fe4bc1c5c401a" kindref="member">get_instance()</ref> - Creates a logger() instance if not created earlier, else return an existing instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns a logger instance</para>
+</simplesect>
+<ref refid="classvart_1_1_logger" kindref="compound">Logger</ref> object when created reads the environment variable VART_CORE_DEBUG to get and store log levels of each module and global log level. Default module instance id is stored as -1. This id will be updated later when each module instance registers with logger. Apart from that, logger reads the environment variable VART_LOG_FILE_PATH and if:<orderedlist>
+<listitem><para>VART_LOG_FILE_PATH is set to CONSOLE, logs messages to on screen console.</para>
+</listitem><listitem><para>VART_LOG_FILE_PATH is set to SYSLOG, appends log messages to syslog.</para>
+</listitem><listitem><para>VART_LOG_FILE_PATH is set to a file on disk, log messages to that file. If the file cannot be opened to log, defaults to syslog logging. </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_logger.hpp" line="83" column="17" bodyfile="cppdoc/vart_logger.hpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvart_1_1_logger_1ad95f94e5e95cff5398d4335ce053214e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; struct log_context &gt;</type>
+        <definition>std::shared_ptr&lt; struct log_context &gt; mod_register</definition>
+        <argsstring>(const char *modname, bool need_id)</argsstring>
+        <name>mod_register</name>
+        <qualifiedname>vart::Logger::mod_register</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>modname</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>need_id</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classvart_1_1_logger_1ad95f94e5e95cff5398d4335ce053214e" kindref="member">mod_register()</ref> - Registers a module with logger object </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>modname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Module name to register with logger</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>need_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flag describing the need for an id to be appended to module name during logging</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns logger context associated with a module instance.</para>
+</simplesect>
+If the module is already registered with the logger, its instance id is incremented, else a default instance id = 0 is assigned. Module instance log level is assigned from logger object&apos;s database or from global log level if per module log level is not provided by user. If need_id is set to false, module instance id is not appended to module&apos;s instance name. Components such as &apos;videoframe&apos;, &apos;memory&apos; need to set this flag to false as there can be too many instances of those components in a single pipeline use case and can be be distinguished by their pointers. Components representing IP blocks can set this to true to distinguish IP instances. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_logger.hpp" line="112" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_logger_1ae8e93aadf416fb3656676e14e842356b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vart_logger_log_obj</definition>
+        <argsstring>(LogLevel, std::shared_ptr&lt; struct log_context &gt; ctx, const char *filename, const char *func, uint32_t line, const char *fmt,...)</argsstring>
+        <name>vart_logger_log_obj</name>
+        <qualifiedname>vart::Logger::vart_logger_log_obj</qualifiedname>
+        <param>
+          <type>LogLevel</type>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; struct log_context &gt;</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para><ref refid="classvart_1_1_logger_1ae8e93aadf416fb3656676e14e842356b" kindref="member">vart_logger_log_obj()</ref> - Logs a module&apos;s message along with metadata like filename, function name, line number, process id, thread id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LogLevel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logging level with which module logs a message</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Module&apos;s logger context obtained with <ref refid="classvart_1_1_logger_1ad95f94e5e95cff5398d4335ce053214e" kindref="member">mod_register()</ref></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source code filename from which this logging is triggered</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source code function name</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source code line number</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format string passed for logging. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_logger.hpp" line="137" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classvart_1_1_logger_1a4fac0c9f6ee2dce6abd726264b9195f7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Logger</definition>
+        <argsstring>()</argsstring>
+        <name>Logger</name>
+        <qualifiedname>vart::Logger::Logger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_logger.hpp" line="146" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_logger_1a0d77f27eb95c246d555904aaf08018eb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>~Logger</definition>
+        <argsstring>()</argsstring>
+        <name>~Logger</name>
+        <qualifiedname>vart::Logger::~Logger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_logger.hpp" line="147" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_logger_1aa7f3dbfbd2426b4874750f08bd23bd7f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Logger</definition>
+        <argsstring>(const Logger &amp;)=delete</argsstring>
+        <name>Logger</name>
+        <qualifiedname>vart::Logger::Logger</qualifiedname>
+        <param>
+          <type>const <ref refid="classvart_1_1_logger" kindref="compound">Logger</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_logger.hpp" line="148" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_logger_1ab86c892f2ae9d88f225aa70942ce2ec3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void operator=</definition>
+        <argsstring>(const Logger &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>vart::Logger::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classvart_1_1_logger" kindref="compound">Logger</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_logger.hpp" line="149" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The logger module provides the logging support for VART modules. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Supports logging to console, file, syslog. </para>
+    </detaileddescription>
+    <location file="cppdoc/vart_logger.hpp" line="61" column="1" bodyfile="cppdoc/vart_logger.hpp" bodystart="61" bodyend="158"/>
+    <listofallmembers>
+      <member refid="classvart_1_1_logger_1a331ac3fbdf05c568da9fe4bc1c5c401a" prot="public" virt="non-virtual"><scope>vart::Logger</scope><name>get_instance</name></member>
+      <member refid="classvart_1_1_logger_1a3f64d3476d6b9292715933b774733cec" prot="private" virt="non-virtual"><scope>vart::Logger</scope><name>global_log_level</name></member>
+      <member refid="classvart_1_1_logger_1a853c8cf2ecbe6ef4b9cc07263369dbdc" prot="private" virt="non-virtual"><scope>vart::Logger</scope><name>level</name></member>
+      <member refid="classvart_1_1_logger_1a075c7553f10c046a5a62eb5d77645f32" prot="private" virt="non-virtual"><scope>vart::Logger</scope><name>log_file</name></member>
+      <member refid="classvart_1_1_logger_1a7aa000dbc5ce63e0803476366e35c7b7" prot="private" virt="non-virtual"><scope>vart::Logger</scope><name>log_mutex</name></member>
+      <member refid="classvart_1_1_logger_1a4fac0c9f6ee2dce6abd726264b9195f7" prot="private" virt="non-virtual"><scope>vart::Logger</scope><name>Logger</name></member>
+      <member refid="classvart_1_1_logger_1aa7f3dbfbd2426b4874750f08bd23bd7f" prot="private" virt="non-virtual"><scope>vart::Logger</scope><name>Logger</name></member>
+      <member refid="classvart_1_1_logger_1a85af9e393bd6ffd4ae0bf4292a909022" prot="private" virt="non-virtual"><scope>vart::Logger</scope><name>logger_start_time</name></member>
+      <member refid="classvart_1_1_logger_1ad95f94e5e95cff5398d4335ce053214e" prot="public" virt="non-virtual"><scope>vart::Logger</scope><name>mod_register</name></member>
+      <member refid="classvart_1_1_logger_1ab86c892f2ae9d88f225aa70942ce2ec3" prot="private" virt="non-virtual"><scope>vart::Logger</scope><name>operator=</name></member>
+      <member refid="classvart_1_1_logger_1a8a196f44b36100c7fa651b7cd165a8d8" prot="private" virt="non-virtual"><scope>vart::Logger</scope><name>reg_mutex</name></member>
+      <member refid="classvart_1_1_logger_1a10478adb47906eaf63330d3762bf592f" prot="private" virt="non-virtual"><scope>vart::Logger</scope><name>type</name></member>
+      <member refid="classvart_1_1_logger_1af89aafa4b0f86c179ba512e1a5a3370e" prot="private" virt="non-virtual"><scope>vart::Logger</scope><name>vart_components</name></member>
+      <member refid="classvart_1_1_logger_1ae8e93aadf416fb3656676e14e842356b" prot="public" virt="non-virtual"><scope>vart::Logger</scope><name>vart_logger_log_obj</name></member>
+      <member refid="classvart_1_1_logger_1a0d77f27eb95c246d555904aaf08018eb" prot="private" virt="non-virtual"><scope>vart::Logger</scope><name>~Logger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

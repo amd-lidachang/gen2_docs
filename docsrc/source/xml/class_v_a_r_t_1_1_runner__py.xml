@@ -1,0 +1,460 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_v_a_r_t_1_1_runner__py" kind="class" language="Python" prot="public">
+    <compoundname>VART::Runner_py</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1adf74345ef2fa404b8f5b0fbb9d28cb86" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>root_json_path</definition>
+        <argsstring></argsstring>
+        <name>root_json_path</name>
+        <qualifiedname>VART.Runner_py.root_json_path</qualifiedname>
+        <initializer>=  root_json_path</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="209" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1a97e7892f0dcb1a2182e86fb846aecc4b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>network_name</definition>
+        <argsstring></argsstring>
+        <name>network_name</name>
+        <qualifiedname>VART.Runner_py.network_name</qualifiedname>
+        <initializer>=  network_name</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="210" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1a30d34426c145492d742483c7d2ddd5bd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>npu_only</definition>
+        <argsstring></argsstring>
+        <name>npu_only</name>
+        <qualifiedname>VART.Runner_py.npu_only</qualifiedname>
+        <initializer>=  npu_only</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="211" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1ac18d0d34c68179e57f605738246bc27c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>use_raw_outputs</definition>
+        <argsstring></argsstring>
+        <name>use_raw_outputs</name>
+        <qualifiedname>VART.Runner_py.use_raw_outputs</qualifiedname>
+        <initializer>=  use_raw_outputs</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="212" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1ac93dadee17de9e9db278c0076d48ae20" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>input_names</definition>
+        <argsstring></argsstring>
+        <name>input_names</name>
+        <qualifiedname>VART.Runner_py.input_names</qualifiedname>
+        <initializer>=  None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="226" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1a80da05dcbdddd95a65dd44162ce55366" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>output_names</definition>
+        <argsstring></argsstring>
+        <name>output_names</name>
+        <qualifiedname>VART.Runner_py.output_names</qualifiedname>
+        <initializer>=  output_names</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="227" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1a71ce2924d28cbd9d36e6c0b886a5c6c7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main_json</definition>
+        <argsstring></argsstring>
+        <name>main_json</name>
+        <qualifiedname>VART.Runner_py.main_json</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="228" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1a5de84ea00cbd882b9a45fecc5f94e20d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main_attr_json</definition>
+        <argsstring></argsstring>
+        <name>main_attr_json</name>
+        <qualifiedname>VART.Runner_py.main_attr_json</qualifiedname>
+        <initializer>=  get_jsons_from_root_path()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="228" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1ae18aa09c938cc68641c37739e496b169" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>statser</definition>
+        <argsstring></argsstring>
+        <name>statser</name>
+        <qualifiedname>VART.Runner_py.statser</qualifiedname>
+        <initializer>=  zebra_embedded.EmbeddedStats()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="229" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1a102653fc9abf24c0529bd89af9f6e069" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>in_order_runners</definition>
+        <argsstring></argsstring>
+        <name>in_order_runners</name>
+        <qualifiedname>VART.Runner_py.in_order_runners</qualifiedname>
+        <initializer>=  self.registerRunners(self.main_json, self.main_attr_json)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="230" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1a9e35bb01f71fdde9bc302328f98458e9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>runner_ios</definition>
+        <argsstring></argsstring>
+        <name>runner_ios</name>
+        <qualifiedname>VART.Runner_py.runner_ios</qualifiedname>
+        <initializer>=  GraphIOs()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="231" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1a7a42b8cd855df1dffac6252bed1fd700" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>input_shapes</definition>
+        <argsstring></argsstring>
+        <name>input_shapes</name>
+        <qualifiedname>VART.Runner_py.input_shapes</qualifiedname>
+        <initializer>=  [main_json[name][&apos;params&apos;][&apos;shape&apos;] for name in self.input_names]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="263" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1a42293304a91fb005b758755ba8178a45" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>output_shapes</definition>
+        <argsstring></argsstring>
+        <name>output_shapes</name>
+        <qualifiedname>VART.Runner_py.output_shapes</qualifiedname>
+        <initializer>=  [main_json[name][&apos;params&apos;][&apos;shape&apos;] for name in self.output_names]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="264" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1ada31c63cd8ad60198ab112d13871fd52" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list input_types</definition>
+        <argsstring></argsstring>
+        <name>input_types</name>
+        <qualifiedname>VART.Runner_py.input_types</qualifiedname>
+        <initializer>=  [get_type_of_layer(main_json, name) for name in self.input_names]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="265" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1a8ff7f5f6c7ea9694e814f472d51215d4" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list output_types</definition>
+        <argsstring></argsstring>
+        <name>output_types</name>
+        <qualifiedname>VART.Runner_py.output_types</qualifiedname>
+        <initializer>=  [get_type_of_layer(main_json, name) for name in self.output_names]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="266" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1a3bf2fa4957aa16c45b41508af01ee001" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple npu_only</definition>
+        <argsstring></argsstring>
+        <name>npu_only</name>
+        <qualifiedname>VART.Runner_py.npu_only</qualifiedname>
+        <initializer>=  (
+                    f&apos;{os.path.join(os.path.dirname(root_json_path),subGraph_name)}.onnx&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="313" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1aaad688b9e6a059a09cb20db836e267c1" prot="public" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict use_raw_outputs</definition>
+        <argsstring></argsstring>
+        <name>use_raw_outputs</name>
+        <qualifiedname>VART.Runner_py.use_raw_outputs</qualifiedname>
+        <initializer>=  {
+                        &quot;onnx_session&quot;: None,
+                        &quot;input_names&quot;: input_names,
+                        &quot;output_names&quot;: output_names,
+                        &quot;subGraph_name&quot;: subGraph_name,
+                        &quot;all_ios_shape&quot;: all_ios_shape,
+                    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="320" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1a9b41a6e4eca95bc60c5e79da63b44f52" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int npu_only</definition>
+        <argsstring></argsstring>
+        <name>npu_only</name>
+        <qualifiedname>VART.Runner_py.npu_only</qualifiedname>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="359" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1a9f4c707d3982b8a1ebefab75e36740e3" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list use_raw_outputs</definition>
+        <argsstring></argsstring>
+        <name>use_raw_outputs</name>
+        <qualifiedname>VART.Runner_py.use_raw_outputs</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="381" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_runner__py_1aff45c89594e246abb8ec6a2de6ced92f" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list npu_only</definition>
+        <argsstring></argsstring>
+        <name>npu_only</name>
+        <qualifiedname>VART.Runner_py.npu_only</qualifiedname>
+        <initializer>=  [runner for runner in in_order_runners if runner is not None]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="451" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="451" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_v_a_r_t_1_1_runner__py_1aceceaf0e6535ae224073a0ad417069c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__init__</definition>
+        <argsstring>(self, snapshot_dir=&apos;&apos;, network_name=&apos;wrp_network&apos;, output_names=None, npu_only=False, use_raw_outputs=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>VART.Runner_py.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>snapshot_dir</type>
+          <defname>snapshot_dir</defname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <param>
+          <type>network_name</type>
+          <defname>network_name</defname>
+          <defval>&apos;wrp_network&apos;</defval>
+        </param>
+        <param>
+          <type>output_names</type>
+          <defname>output_names</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>npu_only</type>
+          <defname>npu_only</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>use_raw_outputs</type>
+          <defname>use_raw_outputs</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="193" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="199" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="class_v_a_r_t_1_1_runner__py_1a16f19e06d5134a234b035979cba46d35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__call__</definition>
+        <argsstring>(self, inputs)</argsstring>
+        <name>__call__</name>
+        <qualifiedname>VART.Runner_py.__call__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>inputs</type>
+          <defname>inputs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="233" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="233" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="class_v_a_r_t_1_1_runner__py_1a17e8846847d389b1fd3323550575df0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>run</definition>
+        <argsstring>(self, inputs)</argsstring>
+        <name>run</name>
+        <qualifiedname>VART.Runner_py.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>inputs</type>
+          <defname>inputs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="236" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="236" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="class_v_a_r_t_1_1_runner__py_1a9e7080e5b17729613a0bfd04232518d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>registerRunners</definition>
+        <argsstring>(self, main_json, main_attr_json)</argsstring>
+        <name>registerRunners</name>
+        <qualifiedname>VART.Runner_py.registerRunners</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>main_json</type>
+          <defname>main_json</defname>
+        </param>
+        <param>
+          <type>main_attr_json</type>
+          <defname>main_attr_json</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="250" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="250" bodyend="524"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="192" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="192" bodyend="524"/>
+    <listofallmembers>
+      <member refid="class_v_a_r_t_1_1_runner__py_1a16f19e06d5134a234b035979cba46d35" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>__call__</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1aceceaf0e6535ae224073a0ad417069c1" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>__init__</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1a102653fc9abf24c0529bd89af9f6e069" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>in_order_runners</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1ac93dadee17de9e9db278c0076d48ae20" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>input_names</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1a7a42b8cd855df1dffac6252bed1fd700" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>input_shapes</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1ada31c63cd8ad60198ab112d13871fd52" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>input_types</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1a5de84ea00cbd882b9a45fecc5f94e20d" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>main_attr_json</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1a71ce2924d28cbd9d36e6c0b886a5c6c7" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>main_json</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1a97e7892f0dcb1a2182e86fb846aecc4b" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>network_name</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1a30d34426c145492d742483c7d2ddd5bd" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>npu_only</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1a3bf2fa4957aa16c45b41508af01ee001" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>npu_only</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1a9b41a6e4eca95bc60c5e79da63b44f52" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>npu_only</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1aff45c89594e246abb8ec6a2de6ced92f" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>npu_only</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1a80da05dcbdddd95a65dd44162ce55366" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>output_names</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1a42293304a91fb005b758755ba8178a45" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>output_shapes</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1a8ff7f5f6c7ea9694e814f472d51215d4" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>output_types</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1a9e7080e5b17729613a0bfd04232518d1" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>registerRunners</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1adf74345ef2fa404b8f5b0fbb9d28cb86" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>root_json_path</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1a17e8846847d389b1fd3323550575df0b" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>run</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1a9e35bb01f71fdde9bc302328f98458e9" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>runner_ios</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1ae18aa09c938cc68641c37739e496b169" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>statser</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1ac18d0d34c68179e57f605738246bc27c" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>use_raw_outputs</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1aaad688b9e6a059a09cb20db836e267c1" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>use_raw_outputs</name></member>
+      <member refid="class_v_a_r_t_1_1_runner__py_1a9f4c707d3982b8a1ebefab75e36740e3" prot="public" virt="non-virtual"><scope>VART::Runner_py</scope><name>use_raw_outputs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

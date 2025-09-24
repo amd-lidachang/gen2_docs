@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvart_1_1_job_handle" kind="struct" language="C++" prot="public">
+    <compoundname>vart::JobHandle</compoundname>
+    <includes local="no">vart_runner_factory.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvart_1_1_job_handle_1a5785f14a45689073b3c1ad14d78c6a1c" prot="public" static="no" mutable="no">
+        <type>StatusCode</type>
+        <definition>StatusCode status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <qualifiedname>vart::JobHandle::status</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="121" column="14" bodyfile="cppdoc/vart_runner_factory.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvart_1_1_job_handle_1a44b85d3843ea93724e325cc4a211ec1d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>job_id</definition>
+        <argsstring></argsstring>
+        <name>job_id</name>
+        <qualifiedname>vart::JobHandle::job_id</qualifiedname>
+        <briefdescription>
+<para>Unique identifier for the job. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="122" column="12" bodyfile="cppdoc/vart_runner_factory.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Struct representing a job handle for asynchronous execution. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct holds the status of a submitted job, including whether it was successfully submitted and its unique identifier. </para>
+    </detaileddescription>
+    <location file="cppdoc/vart_runner_factory.hpp" line="120" column="1" bodyfile="cppdoc/vart_runner_factory.hpp" bodystart="120" bodyend="123"/>
+    <listofallmembers>
+      <member refid="structvart_1_1_job_handle_1a44b85d3843ea93724e325cc4a211ec1d" prot="public" virt="non-virtual"><scope>vart::JobHandle</scope><name>job_id</name></member>
+      <member refid="structvart_1_1_job_handle_1a5785f14a45689073b3c1ad14d78c6a1c" prot="public" virt="non-virtual"><scope>vart::JobHandle</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_c8195319c423143631ce95767fadc48a" kind="dir">
+    <compoundname>cppdoc</compoundname>
+    <innerfile refid="vart__npu__tensor_8hpp">vart_npu_tensor.hpp</innerfile>
+    <innerfile refid="vart__runner__factory_8hpp">vart_runner_factory.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cppdoc/"/>
+  </compounddef>
+</doxygen>

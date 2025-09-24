@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classrunner_1_1_v_a_r_t" kind="class" language="Python" prot="public">
+    <compoundname>runner::VART</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classrunner_1_1_v_a_r_t_1a5f902080cdaea3e0b5488745da2c9481" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>runner</definition>
+        <argsstring></argsstring>
+        <name>runner</name>
+        <qualifiedname>runner.VART.runner</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pydoc/runner.py" line="85" column="1" bodyfile="pydoc/runner.py" bodystart="85" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrunner_1_1_v_a_r_t_1a382684ca5b6c6b7cb376d543fd1ee4c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__init__</definition>
+        <argsstring>(self, str snapshot_dir, str network_name, Optional[List[str]] output_names=None, bool npu_only=False)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>runner.VART.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>snapshot_dir</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>network_name</declname>
+        </param>
+        <param>
+          <type>Optional]</type>
+          <declname>output_names</declname>
+          <array>[List[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>npu_only</declname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>@brief Construct a new VART object from a snapshot.
+
+@param snapshot_dir Directory containing the snapshot.
+@param network_name Name of the network.
+@param output_names Optional list of output tensor names.
+@param npu_only If True, use NPU exclusively for inference.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pydoc/runner.py" line="75" column="1" bodyfile="pydoc/runner.py" bodystart="75" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classrunner_1_1_v_a_r_t_1a2cb628515116fb559701021f5f64d60a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None init_out_arrays</definition>
+        <argsstring>(self, bool use_native_bufs=False)</argsstring>
+        <name>init_out_arrays</name>
+        <qualifiedname>runner.VART.init_out_arrays</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>use_native_bufs</declname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>@brief Initializes output arrays.
+
+@param use_native_bufs If True, allocate native buffers for output data.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pydoc/runner.py" line="88" column="1" bodyfile="pydoc/runner.py" bodystart="88" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classrunner_1_1_v_a_r_t_1a80fd0415e14eb50bc3d695a9dffdde8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[np.ndarray]</type>
+        <definition> List[np.ndarray] alloc_native_bufs</definition>
+        <argsstring>(self, List[List[int]] shape, int nb_images)</argsstring>
+        <name>alloc_native_bufs</name>
+        <qualifiedname>runner.VART.alloc_native_bufs</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List]</type>
+          <declname>shape</declname>
+          <array>[List[int]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_images</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>@brief Allocates native buffers for given shapes and returns NumPy arrays.
+
+@param shape List of shapes for the buffers to allocate.
+@param nb_images Number of images in the buffer.
+@return List of NumPy arrays pointing to the allocated buffers.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pydoc/runner.py" line="96" column="1" bodyfile="pydoc/runner.py" bodystart="96" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classrunner_1_1_v_a_r_t_1af5efa7f75dd7942076c652c58b3cf744" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[List[int]]</type>
+        <definition> List[List[int]] get_input_shapes</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_input_shapes</name>
+        <qualifiedname>runner.VART.get_input_shapes</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>@brief Gets the shapes of the model&apos;s input tensors.
+
+@return List of input tensor shapes.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pydoc/runner.py" line="106" column="1" bodyfile="pydoc/runner.py" bodystart="106" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classrunner_1_1_v_a_r_t_1a947620d4226b51fc70e32f1adf30fff2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[str]</type>
+        <definition> List[str] get_input_shape_formats</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_input_shape_formats</name>
+        <qualifiedname>runner.VART.get_input_shape_formats</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>@brief Gets the shape formats of the model&apos;s input tensors.
+
+@return List of input shape formats.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pydoc/runner.py" line="114" column="1" bodyfile="pydoc/runner.py" bodystart="114" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classrunner_1_1_v_a_r_t_1afa9da19f54550284b5eae277752cb3ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[str]</type>
+        <definition> List[str] get_output_shape_formats</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_output_shape_formats</name>
+        <qualifiedname>runner.VART.get_output_shape_formats</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>@brief Gets the shape formats of the model&apos;s output tensors.
+
+@return List of output shape formats.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pydoc/runner.py" line="122" column="1" bodyfile="pydoc/runner.py" bodystart="122" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classrunner_1_1_v_a_r_t_1a0a2fe7b7cca1bc60f10c884ba0a19aeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[np.dtype]</type>
+        <definition> List[np.dtype] get_input_types</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_input_types</name>
+        <qualifiedname>runner.VART.get_input_types</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>@brief Gets the data types of the model&apos;s input tensors.
+
+@return List of NumPy data types for input tensors.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pydoc/runner.py" line="130" column="1" bodyfile="pydoc/runner.py" bodystart="130" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classrunner_1_1_v_a_r_t_1aa54d69fde808dcb1ab783e6c8c826e18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool set_input_native_formats</definition>
+        <argsstring>(self, bool value)</argsstring>
+        <name>set_input_native_formats</name>
+        <qualifiedname>runner.VART.set_input_native_formats</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>@brief Sets whether input buffers are in native format.
+
+@param value If True, use native input format.
+@return True if the format was set successfully, False otherwise.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pydoc/runner.py" line="138" column="1" bodyfile="pydoc/runner.py" bodystart="138" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classrunner_1_1_v_a_r_t_1ac952a22f707fe8d12a6751645bc8014b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool set_output_native_formats</definition>
+        <argsstring>(self, bool value)</argsstring>
+        <name>set_output_native_formats</name>
+        <qualifiedname>runner.VART.set_output_native_formats</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>@brief Sets whether output buffers are in native format.
+
+@param value If True, use native output format.
+@return True if the format was set successfully, False otherwise.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pydoc/runner.py" line="147" column="1" bodyfile="pydoc/runner.py" bodystart="147" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classrunner_1_1_v_a_r_t_1a7f1c53d1fca2aa5518d41fc04633919b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[float]</type>
+        <definition> List[float] get_input_coeffs</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_input_coeffs</name>
+        <qualifiedname>runner.VART.get_input_coeffs</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>@brief Gets the quantization coefficients for input tensors.
+
+@return List of input quantization coefficients.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pydoc/runner.py" line="156" column="1" bodyfile="pydoc/runner.py" bodystart="156" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classrunner_1_1_v_a_r_t_1a4c0b13d223de37f65a74e66a2f205a18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[float]</type>
+        <definition> List[float] get_output_coeffs</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_output_coeffs</name>
+        <qualifiedname>runner.VART.get_output_coeffs</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>@brief Gets the quantization coefficients for output tensors.
+
+@return List of output quantization coefficients.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pydoc/runner.py" line="164" column="1" bodyfile="pydoc/runner.py" bodystart="164" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classrunner_1_1_v_a_r_t_1aba2fc5ce575ab798a60d6e1ac620833e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[np.ndarray]</type>
+        <definition> List[np.ndarray] execute</definition>
+        <argsstring>(self, List[np.ndarray] inputs)</argsstring>
+        <name>execute</name>
+        <qualifiedname>runner.VART.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>inputs</declname>
+          <array>[np.ndarray]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>@brief Executes the model using the Runner.
+
+@param inputs List of input buffers.
+@return List of output buffers.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pydoc/runner.py" line="172" column="1" bodyfile="pydoc/runner.py" bodystart="172" bodyend="180"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>@brief A Python API for VART, providing NPU-based model inference.
+
+This class wraps the VART C++ API for Python, leveraging an NPU Runner for execution.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="pydoc/runner.py" line="68" column="1" bodyfile="pydoc/runner.py" bodystart="68" bodyend="180"/>
+    <listofallmembers>
+      <member refid="classrunner_1_1_v_a_r_t_1a382684ca5b6c6b7cb376d543fd1ee4c7" prot="public" virt="non-virtual"><scope>runner::VART</scope><name>__init__</name></member>
+      <member refid="classrunner_1_1_v_a_r_t_1a80fd0415e14eb50bc3d695a9dffdde8d" prot="public" virt="non-virtual"><scope>runner::VART</scope><name>alloc_native_bufs</name></member>
+      <member refid="classrunner_1_1_v_a_r_t_1aba2fc5ce575ab798a60d6e1ac620833e" prot="public" virt="non-virtual"><scope>runner::VART</scope><name>execute</name></member>
+      <member refid="classrunner_1_1_v_a_r_t_1a7f1c53d1fca2aa5518d41fc04633919b" prot="public" virt="non-virtual"><scope>runner::VART</scope><name>get_input_coeffs</name></member>
+      <member refid="classrunner_1_1_v_a_r_t_1a947620d4226b51fc70e32f1adf30fff2" prot="public" virt="non-virtual"><scope>runner::VART</scope><name>get_input_shape_formats</name></member>
+      <member refid="classrunner_1_1_v_a_r_t_1af5efa7f75dd7942076c652c58b3cf744" prot="public" virt="non-virtual"><scope>runner::VART</scope><name>get_input_shapes</name></member>
+      <member refid="classrunner_1_1_v_a_r_t_1a0a2fe7b7cca1bc60f10c884ba0a19aeb" prot="public" virt="non-virtual"><scope>runner::VART</scope><name>get_input_types</name></member>
+      <member refid="classrunner_1_1_v_a_r_t_1a4c0b13d223de37f65a74e66a2f205a18" prot="public" virt="non-virtual"><scope>runner::VART</scope><name>get_output_coeffs</name></member>
+      <member refid="classrunner_1_1_v_a_r_t_1afa9da19f54550284b5eae277752cb3ad" prot="public" virt="non-virtual"><scope>runner::VART</scope><name>get_output_shape_formats</name></member>
+      <member refid="classrunner_1_1_v_a_r_t_1a2cb628515116fb559701021f5f64d60a" prot="public" virt="non-virtual"><scope>runner::VART</scope><name>init_out_arrays</name></member>
+      <member refid="classrunner_1_1_v_a_r_t_1a5f902080cdaea3e0b5488745da2c9481" prot="public" virt="non-virtual"><scope>runner::VART</scope><name>runner</name></member>
+      <member refid="classrunner_1_1_v_a_r_t_1aa54d69fde808dcb1ab783e6c8c826e18" prot="public" virt="non-virtual"><scope>runner::VART</scope><name>set_input_native_formats</name></member>
+      <member refid="classrunner_1_1_v_a_r_t_1ac952a22f707fe8d12a6751645bc8014b" prot="public" virt="non-virtual"><scope>runner::VART</scope><name>set_output_native_formats</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

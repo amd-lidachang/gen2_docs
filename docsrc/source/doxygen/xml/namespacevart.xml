@@ -1,0 +1,453 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacevart" kind="namespace" language="C++">
+    <compoundname>vart</compoundname>
+    <innerclass refid="structvart_1_1_job_handle" prot="public">vart::JobHandle</innerclass>
+    <innerclass refid="classvart_1_1_npu_tensor" prot="public">vart::NpuTensor</innerclass>
+    <innerclass refid="structvart_1_1_npu_tensor_info" prot="public">vart::NpuTensorInfo</innerclass>
+    <innerclass refid="structvart_1_1_quant_parameters" prot="public">vart::QuantParameters</innerclass>
+    <innerclass refid="classvart_1_1_runner" prot="public">vart::Runner</innerclass>
+    <innerclass refid="classvart_1_1_runner_factory" prot="public">vart::RunnerFactory</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>DataType</name>
+        <qualifiedname>vart::DataType</qualifiedname>
+        <enumvalue id="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6a696b031073e74bf2cb98e5ef201d4aa3" prot="public">
+          <name>UNKNOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6aee9d73311ff0658494edfff14c3ec1e3" prot="public">
+          <name>INT8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6aecfc091ed2a607335524c8389cfa41b5" prot="public">
+          <name>UINT8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6a5f90af42814c0a419d715d43ae54fd7a" prot="public">
+          <name>INT16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6a48d8f1a723d44ff4a87db1bb6c551c62" prot="public">
+          <name>UINT16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6af656bbf613964dcf710b771b0918ab30" prot="public">
+          <name>BF16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6aa4bf99d6945c25077fd6660d536af8a0" prot="public">
+          <name>FP16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1ad8ed01ff3ff33333d8e19db4d2818bb6a967d280b5c16d95f2947647dd2ca6cc2" prot="public">
+          <name>FLOAT32</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumerates the supported data types for tensors in the VART API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the various data types that can be used to represent tensor elements. It includes integer and floating-point formats, as well as specialized types such as BF16.</para>
+<para><itemizedlist>
+<listitem><para>UNKNOWN: Unknown data type.</para>
+</listitem><listitem><para>INT8: 8-bit signed integer.</para>
+</listitem><listitem><para>UINT8: 8-bit unsigned integer.</para>
+</listitem><listitem><para>INT16: 16-bit signed integer.</para>
+</listitem><listitem><para>UINT16: 16-bit unsigned integer.</para>
+</listitem><listitem><para>BF16: 16-bit Brain Floating Point format.</para>
+</listitem><listitem><para>FP16: 16-bit floating point.</para>
+</listitem><listitem><para>FLOAT32: 32-bit floating point. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="45" column="1" bodyfile="cppdoc/vart_npu_tensor.hpp" bodystart="45" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="enum" id="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>MemoryLayout</name>
+        <qualifiedname>vart::MemoryLayout</qualifiedname>
+        <enumvalue id="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a696b031073e74bf2cb98e5ef201d4aa3" prot="public">
+          <name>UNKNOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a9871f9b486513e716ce74bf6363efb21" prot="public">
+          <name>NHW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7ad066db54b89b0912e7e7c6da51e2da51" prot="public">
+          <name>NHWC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a6b99f356fe3b30a2a850b5ea897c289f" prot="public">
+          <name>NCHW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a471afb8c5bc3825e0c0bc64a0a23fb53" prot="public">
+          <name>NHWC4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a384d83fdd6181e8fe719f67083039618" prot="public">
+          <name>NC4HW4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a3993b6164e2f8d94185e27fdf9624014" prot="public">
+          <name>NC8HW8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a1ba356ddb38e75832d291d2827ff3fb9" prot="public">
+          <name>HCWNC4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7a8890afe61b88d400ded8f14577178339" prot="public">
+          <name>HCWNC8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1a8206a04f26f57965d9cb369acafa33d7ac942dc2a9f958acddc67e11472d3ca0b" prot="public">
+          <name>GENERIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumerates the supported memory layouts for tensors in the VART API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the various memory layouts that can be used to represent tensor data. It includes formats such as NHWC, NCHW, and others that specify how tensor dimensions are organized in memory.</para>
+<para><itemizedlist>
+<listitem><para>UNKNOWN: Unknown memory layout.</para>
+</listitem><listitem><para>NHW: Batch, Height, Width.</para>
+</listitem><listitem><para>NHWC: Batch, Height, Width, Channels (packed format).</para>
+</listitem><listitem><para>NCHW: Batch, Channels, Height, Width (planar format).</para>
+</listitem><listitem><para>NHWC4: Batch, Height, Width, Channel groups of 4 (e.g RGBA).</para>
+</listitem><listitem><para>NC4HW4: Batch, Channels / 4, Height, Width, Channel groups of 4.</para>
+</listitem><listitem><para>NC8HW8: Batch, Channels / 8, Height, Width, Channel groups of 8.</para>
+</listitem><listitem><para>HCWNC4: Height, Channels / 4, Width, Batch, Channel groups of 4.</para>
+</listitem><listitem><para>HCWNC8: Height, Channels / 8, Width, Batch, Channel groups of 8.</para>
+</listitem><listitem><para>GENERIC: Generic layout. See <ref refid="structvart_1_1_npu_tensor_info_1ae4a44cd3721e0c607925c4fb88e93360" kindref="member">NpuTensorInfo::memory_layout_order</ref> for more info. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="76" column="1" bodyfile="cppdoc/vart_npu_tensor.hpp" bodystart="76" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="enum" id="vart__npu__tensor_8hpp_1a462bfa9dfea81692463ecb192183dd01" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>MemoryType</name>
+        <qualifiedname>vart::MemoryType</qualifiedname>
+        <enumvalue id="vart__npu__tensor_8hpp_1a462bfa9dfea81692463ecb192183dd01a696b031073e74bf2cb98e5ef201d4aa3" prot="public">
+          <name>UNKNOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1a462bfa9dfea81692463ecb192183dd01ae10b6ab6a278644ce40631f62f360b6d" prot="public">
+          <name>DEVICE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1a462bfa9dfea81692463ecb192183dd01ab9361011891280a44d85b967739cc6a5" prot="public">
+          <name>HOST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumerates the types of memory used for tensors in the VART API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This enumeration defines where tensor data resides:<itemizedlist>
+<listitem><para>UNKNOWN: Memory type is unspecified.</para>
+</listitem><listitem><para>DEVICE: Represents device or physical memory (e.g., <computeroutput>xrt::bo</computeroutput>).</para>
+</listitem><listitem><para>HOST: Represents virtual pointer-based memory in system RAM, usually accessed by the CPU. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="99" column="1" bodyfile="cppdoc/vart_npu_tensor.hpp" bodystart="99" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="enum" id="vart__npu__tensor_8hpp_1af96612dbef376e428089af3967a92593" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>TensorDirection</name>
+        <qualifiedname>vart::TensorDirection</qualifiedname>
+        <enumvalue id="vart__npu__tensor_8hpp_1af96612dbef376e428089af3967a92593aa84cc046d48610b05c21fd3670d0c829" prot="public">
+          <name>INPUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1af96612dbef376e428089af3967a92593a50a87f0d71f7221582dad4bf507a0f34" prot="public">
+          <name>OUTPUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumerates the supported tensor directions in the VART API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the various directions that tensors can have in the context of model inference. It includes input and output directions.</para>
+<para><itemizedlist>
+<listitem><para>INPUT: Input tensor direction.</para>
+</listitem><listitem><para>OUTPUT: Output tensor direction. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="116" column="1" bodyfile="cppdoc/vart_npu_tensor.hpp" bodystart="116" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="enum" id="vart__npu__tensor_8hpp_1a687cdefe1dea4afccff21e37ca3ce7c6" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>TensorType</name>
+        <qualifiedname>vart::TensorType</qualifiedname>
+        <enumvalue id="vart__npu__tensor_8hpp_1a687cdefe1dea4afccff21e37ca3ce7c6a2b55387dd066c5bac646ac61543d152d" prot="public">
+          <name>CPU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__npu__tensor_8hpp_1a687cdefe1dea4afccff21e37ca3ce7c6a4bd2241a3a809d3cc2bb28e951cc183a" prot="public">
+          <name>HW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Specifies the tensor types supported in the VART API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumerates the available tensor types:<itemizedlist>
+<listitem><para>CPU: Represents tensor metadata from the ONNX model, as defined for standard CPU execution.</para>
+</listitem><listitem><para>HW: Corresponds to AMD hardware-specific tensor metadata, formatted for direct execution on AMD AI engines.</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="note"><para>AMD optimizes its AI engines with unique data formats and memory layouts. As a result, the HW tensor layout and format will typically differ from the CPU tensor representation defined by the ONNX model. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="132" column="1" bodyfile="cppdoc/vart_npu_tensor.hpp" bodystart="132" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="enum" id="vart__runner__factory_8hpp_1a70a6ca729d777c5dfe7306cdcf6bf2a6" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>RunnerType</name>
+        <qualifiedname>vart::RunnerType</qualifiedname>
+        <enumvalue id="vart__runner__factory_8hpp_1a70a6ca729d777c5dfe7306cdcf6bf2a6ac328cedf35cf05e3021c9828f23ba541" prot="public">
+          <name>VAIML</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumerates the types of runner implementations supported. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This enumeration specifies the different runner types available for model inference. RunnerType identifies the backend or solution used to execute the model.</para>
+<para><itemizedlist>
+<listitem><para>VAIML: VAIML-based runner implementation. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="42" column="1" bodyfile="cppdoc/vart_runner_factory.hpp" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="enum" id="vart__runner__factory_8hpp_1a5959c934b204c7bcb6766cfaea8ae101" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>RoundingMode</name>
+        <qualifiedname>vart::RoundingMode</qualifiedname>
+        <enumvalue id="vart__runner__factory_8hpp_1a5959c934b204c7bcb6766cfaea8ae101a696b031073e74bf2cb98e5ef201d4aa3" prot="public">
+          <name>UNKNOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__runner__factory_8hpp_1a5959c934b204c7bcb6766cfaea8ae101a7fd6445dda9c0adea175600ee65cc316" prot="public">
+          <name>ROUND_TO_NEAREST_EVEN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__runner__factory_8hpp_1a5959c934b204c7bcb6766cfaea8ae101ae2495278943208450243de03efbe0607" prot="public">
+          <name>ROUND_TOWARD_ZERO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumerates the rounding modes used in quantization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the different rounding modes that can be applied during quantization, such as rounding to nearest even or truncating towards zero.</para>
+<para><itemizedlist>
+<listitem><para>UNKNOWN: Unknown rounding mode.</para>
+</listitem><listitem><para>ROUND_TO_NEAREST_EVEN: Round to nearest even value.</para>
+</listitem><listitem><para>ROUND_TOWARD_ZERO: Truncate towards zero (no rounding). </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="55" column="1" bodyfile="cppdoc/vart_runner_factory.hpp" bodystart="55" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="enum" id="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>StatusCode</name>
+        <qualifiedname>vart::StatusCode</qualifiedname>
+        <enumvalue id="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113ad0749aaba8b833466dfcbb0428e4f89c" prot="public">
+          <name>SUCCESS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113a36fc6065a3e970bc3e6b2e59da52bf2a" prot="public">
+          <name>FAILURE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113ac063281d4adc16ebccfec66aa885b4dd" prot="public">
+          <name>INVALID_INPUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113a772ab551fe4d567e5cbfac7cf76c9ace" prot="public">
+          <name>INVALID_OUTPUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113ac56ddb8056b120c9d5fee05981f219c6" prot="public">
+          <name>OUT_OF_MEMORY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113a62be47fdd89da032cf78dfce82239579" prot="public">
+          <name>RUNTIME_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113a070a0fb40f6c308ab544b227660aadff" prot="public">
+          <name>TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vart__runner__factory_8hpp_1ae98a46f4ea1a43ca48acaf15d2eb7113ae8ae983711de90edc09f13df02eb695e" prot="public">
+          <name>DEVICE_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumerates the status codes used in the VART. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This enum defines the various status codes that can be returned by VART functions, indicating the success or failure of an operation.</para>
+<para><itemizedlist>
+<listitem><para>SUCCESS: Operation completed successfully.</para>
+</listitem><listitem><para>FAILURE: Operation failed.</para>
+</listitem><listitem><para>INVALID_INPUT: Invalid input parameters.</para>
+</listitem><listitem><para>INVALID_OUTPUT: Invalid output parameters.</para>
+</listitem><listitem><para>OUT_OF_MEMORY: Memory allocation failed.</para>
+</listitem><listitem><para>RUNTIME_ERROR: Runtime error occurred.</para>
+</listitem><listitem><para>TIMEOUT: Operation timed out.</para>
+</listitem><listitem><para>DEVICE_ERROR: Device-specific error occurred. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="97" column="1" bodyfile="cppdoc/vart_runner_factory.hpp" bodystart="97" bodyend="106"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cppdoc/vart_npu_tensor.hpp" line="26" column="1"/>
+  </compounddef>
+</doxygen>

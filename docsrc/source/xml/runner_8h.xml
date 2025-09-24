@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="runner_8h" kind="file" language="C++">
+    <compoundname>runner.h</compoundname>
+    <includes local="no">future</includes>
+    <includes local="no">map</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">optional</includes>
+    <includes local="no">vector</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>runner.h</label>
+        <link refid="runner_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>future</label>
+      </node>
+      <node id="3">
+        <label>map</label>
+      </node>
+      <node id="4">
+        <label>mutex</label>
+      </node>
+      <node id="5">
+        <label>optional</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structvart_1_1npu__tensor" prot="public">vart::npu_tensor</innerclass>
+    <innerclass refid="classvart_1_1_base_runner" prot="public">vart::BaseRunner</innerclass>
+    <innerclass refid="classvart_1_1_runner" prot="public">vart::Runner</innerclass>
+    <innernamespace refid="namespacevart">vart</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>DataType</name>
+        <qualifiedname>vart::DataType</qualifiedname>
+        <enumvalue id="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6ada138aad097eaac8697fe3661c91af95" prot="public">
+          <name>INT8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a2644b741f40df4c4c3a83bbdcf7124b3" prot="public">
+          <name>FLOAT32</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a13759b5b800cc50a6e10f73681f6fe9b" prot="public">
+          <name>UINT8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a86a4d027dff711bdd1e3ab36e6765761" prot="public">
+          <name>BF16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a423a1db7cbc915478f654b15f87f3aac" prot="public">
+          <name>INT64</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a6ce26a62afab55d7606ad4e92428b30c" prot="public">
+          <name>UNKNOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum that list the different data type supported by the VART API. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="32" column="1" bodyfile="cppdoc/runner.h" bodystart="33" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="runner_8h_1a49894c283baf5d1997e9005d0c2d49d4" prot="public" static="no">
+        <type>struct <ref refid="structvart_1_1npu__tensor" kindref="compound">vart::npu_tensor</ref></type>
+        <definition>typedef struct vart::npu_tensor npu_tensor_t</definition>
+        <argsstring></argsstring>
+        <name>npu_tensor_t</name>
+        <qualifiedname>vart::npu_tensor_t</qualifiedname>
+        <briefdescription>
+<para>Structure of a tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure contains all the parameters needed to define a tensor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="76" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>Copyright 2024 Advanced Micro Devices Inc.</para>
+</simplesect>
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <verbatim>http://www.apache.org/licenses/LICENSE-2.0
+</verbatim> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;future&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">vart</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>DataType</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>INT8,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLOAT32,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT8,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BF16,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>INT64,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UNKNOWN</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="structvart_1_1npu__tensor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor</ref></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Name<sp/>of<sp/>the<sp/>tensor.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Vector<sp/>of<sp/>dimensions<sp/>of<sp/>one<sp/>batch<sp/>element.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;uint32_t&gt;<sp/>shape;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Vector<sp/>of<sp/>strides<sp/>of<sp/>the<sp/>tensor<sp/>(includes<sp/>size<sp/>of<sp/>one<sp/>batch<sp/>element).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;uint32_t&gt;<sp/>strides;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Type<sp/>of<sp/>elements.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DataType<sp/>data_type;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Size<sp/>of<sp/>one<sp/>batch<sp/>element<sp/>(also<sp/>number<sp/>of<sp/>elements<sp/>as<sp/>it<sp/>refers<sp/>to<sp/>int8<sp/>elements).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Size<sp/>in<sp/>DDR<sp/>of<sp/>the<sp/>tensor<sp/>data.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>native_size;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Tensor<sp/>data<sp/>format.<sp/>Can<sp/>be<sp/>native<sp/>(i.e.:<sp/>without<sp/>(un)quantization,<sp/>data<sp/>reordering,<sp/>nor<sp/>padding)<sp/>or</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>not.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>native_format;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Coefficient<sp/>used<sp/>for<sp/>(un)quantization.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>coeff;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>channels<sp/>in<sp/>a<sp/>native<sp/>buffer<sp/>(only<sp/>relevant<sp/>for<sp/>zebra<sp/>nodes).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>big_pixel;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}<sp/><ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>InputType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>OutputType&gt;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">BaseRunner</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~BaseRunner()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::pair&lt;std::uint32_t,<sp/>int&gt;<sp/><ref refid="namespaceexecute__async" kindref="compound">execute_async</ref>(InputType<sp/>input,<sp/>OutputType<sp/>output)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>execute(InputType<sp/>input,<sp/>OutputType<sp/>output,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>jobid)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacewait" kindref="compound">wait</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>jobid,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout<sp/>=<sp/>-1)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="classvart_1_1_runner" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvart_1_1_runner" kindref="compound">Runner</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>BaseRunner&lt;const<sp/>void**,<sp/>void**&gt;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::unique_ptr&lt;Runner&gt;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacecreate__runner" kindref="compound">create_runner</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model_path,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>in_shape_format<sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;NHWC&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out_shape_format<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;NHWC&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::optional&lt;std::vector&lt;std::string&gt;&gt;<sp/>output_names<sp/><sp/><sp/><sp/><sp/>=<sp/>std::nullopt,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aie_only<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner" kindref="compound">~Runner</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::pair&lt;uint32_t,<sp/>int&gt;<sp/><ref refid="namespaceexecute__async" kindref="compound">execute_async</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">**<sp/>input,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">**<sp/>output)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::pair&lt;uint32_t,<sp/>int&gt;<sp/><ref refid="namespaceexecute__async" kindref="compound">execute_async</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint64_t*<sp/>input,<sp/>uint64_t*<sp/>output)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1a338d5c08576e8f029b0dbc9ccf4b8f8d" kindref="member">execute</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">**<sp/>input,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">**<sp/>output,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>jobid<sp/>=<sp/>-1)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1a338d5c08576e8f029b0dbc9ccf4b8f8d" kindref="member">execute</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint64_t*<sp/>input,<sp/>uint64_t*<sp/>output,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>jobid<sp/>=<sp/>-1)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::vector&lt;const<sp/>npu_tensor_t*&gt;<sp/><ref refid="classvart_1_1_runner_1aee43aded0e57099283206e4d7d0d820f" kindref="member">get_input_tensors</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::vector&lt;const<sp/>npu_tensor_t*&gt;<sp/><ref refid="classvart_1_1_runner_1a6005a7ae4c273e3f5fa2d3773fc2a325" kindref="member">get_output_tensors</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref>*<sp/><ref refid="classvart_1_1_runner_1ac774b019fe6640cf4d3ac55e49f06603" kindref="member">get_tensor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1aa233d73e4c210ecf8f5dae520f82d442" kindref="member">get_batch_size</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1acb3e0a699b7c656da66bcd4a08593993" kindref="member">set_input_cacheable_attribute</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1a52b4de01c3ba4f2bc255d226a83d998a" kindref="member">set_output_cacheable_attribute</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classvart_1_1_runner_1a6776f6760c98a3144f2944dea38f80b3" kindref="member">malloc_buffer</ref>(uint64_t<sp/>size,<sp/>uint8_t<sp/>ddr<sp/>=<sp/>0)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1a7e73de3cc0946f9e8c64e4cf56055ff8" kindref="member">free_buffer</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buffer_ptr)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>uint64_t<sp/><ref refid="classvart_1_1_runner_1a60e0c33c66f2761828bececab6ccf360" kindref="member">get_physical_addr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buffer_ptr)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="classvart_1_1_runner_1a9dd6a9a6c0ba38c38e30d400eeef38c7" kindref="member">get_nb_ddrs</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::vector&lt;uint32_t&gt;<sp/><ref refid="classvart_1_1_runner_1ac416f966f36248dc9d8aaf0c7c621171" kindref="member">get_shape</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref>*<sp/>tensor,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>include_batch_size<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classvart_1_1_runner_1a073a093f710fd15077918a9f48c6a45c" kindref="member">get_shape_format</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref>*<sp/>tensor)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1aa406a5fd85cb95163bb250c7086484a6" kindref="member">set_shape_format</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref>*<sp/>tensor,<sp/>std::string<sp/>format)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classvart_1_1_runner_1a40137a7108d17778e601be1890f35e90" kindref="member">get_native_shape_format</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref>*<sp/>tensor)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"></highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1aab726b649192edeb0f599c47bb1a1b51" kindref="member">set_input_shape_formats</ref>(std::string<sp/>format)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1a69c5e78d1c75acb73cc258a0d2fe9fa2" kindref="member">set_output_shape_formats</ref>(std::string<sp/>format)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>DataType<sp/><ref refid="classvart_1_1_runner_1a60af11177b2806f0255e4052d8eb1235" kindref="member">get_data_type</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref>*<sp/>tensor)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1aabfd5550bd9b1c93d3b9cc1c5f0e265a" kindref="member">set_data_type</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref>*<sp/>tensor,<sp/>DataType<sp/>data_type)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"></highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1a4520724370bce479d6294b4b6f4fe9d4" kindref="member">set_input_data_types</ref>(DataType<sp/>data_type)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"></highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1a152bf0041e8da97ff95be1987fe53d05" kindref="member">set_output_data_types</ref>(DataType<sp/>data_type)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"></highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1adbf25cc0529dd20f5f452839a7cc4945" kindref="member">get_type_size</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref>*<sp/>tensor)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"></highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1a738fc923bf3bd8be0391161c3ee5f758" kindref="member">get_size</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref>*<sp/>tensor)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1a7b1845cf6f9088d85fe1a7d54e17d434" kindref="member">get_native_size</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref>*<sp/>tensor)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1af843afda612efe35bb049ebcd52e7bbe" kindref="member">set_native_format</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref>*<sp/>tensor,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>format)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"></highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1afb5c32017fbd216815bf535a78773aa4" kindref="member">set_input_native_formats</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>format)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"></highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1a88e0006b83414d0438c98dfa80979be5" kindref="member">set_output_native_formats</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>format)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"></highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::vector&lt;uint32_t&gt;<sp/><ref refid="classvart_1_1_runner_1ad0c650f85ea7bfc96a7ad69c5a66fb31" kindref="member">get_strides</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref>*<sp/>tensor)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"></highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classvart_1_1_runner_1a3051a4ea3cd39bcf26e6af591e2787cb" kindref="member">set_strides</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref>*<sp/>tensor,<sp/>std::vector&lt;uint32_t&gt;<sp/>strides)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="592"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="593"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>vart</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="cppdoc/runner.h"/>
+  </compounddef>
+</doxygen>

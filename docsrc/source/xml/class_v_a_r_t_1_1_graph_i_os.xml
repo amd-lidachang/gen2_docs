@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_v_a_r_t_1_1_graph_i_os" kind="class" language="Python" prot="public">
+    <compoundname>VART::GraphIOs</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_graph_i_os_1a505989936bde0a2b31efb17df6825e0e" prot="public" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict ios</definition>
+        <argsstring></argsstring>
+        <name>ios</name>
+        <qualifiedname>VART.GraphIOs.ios</qualifiedname>
+        <initializer>=  {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="76" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_v_a_r_t_1_1_graph_i_os_1abdd362d5f799ad16b5d6700efe590290" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>VART.GraphIOs.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="75" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_v_a_r_t_1_1_graph_i_os_1a19f69944088d5cd6e9ea3c18e12ae2b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>get</definition>
+        <argsstring>(self, key, transformation=None)</argsstring>
+        <name>get</name>
+        <qualifiedname>VART.GraphIOs.get</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>key</type>
+          <defname>key</defname>
+        </param>
+        <param>
+          <type>transformation</type>
+          <defname>transformation</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="78" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_v_a_r_t_1_1_graph_i_os_1a570a770396cc3bc75e80101bc7787949" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>update</definition>
+        <argsstring>(self, key, data, transformation=None)</argsstring>
+        <name>update</name>
+        <qualifiedname>VART.GraphIOs.update</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>key</type>
+          <defname>key</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <param>
+          <type>transformation</type>
+          <defname>transformation</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="81" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="81" bodyend="84"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="74" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="74" bodyend="84"/>
+    <listofallmembers>
+      <member refid="class_v_a_r_t_1_1_graph_i_os_1abdd362d5f799ad16b5d6700efe590290" prot="public" virt="non-virtual"><scope>VART::GraphIOs</scope><name>__init__</name></member>
+      <member refid="class_v_a_r_t_1_1_graph_i_os_1a19f69944088d5cd6e9ea3c18e12ae2b8" prot="public" virt="non-virtual"><scope>VART::GraphIOs</scope><name>get</name></member>
+      <member refid="class_v_a_r_t_1_1_graph_i_os_1a505989936bde0a2b31efb17df6825e0e" prot="public" virt="non-virtual"><scope>VART::GraphIOs</scope><name>ios</name></member>
+      <member refid="class_v_a_r_t_1_1_graph_i_os_1a570a770396cc3bc75e80101bc7787949" prot="public" virt="non-virtual"><scope>VART::GraphIOs</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

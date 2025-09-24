@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classvart_1_1_video_frame" kind="class" language="C++" prot="public">
+    <compoundname>vart::VideoFrame</compoundname>
+    <includes local="no">vart_videoframe.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvart_1_1_video_frame_1a11c605eea65b5d972911e355491b27a9" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; VideoFrameImplBase &gt;</type>
+        <definition>std::shared_ptr&lt;VideoFrameImplBase&gt; pimpl</definition>
+        <argsstring></argsstring>
+        <name>pimpl</name>
+        <qualifiedname>vart::VideoFrame::pimpl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_videoframe.hpp" line="154" column="19" bodyfile="cppdoc/vart_videoframe.hpp" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvart_1_1_video_frame_1a44b0500f8d03351bf1c39ac91b2411c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>VideoFrame</definition>
+        <argsstring>(VideoFrameImplType type, size_t size, uint8_t mbank_idx, VideoInfo &amp;vinfo, std::shared_ptr&lt; Device &gt; device)</argsstring>
+        <name>VideoFrame</name>
+        <qualifiedname>vart::VideoFrame::VideoFrame</qualifiedname>
+        <param>
+          <type>VideoFrameImplType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mbank_idx</declname>
+        </param>
+        <param>
+          <type>VideoInfo &amp;</type>
+          <declname>vinfo</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classvart_1_1_device" kindref="compound">Device</ref> &gt;</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+<para>VideoFrame() - Constructor for creating video frame instance using implementation specific method based on input &apos;type&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum class to specify which type of memory allocation method to use</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the buffer</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mbank_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>memory bank index on which memory needss to be allocated</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vinfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>VideoInfo instance which contains video frame specific information</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classvart_1_1_device" kindref="compound">Device</ref> handle to be used by implementation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_videoframe.hpp" line="59" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_video_frame_1aa9847fe9349e0a79fbc99d33f8ed0127" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>VideoFrame</definition>
+        <argsstring>(VideoFrameImplType type, std::vector&lt; uint8_t * &gt; &amp;data_vec, VideoInfo &amp;vinfo, std::shared_ptr&lt; Device &gt; device)</argsstring>
+        <name>VideoFrame</name>
+        <qualifiedname>vart::VideoFrame::VideoFrame</qualifiedname>
+        <param>
+          <type>VideoFrameImplType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; uint8_t * &gt; &amp;</type>
+          <declname>data_vec</declname>
+        </param>
+        <param>
+          <type>VideoInfo &amp;</type>
+          <declname>vinfo</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classvart_1_1_device" kindref="compound">Device</ref> &gt;</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+<para>VideoFrame() - Constructor for creating video frame instance using input data pointers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum class to specify which type of memory allocation method to use</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of user allocated buffer pointers</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vinfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>VideoInfo instance which contains video frame specific information</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classvart_1_1_device" kindref="compound">Device</ref> handle to be used by implementation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_videoframe.hpp" line="81" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_video_frame_1a06800799523f29e566f1f6a97bf37b3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>VideoFrame</definition>
+        <argsstring>(VideoFrameImplType type, uint8_t mbank_idx, std::vector&lt; xrt::bo * &gt; &amp;bo_vec, VideoInfo &amp;vinfo, std::shared_ptr&lt; Device &gt; device)</argsstring>
+        <name>VideoFrame</name>
+        <qualifiedname>vart::VideoFrame::VideoFrame</qualifiedname>
+        <param>
+          <type>VideoFrameImplType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mbank_idx</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; xrt::bo * &gt; &amp;</type>
+          <declname>bo_vec</declname>
+        </param>
+        <param>
+          <type>VideoInfo &amp;</type>
+          <declname>vinfo</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classvart_1_1_device" kindref="compound">Device</ref> &gt;</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+<para>VideoFrame() - Constructor for creating video frame instance using input XRT Buffer object(BO) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum class to specify which type of memory allocation method to use</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mbank_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>memory bank index on which memory was allocated</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bo_vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of XRT BOs allocated by user</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vinfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>VideoInfo instance which contains video frame specific information</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classvart_1_1_device" kindref="compound">Device</ref> handle to be used by implementation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_videoframe.hpp" line="105" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_video_frame_1a07bca6788c44542253ce454d67619bf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>~VideoFrame</definition>
+        <argsstring>()=default</argsstring>
+        <name>~VideoFrame</name>
+        <qualifiedname>vart::VideoFrame::~VideoFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_videoframe.hpp" line="111" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_video_frame_1a902e9fcc865f625a36e1da2c03e74306" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const VideoFrameMapInfo &amp;</type>
+        <definition>const VideoFrameMapInfo &amp; map</definition>
+        <argsstring>(DataMapFlags map_flags)</argsstring>
+        <name>map</name>
+        <qualifiedname>vart::VideoFrame::map</qualifiedname>
+        <param>
+          <type>DataMapFlags</type>
+          <declname>map_flags</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classvart_1_1_video_frame_1a902e9fcc865f625a36e1da2c03e74306" kindref="member">map()</ref> - Maps video frame data to user space </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map_flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flag used to indicate mode of memory mapping</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns information containing user space data pointer(s) and its corresponding video frame information. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_videoframe.hpp" line="123" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_video_frame_1a1ffeb3b5abb3d61f62b58a391816201c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void unmap</definition>
+        <argsstring>()</argsstring>
+        <name>unmap</name>
+        <qualifiedname>vart::VideoFrame::unmap</qualifiedname>
+        <briefdescription>
+<para><ref refid="classvart_1_1_video_frame_1a1ffeb3b5abb3d61f62b58a391816201c" kindref="member">unmap()</ref> - Unmaps video frame data from user space </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_videoframe.hpp" line="128" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_video_frame_1a01b1129a8663287402f9c033cb4f0665" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const VideoInfo &amp;</type>
+        <definition>const VideoInfo &amp; get_video_info</definition>
+        <argsstring>() const</argsstring>
+        <name>get_video_info</name>
+        <qualifiedname>vart::VideoFrame::get_video_info</qualifiedname>
+        <briefdescription>
+<para><ref refid="classvart_1_1_video_frame_1a01b1129a8663287402f9c033cb4f0665" kindref="member">get_video_info()</ref> - Retrieves the video frame information from video frame </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns infomation related to video frame </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_videoframe.hpp" line="136" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_video_frame_1a629f2a78e1eb19353b5dd2eb2dd933af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classvart_1_1_device" kindref="compound">Device</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; Device &gt; get_device_handle</definition>
+        <argsstring>() const</argsstring>
+        <name>get_device_handle</name>
+        <qualifiedname>vart::VideoFrame::get_device_handle</qualifiedname>
+        <briefdescription>
+<para><ref refid="classvart_1_1_video_frame_1a629f2a78e1eb19353b5dd2eb2dd933af" kindref="member">get_device_handle()</ref> - Retrieves the device handle associated with the current frame </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_videoframe.hpp" line="143" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_video_frame_1ad6387809e274ab2c9fc76906b1d2bbc5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::shared_ptr&lt; VideoFrameImplBase &gt; &amp;</type>
+        <definition>const std::shared_ptr&lt; VideoFrameImplBase &gt; &amp; get_pimpl_handle</definition>
+        <argsstring>() const</argsstring>
+        <name>get_pimpl_handle</name>
+        <qualifiedname>vart::VideoFrame::get_pimpl_handle</qualifiedname>
+        <briefdescription>
+<para><ref refid="classvart_1_1_video_frame_1ad6387809e274ab2c9fc76906b1d2bbc5" kindref="member">get_pimpl_handle()</ref> - Retrieves pointer to implementation class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns a constant reference of pointer to implementation class. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_videoframe.hpp" line="151" column="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module simplifies the management of frame memory complexities and provides APIs for reading and writing a frame. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classvart_1_1_video_frame" kindref="compound">VideoFrame</ref> class offers flexibility for applications to encapsulate their own memory into the <ref refid="classvart_1_1_video_frame" kindref="compound">VideoFrame</ref> class. In such instances, the application bears the responsibility for deallocating the frame memory. </para>
+    </detaileddescription>
+    <location file="cppdoc/vart_videoframe.hpp" line="38" column="1" bodyfile="cppdoc/vart_videoframe.hpp" bodystart="38" bodyend="155"/>
+    <listofallmembers>
+      <member refid="classvart_1_1_video_frame_1a629f2a78e1eb19353b5dd2eb2dd933af" prot="public" virt="non-virtual"><scope>vart::VideoFrame</scope><name>get_device_handle</name></member>
+      <member refid="classvart_1_1_video_frame_1ad6387809e274ab2c9fc76906b1d2bbc5" prot="public" virt="non-virtual"><scope>vart::VideoFrame</scope><name>get_pimpl_handle</name></member>
+      <member refid="classvart_1_1_video_frame_1a01b1129a8663287402f9c033cb4f0665" prot="public" virt="non-virtual"><scope>vart::VideoFrame</scope><name>get_video_info</name></member>
+      <member refid="classvart_1_1_video_frame_1a902e9fcc865f625a36e1da2c03e74306" prot="public" virt="non-virtual"><scope>vart::VideoFrame</scope><name>map</name></member>
+      <member refid="classvart_1_1_video_frame_1a11c605eea65b5d972911e355491b27a9" prot="private" virt="non-virtual"><scope>vart::VideoFrame</scope><name>pimpl</name></member>
+      <member refid="classvart_1_1_video_frame_1a1ffeb3b5abb3d61f62b58a391816201c" prot="public" virt="non-virtual"><scope>vart::VideoFrame</scope><name>unmap</name></member>
+      <member refid="classvart_1_1_video_frame_1a44b0500f8d03351bf1c39ac91b2411c5" prot="public" virt="non-virtual"><scope>vart::VideoFrame</scope><name>VideoFrame</name></member>
+      <member refid="classvart_1_1_video_frame_1aa9847fe9349e0a79fbc99d33f8ed0127" prot="public" virt="non-virtual"><scope>vart::VideoFrame</scope><name>VideoFrame</name></member>
+      <member refid="classvart_1_1_video_frame_1a06800799523f29e566f1f6a97bf37b3f" prot="public" virt="non-virtual"><scope>vart::VideoFrame</scope><name>VideoFrame</name></member>
+      <member refid="classvart_1_1_video_frame_1a07bca6788c44542253ce454d67619bf8" prot="public" virt="non-virtual"><scope>vart::VideoFrame</scope><name>~VideoFrame</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

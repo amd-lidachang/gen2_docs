@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvart_1_1_quant_parameters" kind="struct" language="C++" prot="public">
+    <compoundname>vart::QuantParameters</compoundname>
+    <includes local="no">vart_runner_factory.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvart_1_1_quant_parameters_1acec6d8ad52a28972fa74e071c1a63b6a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <qualifiedname>vart::QuantParameters::scale</qualifiedname>
+        <briefdescription>
+<para>Scale factor for quantization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="76" column="10" bodyfile="cppdoc/vart_runner_factory.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvart_1_1_quant_parameters_1a1091e77b7105f15ac2445c1c7f77f549" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>zero_point</definition>
+        <argsstring></argsstring>
+        <name>zero_point</name>
+        <qualifiedname>vart::QuantParameters::zero_point</qualifiedname>
+        <briefdescription>
+<para>Optional zero point for asymmetric quantization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Optional. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="77" column="11" bodyfile="cppdoc/vart_runner_factory.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvart_1_1_quant_parameters_1ac54391f3e34f6077c576edde0021bd7b" prot="public" static="no" mutable="no">
+        <type>RoundingMode</type>
+        <definition>rounding_mode</definition>
+        <argsstring></argsstring>
+        <name>rounding_mode</name>
+        <qualifiedname>vart::QuantParameters::rounding_mode</qualifiedname>
+        <briefdescription>
+<para>Rounding mode used during quantization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Optional. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="78" column="16" bodyfile="cppdoc/vart_runner_factory.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Struct representing quantization parameters for a tensor. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct holds the quantization parameters such as scale factor, zero point, and rounding mode used for quantizing tensors in the VART. </para>
+    </detaileddescription>
+    <location file="cppdoc/vart_runner_factory.hpp" line="75" column="1" bodyfile="cppdoc/vart_runner_factory.hpp" bodystart="75" bodyend="79"/>
+    <listofallmembers>
+      <member refid="structvart_1_1_quant_parameters_1ac54391f3e34f6077c576edde0021bd7b" prot="public" virt="non-virtual"><scope>vart::QuantParameters</scope><name>rounding_mode</name></member>
+      <member refid="structvart_1_1_quant_parameters_1acec6d8ad52a28972fa74e071c1a63b6a" prot="public" virt="non-virtual"><scope>vart::QuantParameters</scope><name>scale</name></member>
+      <member refid="structvart_1_1_quant_parameters_1a1091e77b7105f15ac2445c1c7f77f549" prot="public" virt="non-virtual"><scope>vart::QuantParameters</scope><name>zero_point</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacevart" kind="namespace" language="C++">
+    <compoundname>vart</compoundname>
+    <innerclass refid="classvart_1_1_base_runner" prot="public">vart::BaseRunner</innerclass>
+    <innerclass refid="classvart_1_1_device" prot="public">vart::Device</innerclass>
+    <innerclass refid="classvart_1_1_infer_result" prot="public">vart::InferResult</innerclass>
+    <innerclass refid="classvart_1_1_logger" prot="public">vart::Logger</innerclass>
+    <innerclass refid="classvart_1_1_memory" prot="public">vart::Memory</innerclass>
+    <innerclass refid="classvart_1_1_meta_convert" prot="public">vart::MetaConvert</innerclass>
+    <innerclass refid="structvart_1_1npu__tensor" prot="public">vart::npu_tensor</innerclass>
+    <innerclass refid="classvart_1_1_overlay" prot="public">vart::Overlay</innerclass>
+    <innerclass refid="classvart_1_1_p_l_kernel" prot="public">vart::PLKernel</innerclass>
+    <innerclass refid="classvart_1_1_post_process" prot="public">vart::PostProcess</innerclass>
+    <innerclass refid="classvart_1_1_pre_process" prot="public">vart::PreProcess</innerclass>
+    <innerclass refid="classvart_1_1_runner" prot="public">vart::Runner</innerclass>
+    <innerclass refid="classvart_1_1_video_frame" prot="public">vart::VideoFrame</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>DataType</name>
+        <qualifiedname>vart::DataType</qualifiedname>
+        <enumvalue id="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6ada138aad097eaac8697fe3661c91af95" prot="public">
+          <name>INT8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a2644b741f40df4c4c3a83bbdcf7124b3" prot="public">
+          <name>FLOAT32</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a13759b5b800cc50a6e10f73681f6fe9b" prot="public">
+          <name>UINT8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a86a4d027dff711bdd1e3ab36e6765761" prot="public">
+          <name>BF16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a423a1db7cbc915478f654b15f87f3aac" prot="public">
+          <name>INT64</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a6ce26a62afab55d7606ad4e92428b30c" prot="public">
+          <name>UNKNOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum that list the different data type supported by the VART API. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="32" column="1" bodyfile="cppdoc/runner.h" bodystart="33" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="runner_8h_1a49894c283baf5d1997e9005d0c2d49d4" prot="public" static="no">
+        <type>struct <ref refid="structvart_1_1npu__tensor" kindref="compound">vart::npu_tensor</ref></type>
+        <definition>typedef struct vart::npu_tensor npu_tensor_t</definition>
+        <argsstring></argsstring>
+        <name>npu_tensor_t</name>
+        <qualifiedname>vart::npu_tensor_t</qualifiedname>
+        <briefdescription>
+<para>Structure of a tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure contains all the parameters needed to define a tensor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="76" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="vart__logger_8hpp_1a06b7a21010cd34876dc2ec9f5d8c2247" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int sys_log_level[]</definition>
+        <argsstring>[]</argsstring>
+        <name>sys_log_level</name>
+        <qualifiedname>vart::sys_log_level</qualifiedname>
+        <initializer>= {0,          LOG_ERR,  LOG_WARNING,
+                                    LOG_NOTICE, LOG_INFO, LOG_DEBUG}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_logger.hpp" line="54" column="18" bodyfile="cppdoc/vart_logger.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vart__logger_8hpp_1a788ab0467284356567ff480a80a668de" prot="public" static="yes" mutable="no">
+        <type><ref refid="classvart_1_1_logger" kindref="compound">Logger</ref> &amp;</type>
+        <definition>Logger&amp; obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <qualifiedname>vart::obj</qualifiedname>
+        <initializer>= <ref refid="classvart_1_1_logger_1a331ac3fbdf05c568da9fe4bc1c5c401a" kindref="member">Logger::get_instance</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_logger.hpp" line="160" column="15" bodyfile="cppdoc/vart_logger.hpp" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cppdoc/runner.h" line="27" column="1"/>
+  </compounddef>
+</doxygen>

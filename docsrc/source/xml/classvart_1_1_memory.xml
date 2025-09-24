@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classvart_1_1_memory" kind="class" language="C++" prot="public">
+    <compoundname>vart::Memory</compoundname>
+    <includes local="no">vart_memory.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvart_1_1_memory_1aeac4fcd82a210781dc0126949585a628" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; MemoryImplBase &gt;</type>
+        <definition>std::shared_ptr&lt;MemoryImplBase&gt; pimpl</definition>
+        <argsstring></argsstring>
+        <name>pimpl</name>
+        <qualifiedname>vart::Memory::pimpl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_memory.hpp" line="139" column="19" bodyfile="cppdoc/vart_memory.hpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvart_1_1_memory_1a508a6b343dd636419c7b645c85b64f9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Memory</definition>
+        <argsstring>(MemoryImplType type, size_t size, uint8_t mbank_idx, std::shared_ptr&lt; Device &gt; device)</argsstring>
+        <name>Memory</name>
+        <qualifiedname>vart::Memory::Memory</qualifiedname>
+        <param>
+          <type>MemoryImplType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mbank_idx</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classvart_1_1_device" kindref="compound">Device</ref> &gt;</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+<para>Memory() - Constructor to allocate memory using implementation specific method based on input &apos;type&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum class to specify which type of memory allocation method to use</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the buffer</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mbank_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>memory bank index on which memory needs to be allocated</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classvart_1_1_device" kindref="compound">Device</ref> handle to be used by implementation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_memory.hpp" line="50" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_memory_1a2f989258fc49f318cdee3a2614802224" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Memory</definition>
+        <argsstring>(MemoryImplType type, uint8_t *data, size_t size, std::shared_ptr&lt; Device &gt; device)</argsstring>
+        <name>Memory</name>
+        <qualifiedname>vart::Memory::Memory</qualifiedname>
+        <param>
+          <type>MemoryImplType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classvart_1_1_device" kindref="compound">Device</ref> &gt;</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+<para>Memory() - Constructor to create <ref refid="classvart_1_1_memory" kindref="compound">Memory</ref> instance using user provided data pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum class to specify which type of memory allocation method to use</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>user allocated buffer pointer</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the buffer</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classvart_1_1_device" kindref="compound">Device</ref> handle to be used by implementation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_memory.hpp" line="71" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_memory_1afc6711942fbcdf4b1b57f74603cd143b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Memory</definition>
+        <argsstring>(std::shared_ptr&lt; MemoryImplBase &gt; ptr)</argsstring>
+        <name>Memory</name>
+        <qualifiedname>vart::Memory::Memory</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; MemoryImplBase &gt;</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Memory() - Constructor for using user defined implementation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to user&apos;s implementation instance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_memory.hpp" line="82" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_memory_1abd08190d617cd67090de17133f039bfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>~Memory</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Memory</name>
+        <qualifiedname>vart::Memory::~Memory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_memory.hpp" line="84" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_memory_1aa674b2bbfb94a4dfce6fd7fa239f3580" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t * map</definition>
+        <argsstring>(DataMapFlags map_flags)</argsstring>
+        <name>map</name>
+        <qualifiedname>vart::Memory::map</qualifiedname>
+        <param>
+          <type>DataMapFlags</type>
+          <declname>map_flags</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classvart_1_1_memory_1aa674b2bbfb94a4dfce6fd7fa239f3580" kindref="member">map()</ref> - Maps allocated memory to user space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map_flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flag used to indicate mode of memory mapping</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>returns the virtual address</para>
+</simplesect>
+Only <ref refid="classvart_1_1_memory" kindref="compound">Memory</ref> allocated with XRT/CMA type of memory can be used with <ref refid="classvart_1_1_memory_1aa674b2bbfb94a4dfce6fd7fa239f3580" kindref="member">map()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_memory.hpp" line="97" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_memory_1a1ffeb3b5abb3d61f62b58a391816201c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void unmap</definition>
+        <argsstring>()</argsstring>
+        <name>unmap</name>
+        <qualifiedname>vart::Memory::unmap</qualifiedname>
+        <briefdescription>
+<para><ref refid="classvart_1_1_memory_1a1ffeb3b5abb3d61f62b58a391816201c" kindref="member">unmap()</ref> - Unmaps allocated memory from user space </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_memory.hpp" line="102" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_memory_1a661b0eb9c472322a969f95132fb2adaf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::shared_ptr&lt; MemoryImplBase &gt; &amp;</type>
+        <definition>const std::shared_ptr&lt; MemoryImplBase &gt; &amp; get_pimpl_handle</definition>
+        <argsstring>() const</argsstring>
+        <name>get_pimpl_handle</name>
+        <qualifiedname>vart::Memory::get_pimpl_handle</qualifiedname>
+        <briefdescription>
+<para><ref refid="classvart_1_1_memory_1a661b0eb9c472322a969f95132fb2adaf" kindref="member">get_pimpl_handle()</ref> - Retrieves pointer to <ref refid="classvart_1_1_memory" kindref="compound">Memory</ref> Implementation Base class </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns a constant reference of pointer to implementation class. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_memory.hpp" line="110" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_memory_1a629f2a78e1eb19353b5dd2eb2dd933af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classvart_1_1_device" kindref="compound">Device</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; Device &gt; get_device_handle</definition>
+        <argsstring>() const</argsstring>
+        <name>get_device_handle</name>
+        <qualifiedname>vart::Memory::get_device_handle</qualifiedname>
+        <briefdescription>
+<para><ref refid="classvart_1_1_memory_1a629f2a78e1eb19353b5dd2eb2dd933af" kindref="member">get_device_handle()</ref> - Retrieves the device handle associated with memory allocation </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns <ref refid="classvart_1_1_device" kindref="compound">Device</ref> handle </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_memory.hpp" line="119" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_memory_1adf55ed6a1edf8e1aa4f3f5f97936ad1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t get_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_size</name>
+        <qualifiedname>vart::Memory::get_size</qualifiedname>
+        <briefdescription>
+<para><ref refid="classvart_1_1_memory_1adf55ed6a1edf8e1aa4f3f5f97936ad1e" kindref="member">get_size()</ref> - gets the size of the allocated memory </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>returns the memory size </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_memory.hpp" line="127" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_memory_1a56d78b7e78e875c7a8a5be0402edbb9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t get_physical_addr</definition>
+        <argsstring>()</argsstring>
+        <name>get_physical_addr</name>
+        <qualifiedname>vart::Memory::get_physical_addr</qualifiedname>
+        <briefdescription>
+<para><ref refid="classvart_1_1_memory_1a56d78b7e78e875c7a8a5be0402edbb9c" kindref="member">get_physical_addr()</ref> - Retrieves the physical address of the allocated memory if memory type is XRT. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>returns the physical address </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_memory.hpp" line="136" column="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module is responsible for allocating and managing memory on the device. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cppdoc/vart_memory.hpp" line="32" column="1" bodyfile="cppdoc/vart_memory.hpp" bodystart="32" bodyend="140"/>
+    <listofallmembers>
+      <member refid="classvart_1_1_memory_1a629f2a78e1eb19353b5dd2eb2dd933af" prot="public" virt="non-virtual"><scope>vart::Memory</scope><name>get_device_handle</name></member>
+      <member refid="classvart_1_1_memory_1a56d78b7e78e875c7a8a5be0402edbb9c" prot="public" virt="non-virtual"><scope>vart::Memory</scope><name>get_physical_addr</name></member>
+      <member refid="classvart_1_1_memory_1a661b0eb9c472322a969f95132fb2adaf" prot="public" virt="non-virtual"><scope>vart::Memory</scope><name>get_pimpl_handle</name></member>
+      <member refid="classvart_1_1_memory_1adf55ed6a1edf8e1aa4f3f5f97936ad1e" prot="public" virt="non-virtual"><scope>vart::Memory</scope><name>get_size</name></member>
+      <member refid="classvart_1_1_memory_1aa674b2bbfb94a4dfce6fd7fa239f3580" prot="public" virt="non-virtual"><scope>vart::Memory</scope><name>map</name></member>
+      <member refid="classvart_1_1_memory_1a508a6b343dd636419c7b645c85b64f9d" prot="public" virt="non-virtual"><scope>vart::Memory</scope><name>Memory</name></member>
+      <member refid="classvart_1_1_memory_1a2f989258fc49f318cdee3a2614802224" prot="public" virt="non-virtual"><scope>vart::Memory</scope><name>Memory</name></member>
+      <member refid="classvart_1_1_memory_1afc6711942fbcdf4b1b57f74603cd143b" prot="public" virt="non-virtual"><scope>vart::Memory</scope><name>Memory</name></member>
+      <member refid="classvart_1_1_memory_1aeac4fcd82a210781dc0126949585a628" prot="private" virt="non-virtual"><scope>vart::Memory</scope><name>pimpl</name></member>
+      <member refid="classvart_1_1_memory_1a1ffeb3b5abb3d61f62b58a391816201c" prot="public" virt="non-virtual"><scope>vart::Memory</scope><name>unmap</name></member>
+      <member refid="classvart_1_1_memory_1abd08190d617cd67090de17133f039bfd" prot="public" virt="non-virtual"><scope>vart::Memory</scope><name>~Memory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

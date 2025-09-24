@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classvart_1_1_pre_process" kind="class" language="C++" prot="public">
+    <compoundname>vart::PreProcess</compoundname>
+    <includes local="no">vart_preprocess.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvart_1_1_pre_process_1a74f8ad9bd33ee943c15793d5a2299aed" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; PreProcessImplBase &gt;</type>
+        <definition>std::shared_ptr&lt;PreProcessImplBase&gt; pimpl</definition>
+        <argsstring></argsstring>
+        <name>pimpl</name>
+        <qualifiedname>vart::PreProcess::pimpl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_preprocess.hpp" line="132" column="19" bodyfile="cppdoc/vart_preprocess.hpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvart_1_1_pre_process_1af1fc1b8bd4fdc890f612dacdbe2e8951" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PreProcess</definition>
+        <argsstring>()=delete</argsstring>
+        <name>PreProcess</name>
+        <qualifiedname>vart::PreProcess::PreProcess</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_preprocess.hpp" line="40" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_pre_process_1ad9581f50d98a92ed4824eec695635a9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PreProcess</definition>
+        <argsstring>(PreProcessImplType type, std::string &amp;json_data, std::shared_ptr&lt; Device &gt; device)</argsstring>
+        <name>PreProcess</name>
+        <qualifiedname>vart::PreProcess::PreProcess</qualifiedname>
+        <param>
+          <type>PreProcessImplType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>json_data</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classvart_1_1_device" kindref="compound">Device</ref> &gt;</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+<para>PreProcess() - Constructor with implementation type and json data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PreProcessImplType based on which implementaion need to be used.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>json_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Additional preprocessing/user related information in JSON Format which can be used by implementations.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classvart_1_1_device" kindref="compound">Device</ref> handle to be used by implementations. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_preprocess.hpp" line="55" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_pre_process_1ab0356aa946da3c37180168289de8208f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PreProcess</definition>
+        <argsstring>(std::shared_ptr&lt; PreProcessImplBase &gt; ptr)</argsstring>
+        <name>PreProcess</name>
+        <qualifiedname>vart::PreProcess::PreProcess</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; PreProcessImplBase &gt;</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>PreProcess() - Constructor for using user defined implementation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to user&apos;s implementation instance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_preprocess.hpp" line="66" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_pre_process_1aace024d7a15c3488af93b3191cd9b949" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>~PreProcess</definition>
+        <argsstring>()=default</argsstring>
+        <name>~PreProcess</name>
+        <qualifiedname>vart::PreProcess::~PreProcess</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_preprocess.hpp" line="67" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_pre_process_1a6505ba42145cb7c1ba6bcb642bbe2d7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void process</definition>
+        <argsstring>(std::vector&lt; PreProcessOp &gt; &amp;preprocess_ops)</argsstring>
+        <name>process</name>
+        <qualifiedname>vart::PreProcess::process</qualifiedname>
+        <param>
+          <type>std::vector&lt; PreProcessOp &gt; &amp;</type>
+          <declname>preprocess_ops</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classvart_1_1_pre_process_1a6505ba42145cb7c1ba6bcb642bbe2d7b" kindref="member">process()</ref> - Perform pre-processing based on the specified parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>preprocess_ops</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of PreProcessOp to be performed. PreProcessOp contains input/output frame and their corresponding ROI. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_preprocess.hpp" line="76" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_pre_process_1a73283d7a78ab8bb0d63f6dccd4f3c5da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void get_input_vinfo</definition>
+        <argsstring>(int32_t height, int32_t width, VideoFormat fmt, VideoInfo &amp;vinfo)</argsstring>
+        <name>get_input_vinfo</name>
+        <qualifiedname>vart::PreProcess::get_input_vinfo</qualifiedname>
+        <param>
+          <type>int32_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>VideoFormat</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>VideoInfo &amp;</type>
+          <declname>vinfo</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classvart_1_1_pre_process_1a73283d7a78ab8bb0d63f6dccd4f3c5da" kindref="member">get_input_vinfo()</ref> - Fills the input video info from input params. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Height of the input frame.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Width of the input frame.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Video format of the input frame.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vinfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>VideoInfo which can be filled by API. Filled VideoInfo can be used to construct input videoframe. User must provide valid pointer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_preprocess.hpp" line="94" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_pre_process_1a6006b538050e1378d076b2c85a351ab1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const VideoInfo &amp;</type>
+        <definition>const VideoInfo &amp; get_output_vinfo</definition>
+        <argsstring>()</argsstring>
+        <name>get_output_vinfo</name>
+        <qualifiedname>vart::PreProcess::get_output_vinfo</qualifiedname>
+        <briefdescription>
+<para><ref refid="classvart_1_1_pre_process_1a6006b538050e1378d076b2c85a351ab1" kindref="member">get_output_vinfo()</ref> - Get the output video info. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns VideoInfo which can be used to construct output video frame. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_preprocess.hpp" line="105" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_pre_process_1a336e987bed512ab6f7f3aa58270da4ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_preprocess_info</definition>
+        <argsstring>(PreProcessInfo &amp;preprocess_info)</argsstring>
+        <name>set_preprocess_info</name>
+        <qualifiedname>vart::PreProcess::set_preprocess_info</qualifiedname>
+        <param>
+          <type>PreProcessInfo &amp;</type>
+          <declname>preprocess_info</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classvart_1_1_pre_process_1a336e987bed512ab6f7f3aa58270da4ca" kindref="member">set_preprocess_info()</ref> - Set the required Preprocess parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>preprocess_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struture with pre processing parameters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_preprocess.hpp" line="113" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_pre_process_1a3852e8d7fb414e08d0ca2ec19eac854f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const PreProcessInfo &amp;</type>
+        <definition>const PreProcessInfo &amp; get_preprocess_info</definition>
+        <argsstring>()</argsstring>
+        <name>get_preprocess_info</name>
+        <qualifiedname>vart::PreProcess::get_preprocess_info</qualifiedname>
+        <briefdescription>
+<para><ref refid="classvart_1_1_pre_process_1a3852e8d7fb414e08d0ca2ec19eac854f" kindref="member">get_preprocess_info()</ref> - Get the preprocess info </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns struture of pre processing parameters. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_preprocess.hpp" line="121" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_pre_process_1af9d7a88ae7e498412d7c944a1006ab33" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::shared_ptr&lt; PreProcessImplBase &gt; &amp;</type>
+        <definition>const std::shared_ptr&lt; PreProcessImplBase &gt; &amp; get_pimpl_handle</definition>
+        <argsstring>() const</argsstring>
+        <name>get_pimpl_handle</name>
+        <qualifiedname>vart::PreProcess::get_pimpl_handle</qualifiedname>
+        <briefdescription>
+<para><ref refid="classvart_1_1_pre_process_1af9d7a88ae7e498412d7c944a1006ab33" kindref="member">get_pimpl_handle()</ref> - Gives pointer to implementation class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns a constant reference of pointer to implementation class. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_preprocess.hpp" line="129" column="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The preprocessing module handles data preparation tasks such as normalization, scaling, and video format conversion. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This module supports software based pre-processing as well as hardware accelerated pre-processing for optimized performance. It ensures that input data is appropriately formatted for inference. Application can also incorporate custom pre processing by overriding base class methods. </para>
+    </detaileddescription>
+    <location file="cppdoc/vart_preprocess.hpp" line="38" column="1" bodyfile="cppdoc/vart_preprocess.hpp" bodystart="38" bodyend="133"/>
+    <listofallmembers>
+      <member refid="classvart_1_1_pre_process_1a73283d7a78ab8bb0d63f6dccd4f3c5da" prot="public" virt="non-virtual"><scope>vart::PreProcess</scope><name>get_input_vinfo</name></member>
+      <member refid="classvart_1_1_pre_process_1a6006b538050e1378d076b2c85a351ab1" prot="public" virt="non-virtual"><scope>vart::PreProcess</scope><name>get_output_vinfo</name></member>
+      <member refid="classvart_1_1_pre_process_1af9d7a88ae7e498412d7c944a1006ab33" prot="public" virt="non-virtual"><scope>vart::PreProcess</scope><name>get_pimpl_handle</name></member>
+      <member refid="classvart_1_1_pre_process_1a3852e8d7fb414e08d0ca2ec19eac854f" prot="public" virt="non-virtual"><scope>vart::PreProcess</scope><name>get_preprocess_info</name></member>
+      <member refid="classvart_1_1_pre_process_1a74f8ad9bd33ee943c15793d5a2299aed" prot="private" virt="non-virtual"><scope>vart::PreProcess</scope><name>pimpl</name></member>
+      <member refid="classvart_1_1_pre_process_1af1fc1b8bd4fdc890f612dacdbe2e8951" prot="public" virt="non-virtual"><scope>vart::PreProcess</scope><name>PreProcess</name></member>
+      <member refid="classvart_1_1_pre_process_1ad9581f50d98a92ed4824eec695635a9c" prot="public" virt="non-virtual"><scope>vart::PreProcess</scope><name>PreProcess</name></member>
+      <member refid="classvart_1_1_pre_process_1ab0356aa946da3c37180168289de8208f" prot="public" virt="non-virtual"><scope>vart::PreProcess</scope><name>PreProcess</name></member>
+      <member refid="classvart_1_1_pre_process_1a6505ba42145cb7c1ba6bcb642bbe2d7b" prot="public" virt="non-virtual"><scope>vart::PreProcess</scope><name>process</name></member>
+      <member refid="classvart_1_1_pre_process_1a336e987bed512ab6f7f3aa58270da4ca" prot="public" virt="non-virtual"><scope>vart::PreProcess</scope><name>set_preprocess_info</name></member>
+      <member refid="classvart_1_1_pre_process_1aace024d7a15c3488af93b3191cd9b949" prot="public" virt="non-virtual"><scope>vart::PreProcess</scope><name>~PreProcess</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

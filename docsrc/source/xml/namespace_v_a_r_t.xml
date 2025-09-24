@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespace_v_a_r_t" kind="namespace" language="Python">
+    <compoundname>VART</compoundname>
+    <innerclass refid="class_v_a_r_t_1_1_graph_i_os" prot="public">VART::GraphIOs</innerclass>
+    <innerclass refid="class_v_a_r_t_1_1_onnx_runtime_sub_graph" prot="public">VART::OnnxRuntimeSubGraph</innerclass>
+    <innerclass refid="class_v_a_r_t_1_1_runner__py" prot="public">VART::Runner_py</innerclass>
+    <innerclass refid="class_v_a_r_t_1_1_zebra_embedded_sub_graph" prot="public">VART::ZebraEmbeddedSubGraph</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="_v_a_r_t_8py_1a4581c0eb09a63b17db486bbf287bddc3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>zebra_wrap_protector</definition>
+        <argsstring></argsstring>
+        <name>zebra_wrap_protector</name>
+        <qualifiedname>VART.zebra_wrap_protector</qualifiedname>
+        <initializer>=  zebra_import.disable_wrap</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="17" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_v_a_r_t_8py_1ae22ce18e243dc7bc86e4abebba27137c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>ON_EMBD</definition>
+        <argsstring></argsstring>
+        <name>ON_EMBD</name>
+        <qualifiedname>VART.ON_EMBD</qualifiedname>
+        <initializer>=  platform.processor() in [&apos;aarch64&apos;, &apos;&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="25" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_v_a_r_t_8py_1a8dc9fc2e3c2ca36d369bd2fbaed4e544" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Runner</definition>
+        <argsstring></argsstring>
+        <name>Runner</name>
+        <qualifiedname>VART.Runner</qualifiedname>
+        <initializer>=  Runner_py if os.environ.get(&apos;VAISW_USE_VART_PY&apos;, False) else zebra_embedded.VART</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="525" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="525" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_v_a_r_t_8py_1a4affb1d6eb77091466acf4e6b9fa2494" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>get_hash_from_string</definition>
+        <argsstring>(toHash, hash_len=5)</argsstring>
+        <name>get_hash_from_string</name>
+        <qualifiedname>VART.get_hash_from_string</qualifiedname>
+        <param>
+          <type>toHash</type>
+          <defname>toHash</defname>
+        </param>
+        <param>
+          <type>hash_len</type>
+          <defname>hash_len</defname>
+          <defval>5</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="28" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="28" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="_v_a_r_t_8py_1a3c1f3e3fad757a9da11059f7cf82540f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>zebra_op_names_to_tensor_names</definition>
+        <argsstring>(subGraph_json, names_to_search)</argsstring>
+        <name>zebra_op_names_to_tensor_names</name>
+        <qualifiedname>VART.zebra_op_names_to_tensor_names</qualifiedname>
+        <param>
+          <type>subGraph_json</type>
+          <defname>subGraph_json</defname>
+        </param>
+        <param>
+          <type>names_to_search</type>
+          <defname>names_to_search</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="34" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="34" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="_v_a_r_t_8py_1a13e4a78899d4e7220fa8285063e154b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>is_correct_transform</definition>
+        <argsstring>(shape1, shape2, indices)</argsstring>
+        <name>is_correct_transform</name>
+        <qualifiedname>VART.is_correct_transform</qualifiedname>
+        <param>
+          <type>shape1</type>
+          <defname>shape1</defname>
+        </param>
+        <param>
+          <type>shape2</type>
+          <defname>shape2</defname>
+        </param>
+        <param>
+          <type>indices</type>
+          <defname>indices</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="56" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="_v_a_r_t_8py_1ae6e8dbbc5df03b8906c9ddb3506dfe1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>get_type_of_layer</definition>
+        <argsstring>(main_json, layerName)</argsstring>
+        <name>get_type_of_layer</name>
+        <qualifiedname>VART.get_type_of_layer</qualifiedname>
+        <param>
+          <type>main_json</type>
+          <defname>main_json</defname>
+        </param>
+        <param>
+          <type>layerName</type>
+          <defname>layerName</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="60" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="60" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="_v_a_r_t_8py_1aa560b18e098772bceef3f0d69f41e0f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>raw_outputs_shape</definition>
+        <argsstring>(shape)</argsstring>
+        <name>raw_outputs_shape</name>
+        <qualifiedname>VART.raw_outputs_shape</qualifiedname>
+        <param>
+          <type>shape</type>
+          <defname>shape</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="69" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="69" bodyend="73"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

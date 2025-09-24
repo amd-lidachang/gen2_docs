@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structvart_1_1_npu_runner_1_1job__slot__t" kind="struct" language="C++" prot="public">
+    <compoundname>vart::NpuRunner::job_slot_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvart_1_1_npu_runner_1_1job__slot__t_1a2a226422730c4905a15dee925a2c2ce3" prot="public" static="no" mutable="no">
+        <type>std::promise&lt; int &gt;</type>
+        <definition>std::promise&lt;int&gt; promise</definition>
+        <argsstring></argsstring>
+        <name>promise</name>
+        <qualifiedname>vart::NpuRunner::job_slot_t::promise</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="472" column="14" bodyfile="cppdoc/runner.h" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvart_1_1_npu_runner_1_1job__slot__t_1a0a6cb26f71ba4ea0035259744cf2b6a9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int job_id</definition>
+        <argsstring></argsstring>
+        <name>job_id</name>
+        <qualifiedname>vart::NpuRunner::job_slot_t::job_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="473" column="19" bodyfile="cppdoc/runner.h" bodystart="473" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cppdoc/runner.h" line="470" column="1" bodyfile="cppdoc/runner.h" bodystart="471" bodyend="474"/>
+    <listofallmembers>
+      <member refid="structvart_1_1_npu_runner_1_1job__slot__t_1a0a6cb26f71ba4ea0035259744cf2b6a9" prot="public" virt="non-virtual"><scope>vart::NpuRunner::job_slot_t</scope><name>job_id</name></member>
+      <member refid="structvart_1_1_npu_runner_1_1job__slot__t_1a2a226422730c4905a15dee925a2c2ce3" prot="public" virt="non-virtual"><scope>vart::NpuRunner::job_slot_t</scope><name>promise</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

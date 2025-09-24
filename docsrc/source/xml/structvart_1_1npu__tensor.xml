@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structvart_1_1npu__tensor" kind="struct" language="C++" prot="public">
+    <compoundname>vart::npu_tensor</compoundname>
+    <includes local="no">runner.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvart_1_1npu__tensor_1a9b45b3e13bd9167aab02e17e08916231" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>vart::npu_tensor::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="50" column="13" bodyfile="cppdoc/runner.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvart_1_1npu__tensor_1a6c9b110dbaa4a97b9b3ca64256608c3f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; uint32_t &gt;</type>
+        <definition>std::vector&lt;uint32_t&gt; shape</definition>
+        <argsstring></argsstring>
+        <name>shape</name>
+        <qualifiedname>vart::npu_tensor::shape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="53" column="13" bodyfile="cppdoc/runner.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvart_1_1npu__tensor_1a7c83402ee11bc0975db5c8b37ee7968d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; uint32_t &gt;</type>
+        <definition>std::vector&lt;uint32_t&gt; strides</definition>
+        <argsstring></argsstring>
+        <name>strides</name>
+        <qualifiedname>vart::npu_tensor::strides</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="56" column="13" bodyfile="cppdoc/runner.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvart_1_1npu__tensor_1a6118865e7371b107bd5fb4dd4a9e99a3" prot="public" static="no" mutable="no">
+        <type>DataType</type>
+        <definition>DataType data_type</definition>
+        <argsstring></argsstring>
+        <name>data_type</name>
+        <qualifiedname>vart::npu_tensor::data_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="59" column="10" bodyfile="cppdoc/runner.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvart_1_1npu__tensor_1a854352f53b148adc24983a58a1866d66" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>vart::npu_tensor::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="62" column="8" bodyfile="cppdoc/runner.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvart_1_1npu__tensor_1a1c534d25f051c690dfca7d53d487813a" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t native_size</definition>
+        <argsstring></argsstring>
+        <name>native_size</name>
+        <qualifiedname>vart::npu_tensor::native_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="65" column="8" bodyfile="cppdoc/runner.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvart_1_1npu__tensor_1a0604593d2719ef7171622c27fe56fe93" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int native_format</definition>
+        <argsstring></argsstring>
+        <name>native_format</name>
+        <qualifiedname>vart::npu_tensor::native_format</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="69" column="5" bodyfile="cppdoc/runner.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvart_1_1npu__tensor_1a31defd2070218572b20268f42fed598f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float coeff</definition>
+        <argsstring></argsstring>
+        <name>coeff</name>
+        <qualifiedname>vart::npu_tensor::coeff</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="72" column="7" bodyfile="cppdoc/runner.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvart_1_1npu__tensor_1a085ef2a302cd98a04c9965ad80ab1999" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t big_pixel</definition>
+        <argsstring></argsstring>
+        <name>big_pixel</name>
+        <qualifiedname>vart::npu_tensor::big_pixel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="75" column="8" bodyfile="cppdoc/runner.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure of a tensor. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure contains all the parameters needed to define a tensor. </para>
+    </detaileddescription>
+    <location file="cppdoc/runner.h" line="47" column="1" bodyfile="cppdoc/runner.h" bodystart="48" bodyend="76"/>
+    <listofallmembers>
+      <member refid="structvart_1_1npu__tensor_1a085ef2a302cd98a04c9965ad80ab1999" prot="public" virt="non-virtual"><scope>vart::npu_tensor</scope><name>big_pixel</name></member>
+      <member refid="structvart_1_1npu__tensor_1a31defd2070218572b20268f42fed598f" prot="public" virt="non-virtual"><scope>vart::npu_tensor</scope><name>coeff</name></member>
+      <member refid="structvart_1_1npu__tensor_1a6118865e7371b107bd5fb4dd4a9e99a3" prot="public" virt="non-virtual"><scope>vart::npu_tensor</scope><name>data_type</name></member>
+      <member refid="structvart_1_1npu__tensor_1a9b45b3e13bd9167aab02e17e08916231" prot="public" virt="non-virtual"><scope>vart::npu_tensor</scope><name>name</name></member>
+      <member refid="structvart_1_1npu__tensor_1a0604593d2719ef7171622c27fe56fe93" prot="public" virt="non-virtual"><scope>vart::npu_tensor</scope><name>native_format</name></member>
+      <member refid="structvart_1_1npu__tensor_1a1c534d25f051c690dfca7d53d487813a" prot="public" virt="non-virtual"><scope>vart::npu_tensor</scope><name>native_size</name></member>
+      <member refid="structvart_1_1npu__tensor_1a6c9b110dbaa4a97b9b3ca64256608c3f" prot="public" virt="non-virtual"><scope>vart::npu_tensor</scope><name>shape</name></member>
+      <member refid="structvart_1_1npu__tensor_1a854352f53b148adc24983a58a1866d66" prot="public" virt="non-virtual"><scope>vart::npu_tensor</scope><name>size</name></member>
+      <member refid="structvart_1_1npu__tensor_1a7c83402ee11bc0975db5c8b37ee7968d" prot="public" virt="non-virtual"><scope>vart::npu_tensor</scope><name>strides</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

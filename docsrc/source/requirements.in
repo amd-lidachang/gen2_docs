@@ -1,0 +1,6 @@
+rocm-docs-core==1.18.1
+recommonmark
+sphinx-markdown-tables
+codespell
+language-tool-python
+

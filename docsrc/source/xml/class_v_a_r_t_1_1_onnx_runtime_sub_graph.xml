@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_v_a_r_t_1_1_onnx_runtime_sub_graph" kind="class" language="Python" prot="public">
+    <compoundname>VART::OnnxRuntimeSubGraph</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1a8337a5c804f81c5d87d1abd1ee62a05e" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str ONNX_SUFFIX_NUMERIC_WORKAROUND</definition>
+        <argsstring></argsstring>
+        <name>ONNX_SUFFIX_NUMERIC_WORKAROUND</name>
+        <qualifiedname>VART.OnnxRuntimeSubGraph.ONNX_SUFFIX_NUMERIC_WORKAROUND</qualifiedname>
+        <initializer>=  &quot;_iriz_to_onnx&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="87" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="87" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1a5c20895035723443978277bdc348b3ad" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>onnxContext</definition>
+        <argsstring></argsstring>
+        <name>onnxContext</name>
+        <qualifiedname>VART.OnnxRuntimeSubGraph.onnxContext</qualifiedname>
+        <initializer>=  onnxContext</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="90" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1a2f9377dbffa52f865d96a98869af5d0d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>inputs_names</definition>
+        <argsstring></argsstring>
+        <name>inputs_names</name>
+        <qualifiedname>VART.OnnxRuntimeSubGraph.inputs_names</qualifiedname>
+        <initializer>=  inputs_names</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="91" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1a1391594db1578333a4869985ffddf796" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>outputs_names</definition>
+        <argsstring></argsstring>
+        <name>outputs_names</name>
+        <qualifiedname>VART.OnnxRuntimeSubGraph.outputs_names</qualifiedname>
+        <initializer>=  outputs_names</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="92" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1aa57ebe01934de43865125819a3c4af74" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>stats</definition>
+        <argsstring></argsstring>
+        <name>stats</name>
+        <qualifiedname>VART.OnnxRuntimeSubGraph.stats</qualifiedname>
+        <initializer>=  None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="93" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1a3323a9a6d1bacd1bf02e51e2b8ef5f4b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>graph_name</definition>
+        <argsstring></argsstring>
+        <name>graph_name</name>
+        <qualifiedname>VART.OnnxRuntimeSubGraph.graph_name</qualifiedname>
+        <initializer>=  graph_name</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="94" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1a28b5828ac3b16e22c26077eedf5674ff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>hash</definition>
+        <argsstring></argsstring>
+        <name>hash</name>
+        <qualifiedname>VART.OnnxRuntimeSubGraph.hash</qualifiedname>
+        <initializer>=  get_hash_from_string(graph_name)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="95" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1ab07a15b74ada32bf143c01ae88f46892" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>all_ios_shape</definition>
+        <argsstring></argsstring>
+        <name>all_ios_shape</name>
+        <qualifiedname>VART.OnnxRuntimeSubGraph.all_ios_shape</qualifiedname>
+        <initializer>=  all_ios_shape</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="96" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1aca40f232dd4d3a8551e0c025c0c5fc7e" prot="public" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict iriz_to_onnx</definition>
+        <argsstring></argsstring>
+        <name>iriz_to_onnx</name>
+        <qualifiedname>VART.OnnxRuntimeSubGraph.iriz_to_onnx</qualifiedname>
+        <initializer>=  {iriz_name: self.onnx_name(
+            iriz_name) for iriz_name in self.inputs_names + self.outputs_names}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="97" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1a322e912b31b076033e5006885cab40e3" prot="public" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict onnx_to_iriz</definition>
+        <argsstring></argsstring>
+        <name>onnx_to_iriz</name>
+        <qualifiedname>VART.OnnxRuntimeSubGraph.onnx_to_iriz</qualifiedname>
+        <initializer>=  {
+            self.onnx_name(iriz_name): iriz_name for iriz_name in self.inputs_names
+            + self.outputs_names}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="99" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="99" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1a0edf1b23974b6083b50ee10ce007742e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__init__</definition>
+        <argsstring>(self, onnxContext, inputs_names, outputs_names, graph_name, all_ios_shape)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>VART.OnnxRuntimeSubGraph.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>onnxContext</type>
+          <defname>onnxContext</defname>
+        </param>
+        <param>
+          <type>inputs_names</type>
+          <defname>inputs_names</defname>
+        </param>
+        <param>
+          <type>outputs_names</type>
+          <defname>outputs_names</defname>
+        </param>
+        <param>
+          <type>graph_name</type>
+          <defname>graph_name</defname>
+        </param>
+        <param>
+          <type>all_ios_shape</type>
+          <defname>all_ios_shape</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="89" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="89" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1add36d448e219d56363f6d7c9d21fd793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>onnx_name</definition>
+        <argsstring>(self, n)</argsstring>
+        <name>onnx_name</name>
+        <qualifiedname>VART.OnnxRuntimeSubGraph.onnx_name</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>n</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="103" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="103" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1a35527b20e99c3ae130092a35915b9e80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>run</definition>
+        <argsstring>(self, ios_dict)</argsstring>
+        <name>run</name>
+        <qualifiedname>VART.OnnxRuntimeSubGraph.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ios_dict</type>
+          <defname>ios_dict</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="106" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="106" bodyend="135"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="85" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="85" bodyend="135"/>
+    <listofallmembers>
+      <member refid="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1a0edf1b23974b6083b50ee10ce007742e" prot="public" virt="non-virtual"><scope>VART::OnnxRuntimeSubGraph</scope><name>__init__</name></member>
+      <member refid="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1ab07a15b74ada32bf143c01ae88f46892" prot="public" virt="non-virtual"><scope>VART::OnnxRuntimeSubGraph</scope><name>all_ios_shape</name></member>
+      <member refid="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1a3323a9a6d1bacd1bf02e51e2b8ef5f4b" prot="public" virt="non-virtual"><scope>VART::OnnxRuntimeSubGraph</scope><name>graph_name</name></member>
+      <member refid="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1a28b5828ac3b16e22c26077eedf5674ff" prot="public" virt="non-virtual"><scope>VART::OnnxRuntimeSubGraph</scope><name>hash</name></member>
+      <member refid="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1a2f9377dbffa52f865d96a98869af5d0d" prot="public" virt="non-virtual"><scope>VART::OnnxRuntimeSubGraph</scope><name>inputs_names</name></member>
+      <member refid="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1aca40f232dd4d3a8551e0c025c0c5fc7e" prot="public" virt="non-virtual"><scope>VART::OnnxRuntimeSubGraph</scope><name>iriz_to_onnx</name></member>
+      <member refid="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1add36d448e219d56363f6d7c9d21fd793" prot="public" virt="non-virtual"><scope>VART::OnnxRuntimeSubGraph</scope><name>onnx_name</name></member>
+      <member refid="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1a8337a5c804f81c5d87d1abd1ee62a05e" prot="public" virt="non-virtual"><scope>VART::OnnxRuntimeSubGraph</scope><name>ONNX_SUFFIX_NUMERIC_WORKAROUND</name></member>
+      <member refid="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1a322e912b31b076033e5006885cab40e3" prot="public" virt="non-virtual"><scope>VART::OnnxRuntimeSubGraph</scope><name>onnx_to_iriz</name></member>
+      <member refid="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1a5c20895035723443978277bdc348b3ad" prot="public" virt="non-virtual"><scope>VART::OnnxRuntimeSubGraph</scope><name>onnxContext</name></member>
+      <member refid="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1a1391594db1578333a4869985ffddf796" prot="public" virt="non-virtual"><scope>VART::OnnxRuntimeSubGraph</scope><name>outputs_names</name></member>
+      <member refid="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1a35527b20e99c3ae130092a35915b9e80" prot="public" virt="non-virtual"><scope>VART::OnnxRuntimeSubGraph</scope><name>run</name></member>
+      <member refid="class_v_a_r_t_1_1_onnx_runtime_sub_graph_1aa57ebe01934de43865125819a3c4af74" prot="public" virt="non-virtual"><scope>VART::OnnxRuntimeSubGraph</scope><name>stats</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

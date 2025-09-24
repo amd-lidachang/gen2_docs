@@ -1,0 +1,1473 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classvart_1_1_runner" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>vart::Runner</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">vart::BaseRunner&lt; const void **, void ** &gt;</basecompoundref>
+    <includes local="no">runner.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classvart_1_1_runner_1aca07d84ba037c97c9aa6774e7b20d12f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::unique_ptr&lt; <ref refid="classvart_1_1_runner" kindref="compound">Runner</ref> &gt;</type>
+        <definition>static std::unique_ptr&lt; Runner &gt; create_runner</definition>
+        <argsstring>(const std::string &amp;model_path, const std::string &amp;in_shape_format=&quot;NHWC&quot;, const std::string &amp;out_shape_format=&quot;NHWC&quot;, const std::optional&lt; std::vector&lt; std::string &gt; &gt; output_names=std::nullopt, bool aie_only=false)</argsstring>
+        <name>create_runner</name>
+        <qualifiedname>vart::Runner::create_runner</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>model_path</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>in_shape_format</declname>
+          <defval>&quot;NHWC&quot;</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>out_shape_format</declname>
+          <defval>&quot;NHWC&quot;</defval>
+        </param>
+        <param>
+          <type>const std::optional&lt; std::vector&lt; std::string &gt; &gt;</type>
+          <declname>output_names</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>aie_only</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Factory function to create an instance of runner by snapshot. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>snapshot directory </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An instance of runner.</para>
+</simplesect>
+Sample code:</para>
+<para><programlisting><codeline><highlight class="comment">//<sp/>This<sp/>API<sp/>can<sp/>be<sp/>used<sp/>like:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacerunner" kindref="compound">runner</ref><sp/>=<sp/><ref refid="classvart_1_1_runner_1aca07d84ba037c97c9aa6774e7b20d12f" kindref="member">vart::Runner::create_runner</ref>(model_path,<sp/>in_shape_format,<sp/>out_shape_format);</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="158" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvart_1_1_runner_1a5682a18df20288c1de981ab2ca71cc3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~Runner</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Runner</name>
+        <qualifiedname>vart::Runner::~Runner</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="165" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a420b43a5eef175b9c24d4ed5bd7b0d5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::pair&lt; uint32_t, int &gt;</type>
+        <definition>virtual std::pair&lt; uint32_t, int &gt; execute_async</definition>
+        <argsstring>(const void **input, void **output)=0</argsstring>
+        <name>execute_async</name>
+        <qualifiedname>vart::Runner::execute_async</qualifiedname>
+        <param>
+          <type>const void **</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+<para>Executes the runner. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a non-blocking function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of pointer to the input buffers. For a model with N input layers and a snapshot with B as batch size, N*B pointers must be given. The input n of the batch b will be located at position [b*N + n]. In case an incomplete batch inference has to be executed, use NULL pointer for the unused batches. The non null pointers must point to a buffer with enough memory: In case native format is enabled, the size is obtained from get_native_size, otherwise, the size is the one of the original model, from the tensor structure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of pointer to the output buffers. Similar as the input. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pair&lt;jobid, status&gt; status 0 for exit successfully, others for customized warnings or errors </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="182" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1af67c1630dbd7383cc0c0d9d760eb04f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::pair&lt; uint32_t, int &gt;</type>
+        <definition>virtual std::pair&lt; uint32_t, int &gt; execute_async</definition>
+        <argsstring>(const uint64_t *input, uint64_t *output)=0</argsstring>
+        <name>execute_async</name>
+        <qualifiedname>vart::Runner::execute_async</qualifiedname>
+        <param>
+          <type>const uint64_t *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>uint64_t *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+<para>Executes the runner. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a non-blocking function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of physical addresses to the input buffers. For a model with N input layers and a snapshot with B as batch size, N*B addresses must be given. The input n of the batch b will be located at position [b*N + n]. In case an incomplete batch inference has to be executed, use 0 for the unused batches. The non null adresses must point to a buffer with enough memory: The size is obtained from get_native_size, and the data needs to be contigous in physical memory.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of physical addresses to the output buffers. Similar as the input.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jobid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>job id, neg for any id, others for specific job id </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="200" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a338d5c08576e8f029b0dbc9ccf4b8f8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int execute</definition>
+        <argsstring>(const void **input, void **output, int jobid=-1)=0</argsstring>
+        <name>execute</name>
+        <qualifiedname>vart::Runner::execute</qualifiedname>
+        <param>
+          <type>const void **</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>jobid</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Executes the runner. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a blocking function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of pointer to the input buffers. For a model with N input layers and a snapshot with B as batch size, N*B pointers must be given. The input n of the batch b will be located at position [b*N + n]. In case an incomplete batch inference has to be executed, use NULL pointer for the unused batches. The non null pointers must point to a buffer with enough memory: In case native format is enabled, the size is obtained from get_native_size, otherwise, the size is the one of the original model, from the tensor structure.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of pointer to the output buffers. Similar as the input.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jobid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>job id, neg for any id, others for specific job id </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int The vaisw error (vaisw_error_id) code of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="220" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1af840989c7520672ca3e80df1438f285e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int execute</definition>
+        <argsstring>(const uint64_t *input, uint64_t *output, int jobid=-1)=0</argsstring>
+        <name>execute</name>
+        <qualifiedname>vart::Runner::execute</qualifiedname>
+        <param>
+          <type>const uint64_t *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>uint64_t *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>jobid</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Executes the runner. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a non-blocking function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of physical addresses to the input buffers. For a model with N input layers and a snapshot with B as batch size, N*B addresses must be given. The input n of the batch b will be located at position [b*N + n]. In case an incomplete batch inference has to be executed, use 0 for the unused batches. The non null adresses must point to a buffer with enough memory: The size is obtained from get_native_size, and the data needs to be contigous in physical memory.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of physical addresses to the output buffers. Similar as the input.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jobid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>job id, neg for any id, others for specific job id </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int The vaisw error (vaisw_error_id) code of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="239" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1aee43aded0e57099283206e4d7d0d820f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> * &gt;</type>
+        <definition>virtual std::vector&lt; const npu_tensor_t * &gt; get_input_tensors</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>get_input_tensors</name>
+        <qualifiedname>vart::Runner::get_input_tensors</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Waits for the end of DPU processing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>modes: 1. Blocking wait for specific ID. 2. Non-blocking wait for specific ID. 3. Blocking wait for any ID. 4. Non-blocking wait for any ID</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jobid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>job id, neg for any id, others for specific job id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout, neg for block for ever, 0 for non-block, pos for block with a limitation(ms). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status 0 for exit successfully, others for customized warnings or errors</para>
+</simplesect>
+Get all input tensors of runner. <simplesect kind="return"><para>All input tensors. A vector of raw pointer to the input tensor.</para>
+</simplesect>
+Sample code:</para>
+<para><programlisting><codeline><highlight class="normal">inputTensors<sp/>=<sp/><ref refid="namespacerunner" kindref="compound">runner</ref>-&gt;get_input_tensors();</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>input<sp/>:<sp/>inputTensor)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>input-&gt;name;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>input-&gt;size;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>input-&gt;native_size;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>input-&gt;shape;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>input-&gt;coeff;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>input-&gt;data_type;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="272" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a6005a7ae4c273e3f5fa2d3773fc2a325" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> * &gt;</type>
+        <definition>virtual std::vector&lt; const npu_tensor_t * &gt; get_output_tensors</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>get_output_tensors</name>
+        <qualifiedname>vart::Runner::get_output_tensors</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get all output tensors of runner. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>All output tensors. A vector of raw pointer to the output tensor.</para>
+</simplesect>
+Sample code:</para>
+<para><programlisting><codeline><highlight class="normal">outputTensors<sp/>=<sp/><ref refid="namespacerunner" kindref="compound">runner</ref>-&gt;get_output_tensors();</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>output<sp/>:<sp/>outputTensor)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>output-&gt;name;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>output-&gt;size;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>output-&gt;native_size;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>output-&gt;shape;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>output-&gt;coeff;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>output-&gt;data_type;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="292" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1ac774b019fe6640cf4d3ac55e49f06603" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+        <definition>virtual const npu_tensor_t * get_tensor</definition>
+        <argsstring>(const std::string &amp;name)=0</argsstring>
+        <name>get_tensor</name>
+        <qualifiedname>vart::Runner::get_tensor</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a copy of the input/output tensor with the given name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the tensor. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="299" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1aa233d73e4c210ecf8f5dae520f82d442" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t get_batch_size</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>get_batch_size</name>
+        <qualifiedname>vart::Runner::get_batch_size</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the batch size of the snapshot. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the maximum size of a batch of images the engine can process in a single call.</para>
+<para><simplesect kind="return"><para>The maximum batch size supported by the snapshot. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="308" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1acb3e0a699b7c656da66bcd4a08593993" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int set_input_cacheable_attribute</definition>
+        <argsstring>(bool value)=0</argsstring>
+        <name>set_input_cacheable_attribute</name>
+        <qualifiedname>vart::Runner::set_input_cacheable_attribute</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Specify cacheability of memory region where input data is stored. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If this attribute is set to true, input data is assumed to be in a cacheable memory region and copying will be skipped. Input data copying is performed by default.</para>
+<para>The purpose of this method is purely aiming towards performance-tuning. Depending on whether this assumption reflects reality or not, performance can either increase or decrease.</para>
+<para>Only affect input tensors of AIE nodes.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean to specify if input data is assumed to be in a cacheable memory region. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int The vaisw error (vaisw_error_id) code of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="324" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a52b4de01c3ba4f2bc255d226a83d998a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int set_output_cacheable_attribute</definition>
+        <argsstring>(bool value)=0</argsstring>
+        <name>set_output_cacheable_attribute</name>
+        <qualifiedname>vart::Runner::set_output_cacheable_attribute</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Specify cacheability of memory region where output data is stored. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If this attribute is set to true, output data is assumed to be in a cacheable memory region and copying will be skipped. Output data copying is performed by default.</para>
+<para>The purpose of this method is purely aiming towards performance-tuning. Depending on whether this assumption reflects reality or not, performance can either increase or decrease.</para>
+<para>Only affect output tensors of AIE nodes.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean to specify if output data is assumed to be in a cacheable memory region. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int The vaisw error (vaisw_error_id) code of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="340" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a6776f6760c98a3144f2944dea38f80b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void *</type>
+        <definition>virtual void * malloc_buffer</definition>
+        <argsstring>(uint64_t size, uint8_t ddr=0)=0</argsstring>
+        <name>malloc_buffer</name>
+        <qualifiedname>vart::Runner::malloc_buffer</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>ddr</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Return a pointer to a buffer of the given size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The buffer allocation is done by the runner and the free will be done by the destructor.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the buffer.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the target DDR. On a multi-DDR platform, pass the index of the DDR where allocation will occur. Data payload distribution over multiple DDRs can improve the performance.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the newly created buffer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="355" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a7e73de3cc0946f9e8c64e4cf56055ff8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void free_buffer</definition>
+        <argsstring>(void *buffer_ptr)=0</argsstring>
+        <name>free_buffer</name>
+        <qualifiedname>vart::Runner::free_buffer</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>buffer_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Free a previously allocated buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The buffer allocation must have been done through the malloc_buffer function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the buffer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="365" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a60e0c33c66f2761828bececab6ccf360" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint64_t</type>
+        <definition>virtual uint64_t get_physical_addr</definition>
+        <argsstring>(void *buffer_ptr)=0</argsstring>
+        <name>get_physical_addr</name>
+        <qualifiedname>vart::Runner::get_physical_addr</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>buffer_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Return the physical address of a buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The buffer allocation must have been done through the malloc_buffer function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the buffer.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Physical address. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="377" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a9dd6a9a6c0ba38c38e30d400eeef38c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t get_nb_ddrs</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>get_nb_ddrs</name>
+        <qualifiedname>vart::Runner::get_nb_ddrs</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of DDR used bu the NPU. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of DDR. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="385" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1ac416f966f36248dc9d8aaf0c7c621171" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; uint32_t &gt;</type>
+        <definition>virtual std::vector&lt; uint32_t &gt; get_shape</definition>
+        <argsstring>(const npu_tensor_t *tensor, bool include_batch_size=false)=0</argsstring>
+        <name>get_shape</name>
+        <qualifiedname>vart::Runner::get_shape</qualifiedname>
+        <param>
+          <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+          <declname>tensor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>include_batch_size</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Return the shape of a tensor (by default, without batch size). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tensor to get the shape from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>include_batch_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, keep batch size in shape. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The shape of the tensor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="394" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a073a093f710fd15077918a9f48c6a45c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string get_shape_format</definition>
+        <argsstring>(const npu_tensor_t *tensor)=0</argsstring>
+        <name>get_shape_format</name>
+        <qualifiedname>vart::Runner::get_shape_format</qualifiedname>
+        <param>
+          <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+          <declname>tensor</declname>
+        </param>
+        <briefdescription>
+<para>Get the shape format of a tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tensor to get the shape format from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The shape format of the tensor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="402" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1aa406a5fd85cb95163bb250c7086484a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int set_shape_format</definition>
+        <argsstring>(const npu_tensor_t *tensor, std::string format)=0</argsstring>
+        <name>set_shape_format</name>
+        <qualifiedname>vart::Runner::set_shape_format</qualifiedname>
+        <param>
+          <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+          <declname>tensor</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Select the shape format of a tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Only works for tensors of AIE nodes. If the tensor is an input or an output of a CPU node, the function have no effect and returns an error.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tensor of which the shape format will be changed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New shape format of the input or output tensor. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int The vaisw error (vaisw_error_id) code of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="414" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a40137a7108d17778e601be1890f35e90" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string get_native_shape_format</definition>
+        <argsstring>(const npu_tensor_t *tensor)=0</argsstring>
+        <name>get_native_shape_format</name>
+        <qualifiedname>vart::Runner::get_native_shape_format</qualifiedname>
+        <param>
+          <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+          <declname>tensor</declname>
+        </param>
+        <briefdescription>
+<para>Get the native shape format of a tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tensor to get the native shape format from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The native shape format of the tensor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="422" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1aab726b649192edeb0f599c47bb1a1b51" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int set_input_shape_formats</definition>
+        <argsstring>(std::string format)=0</argsstring>
+        <name>set_input_shape_formats</name>
+        <qualifiedname>vart::Runner::set_input_shape_formats</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Select the shape format for all input tensors of the graph. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Only works if all input tensors are linked to AIE nodes. If any input tensor is an input or an output of a CPU node, the function have no effect and returns an error.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New shape format of the input tensors. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int The vaisw error (vaisw_error_id) code of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="433" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a69c5e78d1c75acb73cc258a0d2fe9fa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int set_output_shape_formats</definition>
+        <argsstring>(std::string format)=0</argsstring>
+        <name>set_output_shape_formats</name>
+        <qualifiedname>vart::Runner::set_output_shape_formats</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Select the shape format for all output tensors of the graph. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Only works if all output tensors are linked to AIE nodes. If any output tensor is an output of a CPU node, the function have no effect and returns an error.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New shape format of the output tensors. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int The vaisw error (vaisw_error_id) code of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="444" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a60af11177b2806f0255e4052d8eb1235" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>DataType</type>
+        <definition>virtual DataType get_data_type</definition>
+        <argsstring>(const npu_tensor_t *tensor)=0</argsstring>
+        <name>get_data_type</name>
+        <qualifiedname>vart::Runner::get_data_type</qualifiedname>
+        <param>
+          <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+          <declname>tensor</declname>
+        </param>
+        <briefdescription>
+<para>Get the data type of a tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tensor to get the data type from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>DataType The data type of the given tensor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="452" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1aabfd5550bd9b1c93d3b9cc1c5f0e265a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int set_data_type</definition>
+        <argsstring>(const npu_tensor_t *tensor, DataType data_type)=0</argsstring>
+        <name>set_data_type</name>
+        <qualifiedname>vart::Runner::set_data_type</qualifiedname>
+        <param>
+          <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+          <declname>tensor</declname>
+        </param>
+        <param>
+          <type>DataType</type>
+          <declname>data_type</declname>
+        </param>
+        <briefdescription>
+<para>Select the data type of a tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the data type is different from the one expected by the snapshot, a convertion will be applied during the execution if possible.</para>
+<para>Only works for tensors of AIE nodes. If the tensor is an input or an output of a CPU node, the function have no effect and returns an error.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tensor of which the data type will be changed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data type of the data provided/expected by user for the tensor data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int The vaisw error (vaisw_error_id) code of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="467" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a4520724370bce479d6294b4b6f4fe9d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int set_input_data_types</definition>
+        <argsstring>(DataType data_type)=0</argsstring>
+        <name>set_input_data_types</name>
+        <qualifiedname>vart::Runner::set_input_data_types</qualifiedname>
+        <param>
+          <type>DataType</type>
+          <declname>data_type</declname>
+        </param>
+        <briefdescription>
+<para>Select the data type for all input tensors of the graph. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the data types are different from the ones expected by the snapshot, convertions will be applied during the execution if possible.</para>
+<para>Only works if all input tensors are linked to AIE nodes. If any input tensor is an input or an output of a CPU node, the function have no effect and returns an error.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data types of the data provided/expected by user for the input tensors data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int The vaisw error (vaisw_error_id) code of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="481" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a152bf0041e8da97ff95be1987fe53d05" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int set_output_data_types</definition>
+        <argsstring>(DataType data_type)=0</argsstring>
+        <name>set_output_data_types</name>
+        <qualifiedname>vart::Runner::set_output_data_types</qualifiedname>
+        <param>
+          <type>DataType</type>
+          <declname>data_type</declname>
+        </param>
+        <briefdescription>
+<para>Select the data type for all output tensors of the graph. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the data types are different from the ones expected by the snapshot, convertions will be applied during the execution if possible.</para>
+<para>Only works if all output tensors are linked to AIE nodes. If any output tensor is an output of a CPU node, the function have no effect and returns an error.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data types of the data provided/expected by user for the output tensors data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int The vaisw error (vaisw_error_id) code of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="495" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1adbf25cc0529dd20f5f452839a7cc4945" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t get_type_size</definition>
+        <argsstring>(const npu_tensor_t *tensor)=0</argsstring>
+        <name>get_type_size</name>
+        <qualifiedname>vart::Runner::get_type_size</qualifiedname>
+        <param>
+          <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+          <declname>tensor</declname>
+        </param>
+        <briefdescription>
+<para>Return the size of a tensor&apos;s data type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tensor to get the data type size from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The size of the data type of the tensor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="503" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a738fc923bf3bd8be0391161c3ee5f758" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t get_size</definition>
+        <argsstring>(const npu_tensor_t *tensor)=0</argsstring>
+        <name>get_size</name>
+        <qualifiedname>vart::Runner::get_size</qualifiedname>
+        <param>
+          <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+          <declname>tensor</declname>
+        </param>
+        <briefdescription>
+<para>Return the size of a tensor&apos;s element (without batch size). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tensor to get the element size from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The size of an element of the tensor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="511" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a7b1845cf6f9088d85fe1a7d54e17d434" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t get_native_size</definition>
+        <argsstring>(const npu_tensor_t *tensor)=0</argsstring>
+        <name>get_native_size</name>
+        <qualifiedname>vart::Runner::get_native_size</qualifiedname>
+        <param>
+          <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+          <declname>tensor</declname>
+        </param>
+        <briefdescription>
+<para>Return the native size in DDR of an tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tensor to get the native size from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The native size of the tensor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="519" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1af843afda612efe35bb049ebcd52e7bbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int set_native_format</definition>
+        <argsstring>(const npu_tensor_t *tensor, int format)=0</argsstring>
+        <name>set_native_format</name>
+        <qualifiedname>vart::Runner::set_native_format</qualifiedname>
+        <param>
+          <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+          <declname>tensor</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Select the data format of a tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The native format currently support 3 values:<itemizedlist>
+<listitem><para>0: non native format (pointer is virtual) (equivalent to &apos;false&apos; in the previous API version)</para>
+</listitem><listitem><para>1: native format and pointer is virtual (equivalent to &apos;true&apos; in the previous API version)</para>
+</listitem><listitem><para>2: native format and pointer is physical</para>
+</listitem></itemizedlist>
+</para>
+<para>Only works for tensors of AIE nodes. If the tensor is an input or an output of a CPU node, the function have no effect and returns an error.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tensor of which the data format will be changed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates the data format of the data provided/expected by user for the tensor data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int The vaisw error (vaisw_error_id) code of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="536" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1afb5c32017fbd216815bf535a78773aa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int set_input_native_formats</definition>
+        <argsstring>(int format)=0</argsstring>
+        <name>set_input_native_formats</name>
+        <qualifiedname>vart::Runner::set_input_native_formats</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Select the data format for all input tensors of the graph. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The native format currently support 3 values:<itemizedlist>
+<listitem><para>0: non native format (pointer is virtual) (equivalent to &apos;false&apos; in the previous API version)</para>
+</listitem><listitem><para>1: native format and pointer is virtual (equivalent to &apos;true&apos; in the previous API version)</para>
+</listitem><listitem><para>2: native format and pointer is physical</para>
+</listitem></itemizedlist>
+</para>
+<para>Only works if all input tensors are linked to AIE nodes. If any input tensor is an input or an output of a CPU node, the function have no effect and returns an error.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates the data format of the data provided by user for the input tensors data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int The vaisw error (vaisw_error_id) code of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="552" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a88e0006b83414d0438c98dfa80979be5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int set_output_native_formats</definition>
+        <argsstring>(int format)=0</argsstring>
+        <name>set_output_native_formats</name>
+        <qualifiedname>vart::Runner::set_output_native_formats</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Select the data format for all output tensors of the graph. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The native format currently support 3 values:<itemizedlist>
+<listitem><para>0: non native format (pointer is virtual) (equivalent to &apos;false&apos; in the previous API version)</para>
+</listitem><listitem><para>1: native format and pointer is virtual (equivalent to &apos;true&apos; in the previous API version)</para>
+</listitem><listitem><para>2: native format and pointer is physical</para>
+</listitem></itemizedlist>
+</para>
+<para>Only works if all output tensors are linked to AIE nodes. If any output tensor is an output of a CPU node, the function have no effect and returns an error.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates the data format of the data expected by user for the output tensors data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int The vaisw error (vaisw_error_id) code of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="568" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1ad0c650f85ea7bfc96a7ad69c5a66fb31" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; uint32_t &gt;</type>
+        <definition>virtual std::vector&lt; uint32_t &gt; get_strides</definition>
+        <argsstring>(const npu_tensor_t *tensor)=0</argsstring>
+        <name>get_strides</name>
+        <qualifiedname>vart::Runner::get_strides</qualifiedname>
+        <param>
+          <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+          <declname>tensor</declname>
+        </param>
+        <briefdescription>
+<para>Return the strides of a graph&apos;s tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tensor to get the strides from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The strides of the tensor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="576" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a3051a4ea3cd39bcf26e6af591e2787cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int set_strides</definition>
+        <argsstring>(const npu_tensor_t *tensor, std::vector&lt; uint32_t &gt; strides)=0</argsstring>
+        <name>set_strides</name>
+        <qualifiedname>vart::Runner::set_strides</qualifiedname>
+        <param>
+          <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+          <declname>tensor</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; uint32_t &gt;</type>
+          <declname>strides</declname>
+        </param>
+        <briefdescription>
+<para>Set the strides of a graph&apos;s tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The data are considered packed by default. If a padding was applied, the strides need to be adjusted with the correct value.</para>
+<para>Only works for tensors of AIE nodes. If the tensor is an input or an output of a CPU node, the function have no effect and returns an error.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tensor to set the strides to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>strides</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New strides for the tensor. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int The vaisw error (vaisw_error_id) code of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="591" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_base_runner_1a3a6ebaa53c9250e3c739c3c407c1c20f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::pair&lt; std::uint32_t, int &gt;</type>
+        <definition>virtual std::pair&lt; std::uint32_t, int &gt; execute_async</definition>
+        <argsstring>(InputType input, OutputType output)=0</argsstring>
+        <name>execute_async</name>
+        <qualifiedname>vart::BaseRunner::execute_async</qualifiedname>
+        <param>
+          <type>InputType</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>OutputType</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="namespaceexecute__async" kindref="compound">execute_async</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>inputs with a customized type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>outputs with a customized type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pair&lt;jobid, status&gt; status 0 for exit successfully, others for customized warnings or errors </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="91" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_base_runner_1a769f0822363e8772852804b429c66326" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int execute</definition>
+        <argsstring>(InputType input, OutputType output, int jobid)=0</argsstring>
+        <name>execute</name>
+        <qualifiedname>vart::BaseRunner::execute</qualifiedname>
+        <param>
+          <type>InputType</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>OutputType</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>jobid</declname>
+        </param>
+        <briefdescription>
+<para>execute </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>inputs with a customized type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>outputs with a customized type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jobid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>job id </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int The vaisw error (vaisw_error_id) code of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="101" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_base_runner_1a4749da8b1f941dfdecea936f355319b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int wait</definition>
+        <argsstring>(int jobid, int timeout=-1)=0</argsstring>
+        <name>wait</name>
+        <qualifiedname>vart::BaseRunner::wait</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>jobid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>timeout</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>wait </para>
+        </briefdescription>
+        <detaileddescription>
+<para>modes: 1. Blocking wait for specific ID. 2. Non-blocking wait for specific ID. 3. Blocking wait for any ID. 4. Non-blocking wait for any ID</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jobid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>job id, neg for any id, others for specific job id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout, neg for block for ever, 0 for non-block, pos for block with a limitation(ms). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status 0 for exit successfully, others for customized warnings or errors </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="115" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class of the <ref refid="classvart_1_1_runner" kindref="compound">Runner</ref>, provides API to use the runner. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The runner instance has a number of member functions to control the execution and get the input and output tensors of the runner.</para>
+<para>Sample code:</para>
+<para><programlisting><codeline><highlight class="comment">//<sp/>This<sp/>example<sp/>assumes<sp/>that<sp/>you<sp/>have<sp/>a<sp/>snapshot<sp/>stored<sp/>in<sp/>the<sp/>model_path.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>way<sp/>to<sp/>create<sp/>a<sp/>runner<sp/>to<sp/>run<sp/>the<sp/>snapshot<sp/>is<sp/>shown<sp/>below.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>create<sp/>runner</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacerunner" kindref="compound">runner</ref><sp/>=<sp/><ref refid="classvart_1_1_runner_1aca07d84ba037c97c9aa6774e7b20d12f" kindref="member">vart::Runner::create_runner</ref>(model_path,<sp/>in_shape_format,<sp/>out_shape_format);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>get<sp/>input<sp/>tensors</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>input_tensors<sp/>=<sp/><ref refid="namespacerunner" kindref="compound">runner</ref>-&gt;get_input_tensors();</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>get<sp/>output<sp/>tensors</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>output_tensors<sp/>=<sp/><ref refid="namespacerunner" kindref="compound">runner</ref>-&gt;get_output_tensors();</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>run<sp/>runner</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>v<sp/>=<sp/><ref refid="namespacerunner" kindref="compound">runner</ref>-&gt;execute_async(input,<sp/>output);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>status<sp/>=<sp/><ref refid="namespacerunner" kindref="compound">runner</ref>-&gt;wait((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)v.first,<sp/>1000000000);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="cppdoc/runner.h" line="142" column="1" bodyfile="cppdoc/runner.h" bodystart="143" bodyend="592"/>
+    <listofallmembers>
+      <member refid="classvart_1_1_runner_1aca07d84ba037c97c9aa6774e7b20d12f" prot="public" virt="non-virtual"><scope>vart::Runner</scope><name>create_runner</name></member>
+      <member refid="classvart_1_1_runner_1a338d5c08576e8f029b0dbc9ccf4b8f8d" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>execute</name></member>
+      <member refid="classvart_1_1_runner_1af840989c7520672ca3e80df1438f285e" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>execute</name></member>
+      <member refid="classvart_1_1_base_runner_1a769f0822363e8772852804b429c66326" prot="public" virt="pure-virtual" ambiguityscope="vart::BaseRunner::"><scope>vart::Runner</scope><name>execute</name></member>
+      <member refid="classvart_1_1_runner_1a420b43a5eef175b9c24d4ed5bd7b0d5d" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>execute_async</name></member>
+      <member refid="classvart_1_1_runner_1af67c1630dbd7383cc0c0d9d760eb04f1" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>execute_async</name></member>
+      <member refid="classvart_1_1_base_runner_1a3a6ebaa53c9250e3c739c3c407c1c20f" prot="public" virt="pure-virtual" ambiguityscope="vart::BaseRunner::"><scope>vart::Runner</scope><name>execute_async</name></member>
+      <member refid="classvart_1_1_runner_1a7e73de3cc0946f9e8c64e4cf56055ff8" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>free_buffer</name></member>
+      <member refid="classvart_1_1_runner_1aa233d73e4c210ecf8f5dae520f82d442" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_batch_size</name></member>
+      <member refid="classvart_1_1_runner_1a60af11177b2806f0255e4052d8eb1235" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_data_type</name></member>
+      <member refid="classvart_1_1_runner_1aee43aded0e57099283206e4d7d0d820f" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_input_tensors</name></member>
+      <member refid="classvart_1_1_runner_1a40137a7108d17778e601be1890f35e90" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_native_shape_format</name></member>
+      <member refid="classvart_1_1_runner_1a7b1845cf6f9088d85fe1a7d54e17d434" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_native_size</name></member>
+      <member refid="classvart_1_1_runner_1a9dd6a9a6c0ba38c38e30d400eeef38c7" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_nb_ddrs</name></member>
+      <member refid="classvart_1_1_runner_1a6005a7ae4c273e3f5fa2d3773fc2a325" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_output_tensors</name></member>
+      <member refid="classvart_1_1_runner_1a60e0c33c66f2761828bececab6ccf360" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_physical_addr</name></member>
+      <member refid="classvart_1_1_runner_1ac416f966f36248dc9d8aaf0c7c621171" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_shape</name></member>
+      <member refid="classvart_1_1_runner_1a073a093f710fd15077918a9f48c6a45c" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_shape_format</name></member>
+      <member refid="classvart_1_1_runner_1a738fc923bf3bd8be0391161c3ee5f758" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_size</name></member>
+      <member refid="classvart_1_1_runner_1ad0c650f85ea7bfc96a7ad69c5a66fb31" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_strides</name></member>
+      <member refid="classvart_1_1_runner_1ac774b019fe6640cf4d3ac55e49f06603" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_tensor</name></member>
+      <member refid="classvart_1_1_runner_1adbf25cc0529dd20f5f452839a7cc4945" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_type_size</name></member>
+      <member refid="classvart_1_1_runner_1a6776f6760c98a3144f2944dea38f80b3" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>malloc_buffer</name></member>
+      <member refid="classvart_1_1_runner_1aabfd5550bd9b1c93d3b9cc1c5f0e265a" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>set_data_type</name></member>
+      <member refid="classvart_1_1_runner_1acb3e0a699b7c656da66bcd4a08593993" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>set_input_cacheable_attribute</name></member>
+      <member refid="classvart_1_1_runner_1a4520724370bce479d6294b4b6f4fe9d4" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>set_input_data_types</name></member>
+      <member refid="classvart_1_1_runner_1afb5c32017fbd216815bf535a78773aa4" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>set_input_native_formats</name></member>
+      <member refid="classvart_1_1_runner_1aab726b649192edeb0f599c47bb1a1b51" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>set_input_shape_formats</name></member>
+      <member refid="classvart_1_1_runner_1af843afda612efe35bb049ebcd52e7bbe" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>set_native_format</name></member>
+      <member refid="classvart_1_1_runner_1a52b4de01c3ba4f2bc255d226a83d998a" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>set_output_cacheable_attribute</name></member>
+      <member refid="classvart_1_1_runner_1a152bf0041e8da97ff95be1987fe53d05" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>set_output_data_types</name></member>
+      <member refid="classvart_1_1_runner_1a88e0006b83414d0438c98dfa80979be5" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>set_output_native_formats</name></member>
+      <member refid="classvart_1_1_runner_1a69c5e78d1c75acb73cc258a0d2fe9fa2" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>set_output_shape_formats</name></member>
+      <member refid="classvart_1_1_runner_1aa406a5fd85cb95163bb250c7086484a6" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>set_shape_format</name></member>
+      <member refid="classvart_1_1_runner_1a3051a4ea3cd39bcf26e6af591e2787cb" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>set_strides</name></member>
+      <member refid="classvart_1_1_base_runner_1a4749da8b1f941dfdecea936f355319b5" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>wait</name></member>
+      <member refid="classvart_1_1_base_runner_1a677e6d7a70447e9a747d1f955c490d40" prot="public" virt="virtual"><scope>vart::Runner</scope><name>~BaseRunner</name></member>
+      <member refid="classvart_1_1_runner_1a5682a18df20288c1de981ab2ca71cc3b" prot="public" virt="virtual"><scope>vart::Runner</scope><name>~Runner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

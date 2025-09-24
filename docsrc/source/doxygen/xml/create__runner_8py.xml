@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="create__runner_8py" kind="file" language="Python">
+    <compoundname>create_runner.py</compoundname>
+    <innernamespace refid="namespacecreate__runner">create_runner</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecreate__runner_1a193166e2ab3849ed53a8f05b150dbe6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>create_runner</definition>
+        <argsstring>(subgraph, mode)</argsstring>
+        <name>create_runner</name>
+        <qualifiedname>create_runner.create_runner</qualifiedname>
+        <param>
+          <type>subgraph</type>
+          <defname>subgraph</defname>
+        </param>
+        <param>
+          <type>mode</type>
+          <defname>mode</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pydoc/create_runner.py" line="15" column="1" bodyfile="pydoc/create_runner.py" bodystart="15" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacecreate__runner" refkind="compound"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/><sp/>@brief<sp/>Factory<sp/>function<sp/>to<sp/>create<sp/>an<sp/>instance<sp/>of<sp/>DPU<sp/>runner<sp/>by</highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>subgraph.</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>@param<sp/>subgraph<sp/>:<sp/>xir.Subgraph,<sp/><sp/>XIR<sp/>Subgraph</highlight></codeline>
+<codeline lineno="5"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>@param<sp/>mode<sp/>1<sp/>mode<sp/>supported:<sp/>&apos;run&apos;<sp/>-<sp/>DPU<sp/>runner.</highlight></codeline>
+<codeline lineno="6"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>@return<sp/>vart.Runner,<sp/>an<sp/>instance<sp/>of<sp/>DPU<sp/>runner.</highlight></codeline>
+<codeline lineno="7"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="8"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Sample<sp/>code:</highlight></codeline>
+<codeline lineno="9"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/>@code</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/>//<sp/>This<sp/>API<sp/>can<sp/>be<sp/>used<sp/>like:</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/>runner<sp/>=<sp/>vart.Runner.create_runner(subgraph,<sp/>&quot;run&quot;)</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/>@endcode</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacecreate__runner" kindref="compound">create_runner</ref>(subgraph,<sp/>mode):</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="pydoc/create_runner.py"/>
+  </compounddef>
+</doxygen>

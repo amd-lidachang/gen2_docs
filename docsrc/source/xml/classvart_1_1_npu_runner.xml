@@ -1,0 +1,1269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classvart_1_1_npu_runner" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>vart::NpuRunner</compoundname>
+    <basecompoundref refid="classvart_1_1_runner" prot="public" virt="non-virtual">Runner</basecompoundref>
+    <includes local="no">runner.h</includes>
+    <innerclass refid="structvart_1_1_npu_runner_1_1job__slot__t" prot="public">vart::NpuRunner::job_slot_t</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvart_1_1_npu_runner_1a2f7e8ebf79fbd947858361f76b31b7d6" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* snapshot</definition>
+        <argsstring></argsstring>
+        <name>snapshot</name>
+        <qualifiedname>vart::NpuRunner::snapshot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="483" column="43" bodyfile="cppdoc/runner.h" bodystart="483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_npu_runner_1a621a92c71bb8d9e7417ee31409468756" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;npu_tensor_t&gt; &gt; inputs_</definition>
+        <argsstring></argsstring>
+        <name>inputs_</name>
+        <qualifiedname>vart::NpuRunner::inputs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="484" column="13" bodyfile="cppdoc/runner.h" bodystart="484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_npu_runner_1aacd4ff2e9baf2ad48db9c4ee04ce5b3c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;npu_tensor_t&gt; &gt; outputs_</definition>
+        <argsstring></argsstring>
+        <name>outputs_</name>
+        <qualifiedname>vart::NpuRunner::outputs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="485" column="13" bodyfile="cppdoc/runner.h" bodystart="485" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_npu_runner_1a94ef0ed4f627317abcabe264b007316d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; native_format_in</definition>
+        <argsstring></argsstring>
+        <name>native_format_in</name>
+        <qualifiedname>vart::NpuRunner::native_format_in</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="486" column="39" bodyfile="cppdoc/runner.h" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_npu_runner_1ae6a040b6fbe824abc948a5c32c005aa3" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; native_format_out</definition>
+        <argsstring></argsstring>
+        <name>native_format_out</name>
+        <qualifiedname>vart::NpuRunner::native_format_out</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="487" column="39" bodyfile="cppdoc/runner.h" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_npu_runner_1a619c10b4628263de5b44b33946503402" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; DataType &gt;</type>
+        <definition>std::vector&lt;DataType&gt; data_type_in</definition>
+        <argsstring></argsstring>
+        <name>data_type_in</name>
+        <qualifiedname>vart::NpuRunner::data_type_in</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="488" column="34" bodyfile="cppdoc/runner.h" bodystart="488" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_npu_runner_1a55a1a93bed9801b5abb73600673affc4" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; DataType &gt;</type>
+        <definition>std::vector&lt;DataType&gt; data_type_out</definition>
+        <argsstring></argsstring>
+        <name>data_type_out</name>
+        <qualifiedname>vart::NpuRunner::data_type_out</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="489" column="34" bodyfile="cppdoc/runner.h" bodystart="489" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_npu_runner_1a9957e7350163d7bd5bff39acc6b9fea7" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, std::unique_ptr&lt; job_slot_t &gt; &gt;</type>
+        <definition>std::map&lt;int, std::unique_ptr&lt;job_slot_t&gt; &gt; slots_</definition>
+        <argsstring></argsstring>
+        <name>slots_</name>
+        <qualifiedname>vart::NpuRunner::slots_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="490" column="10" bodyfile="cppdoc/runner.h" bodystart="490" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_npu_runner_1a0e94114098add75c15f167324c8ef9cb" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex mtx_for_slots_</definition>
+        <argsstring></argsstring>
+        <name>mtx_for_slots_</name>
+        <qualifiedname>vart::NpuRunner::mtx_for_slots_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="491" column="44" bodyfile="cppdoc/runner.h" bodystart="491" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_npu_runner_1acc8b6b6879b002e34f544046de374ce8" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t batchSize</definition>
+        <argsstring></argsstring>
+        <name>batchSize</name>
+        <qualifiedname>vart::NpuRunner::batchSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="492" column="44" bodyfile="cppdoc/runner.h" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_npu_runner_1a7af17b4c2e4a90ad9f0495140ae647f6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool is_cacheable_in</definition>
+        <argsstring></argsstring>
+        <name>is_cacheable_in</name>
+        <qualifiedname>vart::NpuRunner::is_cacheable_in</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="493" column="44" bodyfile="cppdoc/runner.h" bodystart="493" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1af261f2ba85e9a703bf925fac98400c82" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NpuRunner</definition>
+        <argsstring>(std::string path, const char *in_shape_format, const char *out_shape_format)</argsstring>
+        <name>NpuRunner</name>
+        <qualifiedname>vart::NpuRunner::NpuRunner</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>in_shape_format</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>out_shape_format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="441" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1a1b9a0711f1d3f75f6662941ea330bd08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NpuRunner</definition>
+        <argsstring>(const NpuRunner &amp;other)=delete</argsstring>
+        <name>NpuRunner</name>
+        <qualifiedname>vart::NpuRunner::NpuRunner</qualifiedname>
+        <param>
+          <type>const <ref refid="classvart_1_1_npu_runner" kindref="compound">NpuRunner</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="443" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1a9f61a2c3596fabd13371f767e047f970" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>~NpuRunner</definition>
+        <argsstring>()</argsstring>
+        <name>~NpuRunner</name>
+        <qualifiedname>vart::NpuRunner::~NpuRunner</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="445" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_base_runner_1a3a6ebaa53c9250e3c739c3c407c1c20f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::pair&lt; std::uint32_t, int &gt;</type>
+        <definition>virtual std::pair&lt; std::uint32_t, int &gt; execute_async</definition>
+        <argsstring>(InputType input, OutputType output)=0</argsstring>
+        <name>execute_async</name>
+        <qualifiedname>vart::BaseRunner::execute_async</qualifiedname>
+        <param>
+          <type>InputType</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>OutputType</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="namespaceexecute__async" kindref="compound">execute_async</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>inputs with a customized type</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>outputs with a customized type</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pair&lt;jobid, status&gt; status 0 for exit successfully, others for customized warnings or errors </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="72" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_base_runner_1ada21e06adca50bce20d625d56237ff61" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void execute</definition>
+        <argsstring>(InputType input, OutputType output, int jobid)=0</argsstring>
+        <name>execute</name>
+        <qualifiedname>vart::BaseRunner::execute</qualifiedname>
+        <param>
+          <type>InputType</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>OutputType</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>jobid</declname>
+        </param>
+        <briefdescription>
+<para>execute </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>inputs with a customized type</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>outputs with a customized type</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jobid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>job id </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="84" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1afd8f68705ee670011ae860c8677debf1" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::pair&lt; uint32_t, int &gt;</type>
+        <definition>std::pair&lt; uint32_t, int &gt; execute_async</definition>
+        <argsstring>(const void **input, void **output) override</argsstring>
+        <name>execute_async</name>
+        <qualifiedname>vart::NpuRunner::execute_async</qualifiedname>
+        <reimplements refid="classvart_1_1_runner_1a420b43a5eef175b9c24d4ed5bd7b0d5d">execute_async</reimplements>
+        <param>
+          <type>const void **</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+<para>Executes the runner. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a non-blocking function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of pointer to the input buffers. For a model with N input layers and a snapshot with B as batch size, N*B pointers must be given. The input n of the batch b will be located at position [b*N + n]. In case an incomplete batch inference has to be executed, use NULL pointer for the unused batches. The non null pointers must point to a buffer with enough memory: In case native format is enabled, the size is obtained from get_native_size, otherwise, the size is the one of the original model, from the tensor structure.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of pointer to the output buffers. Similar as the input.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pair&lt;jobid, status&gt; status 0 for exit successfully, others for customized warnings or errors </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="448" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1abbb3a9ceaa691cb1f88fb8f3703ed3c1" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::pair&lt; uint32_t, int &gt;</type>
+        <definition>std::pair&lt; uint32_t, int &gt; execute_async</definition>
+        <argsstring>(const uint64_t *input, uint64_t *output) override</argsstring>
+        <name>execute_async</name>
+        <qualifiedname>vart::NpuRunner::execute_async</qualifiedname>
+        <reimplements refid="classvart_1_1_runner_1af67c1630dbd7383cc0c0d9d760eb04f1">execute_async</reimplements>
+        <param>
+          <type>const uint64_t *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>uint64_t *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+<para>Executes the runner. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a non-blocking function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of physical addresses to the input buffers. For a model with N input layers and a snapshot with B as batch size, N*B addresses must be given. The input n of the batch b will be located at position [b*N + n]. In case an incomplete batch inference has to be executed, use 0 for the unused batches. The non null adresses must point to a buffer with enough memory: The size is obtained from get_native_size, and the data needs to be contigous in physical memory.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of physical addresses to the output buffers. Similar as the input.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jobid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>job id, neg for any id, others for specific job id </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="449" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1aa9fd5c86c314e1707cfa24c2dc6918eb" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void execute</definition>
+        <argsstring>(const void **input, void **output, int jobid)</argsstring>
+        <name>execute</name>
+        <qualifiedname>vart::NpuRunner::execute</qualifiedname>
+        <reimplements refid="classvart_1_1_runner_1a5794173e4444cdda4f718aefd09c41ad">execute</reimplements>
+        <param>
+          <type>const void **</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>jobid</declname>
+        </param>
+        <briefdescription>
+<para>Executes the runner. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a blocking function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of pointer to the input buffers. For a model with N input layers and a snapshot with B as batch size, N*B pointers must be given. The input n of the batch b will be located at position [b*N + n]. In case an incomplete batch inference has to be executed, use NULL pointer for the unused batches. The non null pointers must point to a buffer with enough memory: In case native format is enabled, the size is obtained from get_native_size, otherwise, the size is the one of the original model, from the tensor structure.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of pointer to the output buffers. Similar as the input.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jobid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>job id, neg for any id, others for specific job id </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="450" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1ae834b7910a20ca4b91d37cd9d272f0c2" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void execute</definition>
+        <argsstring>(const uint64_t *input, uint64_t *output, int jobid)</argsstring>
+        <name>execute</name>
+        <qualifiedname>vart::NpuRunner::execute</qualifiedname>
+        <reimplements refid="classvart_1_1_runner_1a8607548f517f24369e09dd9bb3adab92">execute</reimplements>
+        <param>
+          <type>const uint64_t *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>uint64_t *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>jobid</declname>
+        </param>
+        <briefdescription>
+<para>Executes the runner. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a non-blocking function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of physical addresses to the input buffers. For a model with N input layers and a snapshot with B as batch size, N*B addresses must be given. The input n of the batch b will be located at position [b*N + n]. In case an incomplete batch inference has to be executed, use 0 for the unused batches. The non null adresses must point to a buffer with enough memory: The size is obtained from get_native_size, and the data needs to be contigous in physical memory.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of physical addresses to the output buffers. Similar as the input.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pair&lt;jobid, status&gt; status 0 for exit successfully, others for customized warnings or errors </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="451" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1ad3c3220623de9c3dcaff18136fa4cd08" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int wait</definition>
+        <argsstring>(int jobid, int timeout) override</argsstring>
+        <name>wait</name>
+        <qualifiedname>vart::NpuRunner::wait</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>jobid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="452" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1ae9c0c36660245272e071ccc87b7126b3" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> * &gt;</type>
+        <definition>std::vector&lt; const npu_tensor_t * &gt; get_input_tensors</definition>
+        <argsstring>() override</argsstring>
+        <name>get_input_tensors</name>
+        <qualifiedname>vart::NpuRunner::get_input_tensors</qualifiedname>
+        <reimplements refid="classvart_1_1_runner_1aaec1293342e984217f6f57a241660c02">get_input_tensors</reimplements>
+        <briefdescription>
+<para>Waits for the end of DPU processing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>modes: 1. Blocking wait for specific ID. 2. Non-blocking wait for specific ID. 3. Blocking wait for any ID. 4. Non-blocking wait for any ID</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jobid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>job id, neg for any id, others for specific job id</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout, neg for block for ever, 0 for non-block, pos for block with a limitation(ms).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>status 0 for exit successfully, others for customized warnings or errors</para>
+</simplesect>
+Get all input tensors of runner. <simplesect kind="return"><para>All input tensors. A vector of raw pointer to the input tensor.</para>
+</simplesect>
+Sample code:</para>
+<para><programlisting><codeline><highlight class="normal">inputTensors<sp/>=<sp/><ref refid="namespacerunner" kindref="compound">runner</ref>-&gt;get_input_tensors();</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>input<sp/>:<sp/>inputTensor)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>input-&gt;name;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>input-&gt;size;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>input-&gt;native_size;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>input-&gt;shape;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>input-&gt;coeff;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>input-&gt;data_type;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="453" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1a92fb43e0e19a874b485e178d18823def" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> * &gt;</type>
+        <definition>std::vector&lt; const npu_tensor_t * &gt; get_output_tensors</definition>
+        <argsstring>() override</argsstring>
+        <name>get_output_tensors</name>
+        <qualifiedname>vart::NpuRunner::get_output_tensors</qualifiedname>
+        <reimplements refid="classvart_1_1_runner_1a29776826f76a9650b9438ac62bfd8a1e">get_output_tensors</reimplements>
+        <briefdescription>
+<para>Get all output tensors of runner. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>All output tensors. A vector of raw pointer to the output tensor.</para>
+</simplesect>
+Sample code: <programlisting><codeline><highlight class="normal">outputTensors<sp/>=<sp/><ref refid="namespacerunner" kindref="compound">runner</ref>-&gt;get_output_tensors();</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>output<sp/>:<sp/>outputTensor)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>output-&gt;name;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>output-&gt;size;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>output-&gt;native_size;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>output-&gt;shape;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>output-&gt;coeff;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>output-&gt;data_type;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="454" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1ab266b8a29542c4c2f236a9367d99eaaa" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+        <definition>const npu_tensor_t * get_tensor</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>get_tensor</name>
+        <qualifiedname>vart::NpuRunner::get_tensor</qualifiedname>
+        <reimplements refid="classvart_1_1_runner_1ac774b019fe6640cf4d3ac55e49f06603">get_tensor</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a copy of the input/output tensor with the given name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the tensor. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="455" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1a5dcb229ddad655d6b5d30c5494da0555" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int set_native_format</definition>
+        <argsstring>(const npu_tensor_t *tensor, int format)</argsstring>
+        <name>set_native_format</name>
+        <qualifiedname>vart::NpuRunner::set_native_format</qualifiedname>
+        <reimplements refid="classvart_1_1_runner_1af843afda612efe35bb049ebcd52e7bbe">set_native_format</reimplements>
+        <param>
+          <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+          <declname>tensor</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Select the data format of a tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The native format currently support 3 values:<itemizedlist>
+<listitem><para>0: non native format (pointer is virtual) (false value in the previous API)</para>
+</listitem><listitem><para>1: native format and pointer is virtual (true value in the previous API)</para>
+</listitem><listitem><para>2: native format and pointer is physical</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of which the data format will be changed. Can be input or output.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates the data format of the data provided/expected by user for the tensor data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="456" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1a7791d01d0d1dd78fb1beca919da28ead" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int set_data_type</definition>
+        <argsstring>(const npu_tensor_t *tensor, DataType data_type)</argsstring>
+        <name>set_data_type</name>
+        <qualifiedname>vart::NpuRunner::set_data_type</qualifiedname>
+        <reimplements refid="classvart_1_1_runner_1aabfd5550bd9b1c93d3b9cc1c5f0e265a">set_data_type</reimplements>
+        <param>
+          <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+          <declname>tensor</declname>
+        </param>
+        <param>
+          <type>DataType</type>
+          <declname>data_type</declname>
+        </param>
+        <briefdescription>
+<para>Select the data type of a tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the data type is different from the one expected by the snapshot, a convertion will be applied if possible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of which the data type will be changed. Can be input or output.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DataType of the data provided/expected by user for the tensor data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="457" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1ab3a3dad51548316ae28285ec7bc1d7d6" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int set_strides</definition>
+        <argsstring>(const npu_tensor_t *tensor, std::vector&lt; uint32_t &gt; strides)</argsstring>
+        <name>set_strides</name>
+        <qualifiedname>vart::NpuRunner::set_strides</qualifiedname>
+        <reimplements refid="classvart_1_1_runner_1a3051a4ea3cd39bcf26e6af591e2787cb">set_strides</reimplements>
+        <param>
+          <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+          <declname>tensor</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; uint32_t &gt;</type>
+          <declname>strides</declname>
+        </param>
+        <briefdescription>
+<para>Select the strides a tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The data are considered packed by default. If a padding was apply, the strides need to be updated with the correct value.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of which strides will be changed. Can be input or output.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>strides</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New strides of the input or output tensor. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="458" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1acaf6f4cf196dd95bb03a2fa1895a0e2a" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; uint32_t &gt;</type>
+        <definition>std::vector&lt; uint32_t &gt; get_strides</definition>
+        <argsstring>(const npu_tensor_t *tensor)</argsstring>
+        <name>get_strides</name>
+        <qualifiedname>vart::NpuRunner::get_strides</qualifiedname>
+        <reimplements refid="classvart_1_1_runner_1ad0c650f85ea7bfc96a7ad69c5a66fb31">get_strides</reimplements>
+        <param>
+          <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+          <declname>tensor</declname>
+        </param>
+        <briefdescription>
+<para>Return the strides a tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of which the strides will be returned. Can be input or output. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="459" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1aaa23c50f6234a1327cc9aeee008c0be4" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int set_shape_format</definition>
+        <argsstring>(const npu_tensor_t *tensor, std::string format)</argsstring>
+        <name>set_shape_format</name>
+        <qualifiedname>vart::NpuRunner::set_shape_format</qualifiedname>
+        <reimplements refid="classvart_1_1_runner_1aa406a5fd85cb95163bb250c7086484a6">set_shape_format</reimplements>
+        <param>
+          <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+          <declname>tensor</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Select the strides a tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The data are considered packed by default. If a padding was apply, the strides need to be updated with the correct value.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of which shape format will be changed. Can be input or output.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New shape format of the input or output tensor. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="460" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1a8be57dd527fc610f7e5bda9c9601c5e9" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string get_shape_format</definition>
+        <argsstring>(const npu_tensor_t *tensor)</argsstring>
+        <name>get_shape_format</name>
+        <qualifiedname>vart::NpuRunner::get_shape_format</qualifiedname>
+        <reimplements refid="classvart_1_1_runner_1a073a093f710fd15077918a9f48c6a45c">get_shape_format</reimplements>
+        <param>
+          <type>const <ref refid="structvart_1_1npu__tensor" kindref="compound">npu_tensor_t</ref> *</type>
+          <declname>tensor</declname>
+        </param>
+        <briefdescription>
+<para>Return the shape format a tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of which the shape format will be returned. Can be input or output. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="461" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1a35d22d61a83da36f16fe8cbc7dc393d6" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t get_batch_size</definition>
+        <argsstring>(void)</argsstring>
+        <name>get_batch_size</name>
+        <qualifiedname>vart::NpuRunner::get_batch_size</qualifiedname>
+        <reimplements refid="classvart_1_1_runner_1aa233d73e4c210ecf8f5dae520f82d442">get_batch_size</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the batch size of the snapshot. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the maximum batch size the engine will process in a single call and it is used for the size of the input and output lists.</para>
+<para><simplesect kind="return"><para>The maximum batch size supported by the snapshot. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="462" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1aea2707d35a6d43e2bf6ccf49d8ae4ef0" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void set_input_cacheable_attribute</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>set_input_cacheable_attribute</name>
+        <qualifiedname>vart::NpuRunner::set_input_cacheable_attribute</qualifiedname>
+        <reimplements refid="classvart_1_1_runner_1a79f9808e44443456a99a88a949769271">set_input_cacheable_attribute</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Specify cacheability of memory region where input data is stored. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If this attribute is set to true, input data is assumed to be in a cacheable memory region and copying will be skipped. Input data copying is performed by default.</para>
+<para>The purpose of this method is purely aiming towards performance-tuning. Depending on whether this assumption reflects reality or not, performance can either increase or decrease.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean to specify if input data is assumed to be in a cacheable memory region. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="463" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1ac88425f824eda72dd356059e7fee9f28" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void *</type>
+        <definition>void * malloc_buffer</definition>
+        <argsstring>(uint64_t size, uint8_t ddr)</argsstring>
+        <name>malloc_buffer</name>
+        <qualifiedname>vart::NpuRunner::malloc_buffer</qualifiedname>
+        <reimplements refid="classvart_1_1_runner_1a6776f6760c98a3144f2944dea38f80b3">malloc_buffer</reimplements>
+        <param>
+          <type>uint64_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>ddr</declname>
+        </param>
+        <briefdescription>
+<para>Return a pointer to a buffer of the given size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The buffer allocation is done by the runner and the free will be done by the destructor.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the buffer.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Select the DDR in which the allocation will be done. It is better to share the load between multiple DDRs.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the new created buffer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="464" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1ab26f9142a4f7b1487ee574074b60a44b" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void free_buffer</definition>
+        <argsstring>(void *buffer_ptr)</argsstring>
+        <name>free_buffer</name>
+        <qualifiedname>vart::NpuRunner::free_buffer</qualifiedname>
+        <reimplements refid="classvart_1_1_runner_1a7e73de3cc0946f9e8c64e4cf56055ff8">free_buffer</reimplements>
+        <param>
+          <type>void *</type>
+          <declname>buffer_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Free a previously allocated buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The buffer allocation must have been done through the malloc_buffer function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the buffer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="465" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1a27fec4714edb91964d039cd7e9f645db" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t get_physical_addr</definition>
+        <argsstring>(void *buffer_ptr)</argsstring>
+        <name>get_physical_addr</name>
+        <qualifiedname>vart::NpuRunner::get_physical_addr</qualifiedname>
+        <reimplements refid="classvart_1_1_runner_1a60e0c33c66f2761828bececab6ccf360">get_physical_addr</reimplements>
+        <param>
+          <type>void *</type>
+          <declname>buffer_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Return the physical address of a buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The buffer allocation must have been done through the malloc_buffer function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the buffer.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Physical address. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="466" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1ac1658ea668a652f08cd40d6c668d17fa" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t get_nb_ddrs</definition>
+        <argsstring>(void)</argsstring>
+        <name>get_nb_ddrs</name>
+        <qualifiedname>vart::NpuRunner::get_nb_ddrs</qualifiedname>
+        <reimplements refid="classvart_1_1_runner_1a9dd6a9a6c0ba38c38e30d400eeef38c7">get_nb_ddrs</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of DDR used bu the NPU. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of DDR. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="467" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1a18df69192d60b68dcddc15fec691c7a7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int allocate_job_id</definition>
+        <argsstring>()</argsstring>
+        <name>allocate_job_id</name>
+        <qualifiedname>vart::NpuRunner::allocate_job_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="477" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1a131ceefd1375e3ab1c7f53e36a18d770" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>job_slot_t *</type>
+        <definition>job_slot_t * find_job_slot</definition>
+        <argsstring>(int job_id)</argsstring>
+        <name>find_job_slot</name>
+        <qualifiedname>vart::NpuRunner::find_job_slot</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>job_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="478" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1a62d7268b5dbca9d0e28d183ab44218c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void delete_job_slot</definition>
+        <argsstring>(int job_id)</argsstring>
+        <name>delete_job_slot</name>
+        <qualifiedname>vart::NpuRunner::delete_job_slot</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>job_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="479" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_runner_1af8a8a890d71db0da4130af201380e26d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void notify_completion</definition>
+        <argsstring>(int job_id, int ret)</argsstring>
+        <name>notify_completion</name>
+        <qualifiedname>vart::NpuRunner::notify_completion</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>job_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ret</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="480" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classvart_1_1_runner_1ad0a8e337b8da6b95e1681699e3364f6c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::unique_ptr&lt; <ref refid="classvart_1_1_runner" kindref="compound">Runner</ref> &gt;</type>
+        <definition>static std::unique_ptr&lt; Runner &gt; create_runner</definition>
+        <argsstring>(const std::string &amp;model_directory, const char *in_shape_format=&quot;NHWC&quot;, const char *out_shape_format=&quot;NHWC&quot;)</argsstring>
+        <name>create_runner</name>
+        <qualifiedname>vart::Runner::create_runner</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>model_directory</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>in_shape_format</declname>
+          <defval>&quot;NHWC&quot;</defval>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>out_shape_format</declname>
+          <defval>&quot;NHWC&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Factory function to create an instance of runner by snapshot. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model_directory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>snapshot directory </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An instance of runner.</para>
+</simplesect>
+Sample code:</para>
+<para><programlisting><codeline><highlight class="comment">//<sp/>This<sp/>API<sp/>can<sp/>be<sp/>used<sp/>like:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacerunner" kindref="compound">runner</ref><sp/>=<sp/><ref refid="classvart_1_1_runner_1ad0a8e337b8da6b95e1681699e3364f6c" kindref="member">vart::Runner::create_runner</ref>(model_directory,<sp/>in_shape_format,out_shape_format);</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/runner.h" line="143" column="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class of the <ref refid="classvart_1_1_runner" kindref="compound">Runner</ref>, provides API to use the NPU runner. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The runner instance has a number of member functions to control the execution and get the input and output tensors of the runner. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>NpuRunner</label>
+        <link refid="classvart_1_1_npu_runner"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Runner</label>
+        <link refid="classvart_1_1_runner"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>NpuRunner</label>
+        <link refid="classvart_1_1_npu_runner"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Runner</label>
+        <link refid="classvart_1_1_runner"/>
+      </node>
+    </collaborationgraph>
+    <location file="cppdoc/runner.h" line="438" column="1" bodyfile="cppdoc/runner.h" bodystart="439" bodyend="494"/>
+    <listofallmembers>
+      <member refid="classvart_1_1_npu_runner_1a18df69192d60b68dcddc15fec691c7a7" prot="private" virt="non-virtual"><scope>vart::NpuRunner</scope><name>allocate_job_id</name></member>
+      <member refid="classvart_1_1_npu_runner_1acc8b6b6879b002e34f544046de374ce8" prot="private" virt="non-virtual"><scope>vart::NpuRunner</scope><name>batchSize</name></member>
+      <member refid="classvart_1_1_runner_1ad0a8e337b8da6b95e1681699e3364f6c" prot="public" virt="non-virtual"><scope>vart::NpuRunner</scope><name>create_runner</name></member>
+      <member refid="classvart_1_1_npu_runner_1a619c10b4628263de5b44b33946503402" prot="private" virt="non-virtual"><scope>vart::NpuRunner</scope><name>data_type_in</name></member>
+      <member refid="classvart_1_1_npu_runner_1a55a1a93bed9801b5abb73600673affc4" prot="private" virt="non-virtual"><scope>vart::NpuRunner</scope><name>data_type_out</name></member>
+      <member refid="classvart_1_1_npu_runner_1a62d7268b5dbca9d0e28d183ab44218c8" prot="private" virt="non-virtual"><scope>vart::NpuRunner</scope><name>delete_job_slot</name></member>
+      <member refid="classvart_1_1_npu_runner_1aa9fd5c86c314e1707cfa24c2dc6918eb" prot="private" virt="virtual"><scope>vart::NpuRunner</scope><name>execute</name></member>
+      <member refid="classvart_1_1_npu_runner_1ae834b7910a20ca4b91d37cd9d272f0c2" prot="private" virt="virtual"><scope>vart::NpuRunner</scope><name>execute</name></member>
+      <member refid="classvart_1_1_base_runner_1ada21e06adca50bce20d625d56237ff61" prot="public" virt="pure-virtual" ambiguityscope="vart::BaseRunner::"><scope>vart::NpuRunner</scope><name>execute</name></member>
+      <member refid="classvart_1_1_npu_runner_1afd8f68705ee670011ae860c8677debf1" prot="private" virt="virtual"><scope>vart::NpuRunner</scope><name>execute_async</name></member>
+      <member refid="classvart_1_1_npu_runner_1abbb3a9ceaa691cb1f88fb8f3703ed3c1" prot="private" virt="virtual"><scope>vart::NpuRunner</scope><name>execute_async</name></member>
+      <member refid="classvart_1_1_base_runner_1a3a6ebaa53c9250e3c739c3c407c1c20f" prot="public" virt="pure-virtual" ambiguityscope="vart::BaseRunner::"><scope>vart::NpuRunner</scope><name>execute_async</name></member>
+      <member refid="classvart_1_1_npu_runner_1a131ceefd1375e3ab1c7f53e36a18d770" prot="private" virt="non-virtual"><scope>vart::NpuRunner</scope><name>find_job_slot</name></member>
+      <member refid="classvart_1_1_npu_runner_1ab26f9142a4f7b1487ee574074b60a44b" prot="private" virt="virtual"><scope>vart::NpuRunner</scope><name>free_buffer</name></member>
+      <member refid="classvart_1_1_npu_runner_1a35d22d61a83da36f16fe8cbc7dc393d6" prot="private" virt="virtual"><scope>vart::NpuRunner</scope><name>get_batch_size</name></member>
+      <member refid="classvart_1_1_npu_runner_1ae9c0c36660245272e071ccc87b7126b3" prot="private" virt="virtual"><scope>vart::NpuRunner</scope><name>get_input_tensors</name></member>
+      <member refid="classvart_1_1_npu_runner_1ac1658ea668a652f08cd40d6c668d17fa" prot="private" virt="virtual"><scope>vart::NpuRunner</scope><name>get_nb_ddrs</name></member>
+      <member refid="classvart_1_1_npu_runner_1a92fb43e0e19a874b485e178d18823def" prot="private" virt="virtual"><scope>vart::NpuRunner</scope><name>get_output_tensors</name></member>
+      <member refid="classvart_1_1_npu_runner_1a27fec4714edb91964d039cd7e9f645db" prot="private" virt="virtual"><scope>vart::NpuRunner</scope><name>get_physical_addr</name></member>
+      <member refid="classvart_1_1_npu_runner_1a8be57dd527fc610f7e5bda9c9601c5e9" prot="private" virt="virtual"><scope>vart::NpuRunner</scope><name>get_shape_format</name></member>
+      <member refid="classvart_1_1_npu_runner_1acaf6f4cf196dd95bb03a2fa1895a0e2a" prot="private" virt="virtual"><scope>vart::NpuRunner</scope><name>get_strides</name></member>
+      <member refid="classvart_1_1_npu_runner_1ab266b8a29542c4c2f236a9367d99eaaa" prot="private" virt="virtual"><scope>vart::NpuRunner</scope><name>get_tensor</name></member>
+      <member refid="classvart_1_1_npu_runner_1a621a92c71bb8d9e7417ee31409468756" prot="private" virt="non-virtual"><scope>vart::NpuRunner</scope><name>inputs_</name></member>
+      <member refid="classvart_1_1_npu_runner_1a7af17b4c2e4a90ad9f0495140ae647f6" prot="private" virt="non-virtual"><scope>vart::NpuRunner</scope><name>is_cacheable_in</name></member>
+      <member refid="classvart_1_1_npu_runner_1ac88425f824eda72dd356059e7fee9f28" prot="private" virt="virtual"><scope>vart::NpuRunner</scope><name>malloc_buffer</name></member>
+      <member refid="classvart_1_1_npu_runner_1a0e94114098add75c15f167324c8ef9cb" prot="private" virt="non-virtual"><scope>vart::NpuRunner</scope><name>mtx_for_slots_</name></member>
+      <member refid="classvart_1_1_npu_runner_1a94ef0ed4f627317abcabe264b007316d" prot="private" virt="non-virtual"><scope>vart::NpuRunner</scope><name>native_format_in</name></member>
+      <member refid="classvart_1_1_npu_runner_1ae6a040b6fbe824abc948a5c32c005aa3" prot="private" virt="non-virtual"><scope>vart::NpuRunner</scope><name>native_format_out</name></member>
+      <member refid="classvart_1_1_npu_runner_1af8a8a890d71db0da4130af201380e26d" prot="private" virt="non-virtual"><scope>vart::NpuRunner</scope><name>notify_completion</name></member>
+      <member refid="classvart_1_1_npu_runner_1af261f2ba85e9a703bf925fac98400c82" prot="public" virt="non-virtual"><scope>vart::NpuRunner</scope><name>NpuRunner</name></member>
+      <member refid="classvart_1_1_npu_runner_1a1b9a0711f1d3f75f6662941ea330bd08" prot="public" virt="non-virtual"><scope>vart::NpuRunner</scope><name>NpuRunner</name></member>
+      <member refid="classvart_1_1_npu_runner_1aacd4ff2e9baf2ad48db9c4ee04ce5b3c" prot="private" virt="non-virtual"><scope>vart::NpuRunner</scope><name>outputs_</name></member>
+      <member refid="classvart_1_1_npu_runner_1a7791d01d0d1dd78fb1beca919da28ead" prot="private" virt="virtual"><scope>vart::NpuRunner</scope><name>set_data_type</name></member>
+      <member refid="classvart_1_1_npu_runner_1aea2707d35a6d43e2bf6ccf49d8ae4ef0" prot="private" virt="virtual"><scope>vart::NpuRunner</scope><name>set_input_cacheable_attribute</name></member>
+      <member refid="classvart_1_1_npu_runner_1a5dcb229ddad655d6b5d30c5494da0555" prot="private" virt="virtual"><scope>vart::NpuRunner</scope><name>set_native_format</name></member>
+      <member refid="classvart_1_1_npu_runner_1aaa23c50f6234a1327cc9aeee008c0be4" prot="private" virt="virtual"><scope>vart::NpuRunner</scope><name>set_shape_format</name></member>
+      <member refid="classvart_1_1_npu_runner_1ab3a3dad51548316ae28285ec7bc1d7d6" prot="private" virt="virtual"><scope>vart::NpuRunner</scope><name>set_strides</name></member>
+      <member refid="classvart_1_1_npu_runner_1a9957e7350163d7bd5bff39acc6b9fea7" prot="private" virt="non-virtual"><scope>vart::NpuRunner</scope><name>slots_</name></member>
+      <member refid="classvart_1_1_npu_runner_1a2f7e8ebf79fbd947858361f76b31b7d6" prot="private" virt="non-virtual"><scope>vart::NpuRunner</scope><name>snapshot</name></member>
+      <member refid="classvart_1_1_npu_runner_1ad3c3220623de9c3dcaff18136fa4cd08" prot="private" virt="non-virtual"><scope>vart::NpuRunner</scope><name>wait</name></member>
+      <member refid="classvart_1_1_base_runner_1a677e6d7a70447e9a747d1f955c490d40" prot="public" virt="virtual"><scope>vart::NpuRunner</scope><name>~BaseRunner</name></member>
+      <member refid="classvart_1_1_npu_runner_1a9f61a2c3596fabd13371f767e047f970" prot="public" virt="non-virtual"><scope>vart::NpuRunner</scope><name>~NpuRunner</name></member>
+      <member refid="classvart_1_1_runner_1a5682a18df20288c1de981ab2ca71cc3b" prot="public" virt="virtual"><scope>vart::NpuRunner</scope><name>~Runner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

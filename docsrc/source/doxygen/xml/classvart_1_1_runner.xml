@@ -1,0 +1,510 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classvart_1_1_runner" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>vart::Runner</compoundname>
+    <includes local="no">vart_runner_factory.hpp</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classvart_1_1_runner_1afb125477af0423b4df8740e151c9fc7f" prot="public" static="no">
+        <type>std::function&lt; void(StatusCode)&gt;</type>
+        <definition>using ExecuteAsyncCallback =  std::function&lt;void(StatusCode)&gt;</definition>
+        <argsstring></argsstring>
+        <name>ExecuteAsyncCallback</name>
+        <qualifiedname>vart::Runner::ExecuteAsyncCallback</qualifiedname>
+        <briefdescription>
+<para>Alias for a callback function used to handle the result of an asynchronous operation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This callback is invoked with a boolean parameter indicating the success or failure of the operation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The status of the asynchronous operation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="308" column="3" bodyfile="cppdoc/vart_runner_factory.hpp" bodystart="308" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classvart_1_1_runner_1a6a3ca49a2d60ca67238ad1e5ea80f2ab" prot="protected" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Runner</definition>
+        <argsstring>(const std::string &amp;model_path, const std::unordered_map&lt; std::string, std::any &gt; &amp;options={})</argsstring>
+        <name>Runner</name>
+        <qualifiedname>vart::Runner::Runner</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>model_path</declname>
+        </param>
+        <param>
+          <type>const std::unordered_map&lt; std::string, std::any &gt; &amp;</type>
+          <declname>options</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="classvart_1_1_runner" kindref="compound">Runner</ref> object with the specified model path and options. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file path to the model to be used by the <ref refid="classvart_1_1_runner" kindref="compound">Runner</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional configuration parameters for the <ref refid="classvart_1_1_runner" kindref="compound">Runner</ref>, provided as a map of string keys to values of any type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="154" column="12" bodyfile="cppdoc/vart_runner_factory.hpp" bodystart="154" bodyend="156"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvart_1_1_runner_1a5682a18df20288c1de981ab2ca71cc3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~Runner</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Runner</name>
+        <qualifiedname>vart::Runner::~Runner</qualifiedname>
+        <briefdescription>
+<para>Destroys the <ref refid="classvart_1_1_runner" kindref="compound">Runner</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="162" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a531cc4202e8f2d719afade557b260765" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const std::vector&lt; <ref refid="structvart_1_1_npu_tensor_info" kindref="compound">NpuTensorInfo</ref> &gt; &amp;</type>
+        <definition>virtual const std::vector&lt; NpuTensorInfo &gt; &amp; get_tensors_info</definition>
+        <argsstring>(const TensorDirection &amp;direction, const TensorType &amp;type) const =0</argsstring>
+        <name>get_tensors_info</name>
+        <qualifiedname>vart::Runner::get_tensors_info</qualifiedname>
+        <param>
+          <type>const TensorDirection &amp;</type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>const TensorType &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Unified API to retrieve tensor information based on direction and tensor type (CPU/HW). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method retrieves tensor information based on the specified direction (input/output) and tensor type (CPU/HW).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies whether to retrieve input or output tensor information. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies whether to retrieve CPU or HW tensor information. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A constant reference to a vector containing <ref refid="structvart_1_1_npu_tensor_info" kindref="compound">NpuTensorInfo</ref> objects, each describing a tensor matching the specified criteria. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="177" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a9bf506aae3d036df23fd6e7a8e33854e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const <ref refid="structvart_1_1_npu_tensor_info" kindref="compound">NpuTensorInfo</ref> &amp;</type>
+        <definition>virtual const NpuTensorInfo &amp; get_tensor_info_by_name</definition>
+        <argsstring>(const std::string &amp;tensor_name, const TensorType &amp;type) const =0</argsstring>
+        <name>get_tensor_info_by_name</name>
+        <qualifiedname>vart::Runner::get_tensor_info_by_name</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tensor_name</declname>
+        </param>
+        <param>
+          <type>const TensorType &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Unified API to retrieve tensor information by name and tensor type (CPU/HW). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method retrieves tensor information for a specific tensor identified by name, with the ability to specify whether to retrieve CPU or HW tensor information.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the tensor for which to retrieve information. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies whether to retrieve CPU or HW tensor information. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A constant reference to the <ref refid="structvart_1_1_npu_tensor_info" kindref="compound">NpuTensorInfo</ref> object describing the specified tensor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="195" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1ab26a80f1b026365f3daeb1097993d9f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const <ref refid="structvart_1_1_quant_parameters" kindref="compound">QuantParameters</ref> &amp;</type>
+        <definition>virtual const QuantParameters &amp; get_quant_parameters</definition>
+        <argsstring>(const std::string &amp;tensor_name) const =0</argsstring>
+        <name>get_quant_parameters</name>
+        <qualifiedname>vart::Runner::get_quant_parameters</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tensor_name</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the quantization parameters for a specific tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method retrieves the quantization parameters for a tensor identified by its name.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the tensor for which to retrieve quantization parameters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="structvart_1_1_quant_parameters" kindref="compound">QuantParameters</ref> object containing the scale factor and optional zero point. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="210" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a4d189bbdc89286eb2ca17ac3da6f14d1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t get_num_input_tensors</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_num_input_tensors</name>
+        <qualifiedname>vart::Runner::get_num_input_tensors</qualifiedname>
+        <briefdescription>
+<para>Returns the number of input tensors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method retrieves the number of input tensors required by the model or operation.</para>
+<para><simplesect kind="return"><para>The number of input tensors. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="221" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1ab9862ef89dceca3e8890b754238ea872" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t get_num_output_tensors</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_num_output_tensors</name>
+        <qualifiedname>vart::Runner::get_num_output_tensors</qualifiedname>
+        <briefdescription>
+<para>Returns the number of output tensors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method retrieves the number of output tensors produced by the model or operation.</para>
+<para><simplesect kind="return"><para>The number of output tensors. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="231" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a38797341425a3cbc58f783ee6a0920fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t get_batch_size</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_batch_size</name>
+        <qualifiedname>vart::Runner::get_batch_size</qualifiedname>
+        <briefdescription>
+<para>Returns the batch size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method retrieves the batch size for the model or operation.</para>
+<para><simplesect kind="return"><para>The batch size. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="240" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a73b67eeafdd837710322b6535fad8a29" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>StatusCode</type>
+        <definition>virtual StatusCode execute</definition>
+        <argsstring>(const std::vector&lt; std::vector&lt; NpuTensor &gt; &gt; &amp;inputs, std::vector&lt; std::vector&lt; NpuTensor &gt; &gt; &amp;outputs)=0</argsstring>
+        <name>execute</name>
+        <qualifiedname>vart::Runner::execute</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; <ref refid="classvart_1_1_npu_tensor" kindref="compound">NpuTensor</ref> &gt; &gt; &amp;</type>
+          <declname>inputs</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classvart_1_1_npu_tensor" kindref="compound">NpuTensor</ref> &gt; &gt; &amp;</type>
+          <declname>outputs</declname>
+        </param>
+        <briefdescription>
+<para>Executes the main computation using the provided input tensors and produces output tensors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is responsible for performing the actual inference or computation using the specified input tensors and generating the corresponding output tensors.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A constant reference to a vector of input <ref refid="classvart_1_1_npu_tensor" kindref="compound">NpuTensor</ref> objects, vector dimensions: [batch][tensors]. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outputs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to a vector of <ref refid="classvart_1_1_npu_tensor" kindref="compound">NpuTensor</ref> objects where the outputs will be stored, vector dimensions: [batch][tensors]. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A StatusCode indicating the success, failure, etc of the execution. </para>
+</simplesect>
+<simplesect kind="note"><para>Users should provide tensors in the same order as returned by <ref refid="classvart_1_1_runner_1a531cc4202e8f2d719afade557b260765" kindref="member">get_tensors_info()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="258" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1ab555d9eee7e0292ef3a5316b77c0d1eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="structvart_1_1_job_handle" kindref="compound">JobHandle</ref></type>
+        <definition>virtual JobHandle execute_async</definition>
+        <argsstring>(const std::vector&lt; std::vector&lt; NpuTensor &gt; &gt; &amp;inputs, std::vector&lt; std::vector&lt; NpuTensor &gt; &gt; &amp;outputs)=0</argsstring>
+        <name>execute_async</name>
+        <qualifiedname>vart::Runner::execute_async</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; <ref refid="classvart_1_1_npu_tensor" kindref="compound">NpuTensor</ref> &gt; &gt; &amp;</type>
+          <declname>inputs</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classvart_1_1_npu_tensor" kindref="compound">NpuTensor</ref> &gt; &gt; &amp;</type>
+          <declname>outputs</declname>
+        </param>
+        <briefdescription>
+<para>Executes the job asynchronously with the given input tensors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method initiates an asynchronous operation using the provided input tensors, and stores the results in the output tensors. The function returns a handle to the asynchronous job, allowing the caller to track or manage its execution.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A constant reference to a vector of input tensors required for the job, vector dimensions: [batch][tensors]. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outputs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to a vector where the output tensors will be stored upon completion, vector dimensions: [batch][tensors]. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structvart_1_1_job_handle" kindref="compound">JobHandle</ref> A handle representing the asynchronous job. </para>
+</simplesect>
+<simplesect kind="note"><para>Users should provide tensors in the same order as returned by <ref refid="classvart_1_1_runner_1a531cc4202e8f2d719afade557b260765" kindref="member">get_tensors_info()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="277" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1a186ec9a8aa9b8d14752bdc38586e149c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>StatusCode</type>
+        <definition>virtual StatusCode wait</definition>
+        <argsstring>(const JobHandle &amp;job_handle, unsigned int timeout)=0</argsstring>
+        <name>wait</name>
+        <qualifiedname>vart::Runner::wait</qualifiedname>
+        <param>
+          <type>const <ref refid="structvart_1_1_job_handle" kindref="compound">JobHandle</ref> &amp;</type>
+          <declname>job_handle</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+<para>Waits for the completion of an asynchronous job. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is used to check the status of job submitted using <ref refid="namespaceexecute__async" kindref="compound">execute_async</ref> and blocks until the specified job is completed or the timeout expires.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>job_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A constant reference to the handle of the job to wait for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum time to wait in milliseconds. Zero timeout means the wait should check the job completion status and return immediately. If a positive timeout is specified, the wait will return once the task is completed, or the specified time has elapsed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>StatusCode The status of the wait operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="296" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_runner_1afbfbbcb2c7e7ca7d7c642b1c6f33be61" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>StatusCode</type>
+        <definition>virtual StatusCode execute_async</definition>
+        <argsstring>(const std::vector&lt; std::vector&lt; NpuTensor &gt; &gt; &amp;inputs, std::vector&lt; std::vector&lt; NpuTensor &gt; &gt; &amp;outputs, ExecuteAsyncCallback cb, unsigned int timeout)=0</argsstring>
+        <name>execute_async</name>
+        <qualifiedname>vart::Runner::execute_async</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; <ref refid="classvart_1_1_npu_tensor" kindref="compound">NpuTensor</ref> &gt; &gt; &amp;</type>
+          <declname>inputs</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classvart_1_1_npu_tensor" kindref="compound">NpuTensor</ref> &gt; &gt; &amp;</type>
+          <declname>outputs</declname>
+        </param>
+        <param>
+          <type><ref refid="classvart_1_1_runner_1afb125477af0423b4df8740e151c9fc7f" kindref="member">ExecuteAsyncCallback</ref></type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+<para>Executes the operation asynchronously with the given input tensors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method starts the asynchronous execution of the operation using the provided input tensors. The results will be stored in the output tensors, and the specified callback will be invoked upon completion.</para>
+<para><simplesect kind="note"><para>The callback may be invoked from an internal worker thread, not necessarily the calling thread. Users are responsible for ensuring thread safety when accessing shared resources in the callback.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of input tensors to be processed, vector dimensions: [batch][tensors]. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outputs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to a vector where the output tensors will be stored, vector dimensions: [batch][tensors]. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback function to be called when the asynchronous execution is complete. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum time to wait in milliseconds for the inference to complete. Only non zero timeout is considered. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>StatusCode The status of the execution operation. </para>
+</simplesect>
+<simplesect kind="note"><para>Users should provide tensors in the same order as returned by <ref refid="classvart_1_1_runner_1a531cc4202e8f2d719afade557b260765" kindref="member">get_tensors_info()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_runner_factory.hpp" line="333" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Abstract base class for executing model inference operations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classvart_1_1_runner" kindref="compound">Runner</ref> class defines a unified interface for running synchronous and asynchronous inference tasks on machine learning models. It provides methods for retrieving tensor metadata, executing computations, and managing asynchronous job execution.</para>
+<para>Key Features:<itemizedlist>
+<listitem><para>Query input and output tensor information, including support for zero-copy operations.</para>
+</listitem><listitem><para>Perform synchronous inference with input and output tensors.</para>
+</listitem><listitem><para>Submit asynchronous inference jobs and manage their lifecycle via job handles or callbacks.</para>
+</listitem><listitem><para>Support for both polling/waiting and callback-based asynchronous execution models. </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="cppdoc/vart_runner_factory.hpp" line="144" column="1" bodyfile="cppdoc/vart_runner_factory.hpp" bodystart="144" bodyend="338"/>
+    <listofallmembers>
+      <member refid="classvart_1_1_runner_1a73b67eeafdd837710322b6535fad8a29" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>execute</name></member>
+      <member refid="classvart_1_1_runner_1ab555d9eee7e0292ef3a5316b77c0d1eb" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>execute_async</name></member>
+      <member refid="classvart_1_1_runner_1afbfbbcb2c7e7ca7d7c642b1c6f33be61" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>execute_async</name></member>
+      <member refid="classvart_1_1_runner_1afb125477af0423b4df8740e151c9fc7f" prot="public" virt="non-virtual"><scope>vart::Runner</scope><name>ExecuteAsyncCallback</name></member>
+      <member refid="classvart_1_1_runner_1a38797341425a3cbc58f783ee6a0920fb" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_batch_size</name></member>
+      <member refid="classvart_1_1_runner_1a4d189bbdc89286eb2ca17ac3da6f14d1" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_num_input_tensors</name></member>
+      <member refid="classvart_1_1_runner_1ab9862ef89dceca3e8890b754238ea872" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_num_output_tensors</name></member>
+      <member refid="classvart_1_1_runner_1ab26a80f1b026365f3daeb1097993d9f7" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_quant_parameters</name></member>
+      <member refid="classvart_1_1_runner_1a9bf506aae3d036df23fd6e7a8e33854e" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_tensor_info_by_name</name></member>
+      <member refid="classvart_1_1_runner_1a531cc4202e8f2d719afade557b260765" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>get_tensors_info</name></member>
+      <member refid="classvart_1_1_runner_1a6a3ca49a2d60ca67238ad1e5ea80f2ab" prot="protected" virt="non-virtual"><scope>vart::Runner</scope><name>Runner</name></member>
+      <member refid="classvart_1_1_runner_1a186ec9a8aa9b8d14752bdc38586e149c" prot="public" virt="pure-virtual"><scope>vart::Runner</scope><name>wait</name></member>
+      <member refid="classvart_1_1_runner_1a5682a18df20288c1de981ab2ca71cc3b" prot="public" virt="virtual"><scope>vart::Runner</scope><name>~Runner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

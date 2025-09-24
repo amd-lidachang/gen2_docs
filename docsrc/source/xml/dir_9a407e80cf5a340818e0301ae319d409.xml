@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_9a407e80cf5a340818e0301ae319d409" kind="dir">
+    <compoundname>src</compoundname>
+    <innerdir refid="dir_9cbd6d9068e03342208ab26a1ac0ea0c">vart_ml</innerdir>
+    <innerdir refid="dir_f2394b6eff136842dc776cd572ab11b5">vart_x</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/dachang/work/Vitis-AI/src/"/>
+  </compounddef>
+</doxygen>

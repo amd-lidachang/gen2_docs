@@ -1,0 +1,356 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classvart_1_1_npu_tensor" kind="class" language="C++" prot="public">
+    <compoundname>vart::NpuTensor</compoundname>
+    <includes local="no">vart_npu_tensor.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvart_1_1_npu_tensor_1af44c058ad62bf7788927b3beb1e60e12" prot="private" static="no" mutable="no">
+        <type><ref refid="structvart_1_1_npu_tensor_info" kindref="compound">NpuTensorInfo</ref></type>
+        <definition>NpuTensorInfo info_</definition>
+        <argsstring></argsstring>
+        <name>info_</name>
+        <qualifiedname>vart::NpuTensor::info_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="275" column="17" bodyfile="cppdoc/vart_npu_tensor.hpp" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_npu_tensor_1a75ca9094d891d3163928f33977014e37" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* buffer_</definition>
+        <argsstring></argsstring>
+        <name>buffer_</name>
+        <qualifiedname>vart::NpuTensor::buffer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="276" column="8" bodyfile="cppdoc/vart_npu_tensor.hpp" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_npu_tensor_1a782677c9addc82622fecd37dd99dc711" prot="private" static="no" mutable="no">
+        <type>MemoryType</type>
+        <definition>MemoryType memory_type_</definition>
+        <argsstring></argsstring>
+        <name>memory_type_</name>
+        <qualifiedname>vart::NpuTensor::memory_type_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="277" column="14" bodyfile="cppdoc/vart_npu_tensor.hpp" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvart_1_1_npu_tensor_1ae592f0af41317580d48166b48140147e" prot="private" static="no" mutable="no">
+        <type>TensorType</type>
+        <definition>TensorType type_</definition>
+        <argsstring></argsstring>
+        <name>type_</name>
+        <qualifiedname>vart::NpuTensor::type_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="278" column="14" bodyfile="cppdoc/vart_npu_tensor.hpp" bodystart="278" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvart_1_1_npu_tensor_1af5ab2b2704a0cf74ad88f2f6db31e163" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NpuTensor</definition>
+        <argsstring>(const NpuTensorInfo &amp;info, void *buffer, const MemoryType &amp;mem_type, const TensorType &amp;type=TensorType::CPU)</argsstring>
+        <name>NpuTensor</name>
+        <qualifiedname>vart::NpuTensor::NpuTensor</qualifiedname>
+        <param>
+          <type>const <ref refid="structvart_1_1_npu_tensor_info" kindref="compound">NpuTensorInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const MemoryType &amp;</type>
+          <declname>mem_type</declname>
+        </param>
+        <param>
+          <type>const TensorType &amp;</type>
+          <declname>type</declname>
+          <defval>TensorType::CPU</defval>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="classvart_1_1_npu_tensor" kindref="compound">NpuTensor</ref> from a user-supplied buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the tensor using the specified metadata and buffer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tensor metadata (<ref refid="structvart_1_1_npu_tensor_info" kindref="compound">NpuTensorInfo</ref>). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the user buffer containing the tensor data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mem_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies whether the buffer is in host or device memory (HOST or DEVICE). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates the tensor type (CPU or HW).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>When using TensorType::HW:<itemizedlist>
+<listitem><para>The buffer must be of MemoryType::DEVICE.</para>
+</listitem><listitem><para>The data should be pre-processed to meet hardware requirements.</para>
+</listitem><listitem><para>TensorType::HW supports zero-copy operations only. If the buffer is not pre-processed or compatible with hardware, use TensorType::CPU instead. </para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="215" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_tensor_1aec8d7fc6488dbd28fe30215660df18bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NpuTensor</definition>
+        <argsstring>()=delete</argsstring>
+        <name>NpuTensor</name>
+        <qualifiedname>vart::NpuTensor::NpuTensor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="220" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_tensor_1ac9001b11221ff783d6ff4b0f217b4c16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NpuTensor</definition>
+        <argsstring>(const NpuTensor &amp;other)=delete</argsstring>
+        <name>NpuTensor</name>
+        <qualifiedname>vart::NpuTensor::NpuTensor</qualifiedname>
+        <param>
+          <type>const <ref refid="classvart_1_1_npu_tensor" kindref="compound">NpuTensor</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="221" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_tensor_1af52310927e87f2390cc4db670e473f59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvart_1_1_npu_tensor" kindref="compound">NpuTensor</ref> &amp;</type>
+        <definition>NpuTensor &amp; operator=</definition>
+        <argsstring>(const NpuTensor &amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>vart::NpuTensor::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classvart_1_1_npu_tensor" kindref="compound">NpuTensor</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="222" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_tensor_1afa670adeba294d331a0d26594f48e84d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>NpuTensor</definition>
+        <argsstring>(NpuTensor &amp;&amp;other) noexcept</argsstring>
+        <name>NpuTensor</name>
+        <qualifiedname>vart::NpuTensor::NpuTensor</qualifiedname>
+        <param>
+          <type><ref refid="classvart_1_1_npu_tensor" kindref="compound">NpuTensor</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="225" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_tensor_1a95492a0145baf2e8bbd45bf9af78ef99" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classvart_1_1_npu_tensor" kindref="compound">NpuTensor</ref> &amp;</type>
+        <definition>NpuTensor &amp; operator=</definition>
+        <argsstring>(NpuTensor &amp;&amp;other) noexcept</argsstring>
+        <name>operator=</name>
+        <qualifiedname>vart::NpuTensor::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classvart_1_1_npu_tensor" kindref="compound">NpuTensor</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="226" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_tensor_1a6ecb12c0d8a1f0586b9072995ec48e07" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * get_buffer</definition>
+        <argsstring>(MemoryType mem_type) const</argsstring>
+        <name>get_buffer</name>
+        <qualifiedname>vart::NpuTensor::get_buffer</qualifiedname>
+        <param>
+          <type>MemoryType</type>
+          <declname>mem_type</declname>
+        </param>
+        <briefdescription>
+<para>Returns a pointer to the buffer associated with the specified memory type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Provides access to the buffer associated with the given memory type.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mem_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The memory type (e.g., DEVICE or HOST) for which to retrieve the buffer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void* Pointer to the buffer, or nullptr if no buffer is available for the requested memory type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="239" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_tensor_1a27f7459a75c1917dc0e4e36edc6fcfc8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structvart_1_1_npu_tensor_info" kindref="compound">NpuTensorInfo</ref> &amp;</type>
+        <definition>const NpuTensorInfo &amp; get_info</definition>
+        <argsstring>() const</argsstring>
+        <name>get_info</name>
+        <qualifiedname>vart::NpuTensor::get_info</qualifiedname>
+        <briefdescription>
+<para>Returns the <ref refid="structvart_1_1_npu_tensor_info" kindref="compound">NpuTensorInfo</ref> metadata of the tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method returns the <ref refid="structvart_1_1_npu_tensor_info" kindref="compound">NpuTensorInfo</ref> object that contains metadata about the tensor, such as its name, shape, strides, data type, and memory layout. <simplesect kind="return"><para>A constant reference to the <ref refid="structvart_1_1_npu_tensor_info" kindref="compound">NpuTensorInfo</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="248" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_tensor_1a0e786197c614a0aa7f38f91d024af6dc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>TensorType</type>
+        <definition>TensorType get_tensor_type</definition>
+        <argsstring>() const</argsstring>
+        <name>get_tensor_type</name>
+        <qualifiedname>vart::NpuTensor::get_tensor_type</qualifiedname>
+        <briefdescription>
+<para>Returns the type of the tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The type of the tensor (CPU or HW). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="255" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_tensor_1a73ba908190729e802faab40f810c6381" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MemoryType</type>
+        <definition>MemoryType get_memory_type</definition>
+        <argsstring>() const</argsstring>
+        <name>get_memory_type</name>
+        <qualifiedname>vart::NpuTensor::get_memory_type</qualifiedname>
+        <briefdescription>
+<para>Get the memory type of the tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>MemoryType The memory type of the tensor, which can be either HOST or DEVICE. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="263" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classvart_1_1_npu_tensor_1a8c1584b58fcbef5c95d26385aaa35797" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_info</definition>
+        <argsstring>() const</argsstring>
+        <name>print_info</name>
+        <qualifiedname>vart::NpuTensor::print_info</qualifiedname>
+        <briefdescription>
+<para>Prints the metadata of the tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method prints the <ref refid="structvart_1_1_npu_tensor_info" kindref="compound">NpuTensorInfo</ref> metadata, including name, shape, strides, data type, memory layout, and size. It is useful for debugging and understanding the tensor&apos;s properties. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="272" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This class represents a tensor in the VART API. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class encapsulates tensor metadata and offers access to the tensor&apos;s data buffers. It acts as a lightweight wrapper around buffers supplied by the user.</para>
+<para><simplesect kind="note"><para>: This class does not take ownership of the buffer memory. The user is responsible for managing the buffer&apos;s lifecycle. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="cppdoc/vart_npu_tensor.hpp" line="195" column="1" bodyfile="cppdoc/vart_npu_tensor.hpp" bodystart="195" bodyend="279"/>
+    <listofallmembers>
+      <member refid="classvart_1_1_npu_tensor_1a75ca9094d891d3163928f33977014e37" prot="private" virt="non-virtual"><scope>vart::NpuTensor</scope><name>buffer_</name></member>
+      <member refid="classvart_1_1_npu_tensor_1a6ecb12c0d8a1f0586b9072995ec48e07" prot="public" virt="non-virtual"><scope>vart::NpuTensor</scope><name>get_buffer</name></member>
+      <member refid="classvart_1_1_npu_tensor_1a27f7459a75c1917dc0e4e36edc6fcfc8" prot="public" virt="non-virtual"><scope>vart::NpuTensor</scope><name>get_info</name></member>
+      <member refid="classvart_1_1_npu_tensor_1a73ba908190729e802faab40f810c6381" prot="public" virt="non-virtual"><scope>vart::NpuTensor</scope><name>get_memory_type</name></member>
+      <member refid="classvart_1_1_npu_tensor_1a0e786197c614a0aa7f38f91d024af6dc" prot="public" virt="non-virtual"><scope>vart::NpuTensor</scope><name>get_tensor_type</name></member>
+      <member refid="classvart_1_1_npu_tensor_1af44c058ad62bf7788927b3beb1e60e12" prot="private" virt="non-virtual"><scope>vart::NpuTensor</scope><name>info_</name></member>
+      <member refid="classvart_1_1_npu_tensor_1a782677c9addc82622fecd37dd99dc711" prot="private" virt="non-virtual"><scope>vart::NpuTensor</scope><name>memory_type_</name></member>
+      <member refid="classvart_1_1_npu_tensor_1af5ab2b2704a0cf74ad88f2f6db31e163" prot="public" virt="non-virtual"><scope>vart::NpuTensor</scope><name>NpuTensor</name></member>
+      <member refid="classvart_1_1_npu_tensor_1aec8d7fc6488dbd28fe30215660df18bb" prot="public" virt="non-virtual"><scope>vart::NpuTensor</scope><name>NpuTensor</name></member>
+      <member refid="classvart_1_1_npu_tensor_1ac9001b11221ff783d6ff4b0f217b4c16" prot="public" virt="non-virtual"><scope>vart::NpuTensor</scope><name>NpuTensor</name></member>
+      <member refid="classvart_1_1_npu_tensor_1afa670adeba294d331a0d26594f48e84d" prot="public" virt="non-virtual"><scope>vart::NpuTensor</scope><name>NpuTensor</name></member>
+      <member refid="classvart_1_1_npu_tensor_1af52310927e87f2390cc4db670e473f59" prot="public" virt="non-virtual"><scope>vart::NpuTensor</scope><name>operator=</name></member>
+      <member refid="classvart_1_1_npu_tensor_1a95492a0145baf2e8bbd45bf9af78ef99" prot="public" virt="non-virtual"><scope>vart::NpuTensor</scope><name>operator=</name></member>
+      <member refid="classvart_1_1_npu_tensor_1a8c1584b58fcbef5c95d26385aaa35797" prot="public" virt="non-virtual"><scope>vart::NpuTensor</scope><name>print_info</name></member>
+      <member refid="classvart_1_1_npu_tensor_1ae592f0af41317580d48166b48140147e" prot="private" virt="non-virtual"><scope>vart::NpuTensor</scope><name>type_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

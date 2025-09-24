@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvart_1_1_npu_tensor_info" kind="struct" language="C++" prot="public">
+    <compoundname>vart::NpuTensorInfo</compoundname>
+    <includes local="no">vart_npu_tensor.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvart_1_1_npu_tensor_info_1ab74e6bf80237ddc4109968cedc58c151" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>vart::NpuTensorInfo::name</qualifiedname>
+        <briefdescription>
+<para>Name of the tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="173" column="15" bodyfile="cppdoc/vart_npu_tensor.hpp" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvart_1_1_npu_tensor_info_1ac2ad7f431e3446fddcd9b6b9f93c4c14" prot="public" static="no" mutable="no">
+        <type>DataType</type>
+        <definition>data_type</definition>
+        <argsstring></argsstring>
+        <name>data_type</name>
+        <qualifiedname>vart::NpuTensorInfo::data_type</qualifiedname>
+        <briefdescription>
+<para>Data type of the tensor elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="174" column="12" bodyfile="cppdoc/vart_npu_tensor.hpp" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvart_1_1_npu_tensor_info_1aeb6b90acb33f1d77b2974f6cf5e505ea" prot="public" static="no" mutable="no">
+        <type>MemoryLayout</type>
+        <definition>memory_layout</definition>
+        <argsstring></argsstring>
+        <name>memory_layout</name>
+        <qualifiedname>vart::NpuTensorInfo::memory_layout</qualifiedname>
+        <briefdescription>
+<para>Memory layout type of the tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="175" column="16" bodyfile="cppdoc/vart_npu_tensor.hpp" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvart_1_1_npu_tensor_info_1ae4a44cd3721e0c607925c4fb88e93360" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; uint32_t &gt;</type>
+        <definition>memory_layout_order</definition>
+        <argsstring></argsstring>
+        <name>memory_layout_order</name>
+        <qualifiedname>vart::NpuTensorInfo::memory_layout_order</qualifiedname>
+        <briefdescription>
+<para>(Optional) Dimension permutation order for buffer data, relevant when memory_layout is GENERIC. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the order in which dimensions are arranged compared to the reference TensorType::CPU tensor format. For example, if the TensorType::CPU format is &quot;ABCD&quot;, memory_layout_order is {0, 1, 2, 3}; if the TensorType::HW format is &quot;ADBC&quot;, memory_layout_order is {0, 3, 1, 2}. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="176" column="15" bodyfile="cppdoc/vart_npu_tensor.hpp" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvart_1_1_npu_tensor_info_1aa3d6656320f1a7278c0c2c7fdf07617c" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>vart::NpuTensorInfo::size</qualifiedname>
+        <briefdescription>
+<para>Number of elements in the tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="177" column="10" bodyfile="cppdoc/vart_npu_tensor.hpp" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvart_1_1_npu_tensor_info_1ad5a02330f66e8f949f78c456e0686a51" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_in_bytes</definition>
+        <argsstring></argsstring>
+        <name>size_in_bytes</name>
+        <qualifiedname>vart::NpuTensorInfo::size_in_bytes</qualifiedname>
+        <briefdescription>
+<para>Size of the tensor data in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="178" column="10" bodyfile="cppdoc/vart_npu_tensor.hpp" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvart_1_1_npu_tensor_info_1a45cde9abb508c62d67c3bb2b9bf566a5" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; uint32_t &gt;</type>
+        <definition>shape</definition>
+        <argsstring></argsstring>
+        <name>shape</name>
+        <qualifiedname>vart::NpuTensorInfo::shape</qualifiedname>
+        <briefdescription>
+<para>Dimensions of the tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="179" column="15" bodyfile="cppdoc/vart_npu_tensor.hpp" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvart_1_1_npu_tensor_info_1a815021df904d32a73e6c8a8d1bdd7064" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; uint32_t &gt;</type>
+        <definition>strides</definition>
+        <argsstring></argsstring>
+        <name>strides</name>
+        <qualifiedname>vart::NpuTensorInfo::strides</qualifiedname>
+        <briefdescription>
+<para>(Optional) Stride values for each dimension. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="180" column="15" bodyfile="cppdoc/vart_npu_tensor.hpp" bodystart="180" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structvart_1_1_npu_tensor_info_1acd0f82d3c49b8a5dd436d4003c44b713" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print</definition>
+        <argsstring>() const</argsstring>
+        <name>print</name>
+        <qualifiedname>vart::NpuTensorInfo::print</qualifiedname>
+        <briefdescription>
+<para>Prints tensor metadata to standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cppdoc/vart_npu_tensor.hpp" line="182" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Metadata structure describing a tensor used in VART. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains various attributes used to define and manage a tensor: </para>
+    </detaileddescription>
+    <location file="cppdoc/vart_npu_tensor.hpp" line="172" column="1" bodyfile="cppdoc/vart_npu_tensor.hpp" bodystart="172" bodyend="183"/>
+    <listofallmembers>
+      <member refid="structvart_1_1_npu_tensor_info_1ac2ad7f431e3446fddcd9b6b9f93c4c14" prot="public" virt="non-virtual"><scope>vart::NpuTensorInfo</scope><name>data_type</name></member>
+      <member refid="structvart_1_1_npu_tensor_info_1aeb6b90acb33f1d77b2974f6cf5e505ea" prot="public" virt="non-virtual"><scope>vart::NpuTensorInfo</scope><name>memory_layout</name></member>
+      <member refid="structvart_1_1_npu_tensor_info_1ae4a44cd3721e0c607925c4fb88e93360" prot="public" virt="non-virtual"><scope>vart::NpuTensorInfo</scope><name>memory_layout_order</name></member>
+      <member refid="structvart_1_1_npu_tensor_info_1ab74e6bf80237ddc4109968cedc58c151" prot="public" virt="non-virtual"><scope>vart::NpuTensorInfo</scope><name>name</name></member>
+      <member refid="structvart_1_1_npu_tensor_info_1acd0f82d3c49b8a5dd436d4003c44b713" prot="public" virt="non-virtual"><scope>vart::NpuTensorInfo</scope><name>print</name></member>
+      <member refid="structvart_1_1_npu_tensor_info_1a45cde9abb508c62d67c3bb2b9bf566a5" prot="public" virt="non-virtual"><scope>vart::NpuTensorInfo</scope><name>shape</name></member>
+      <member refid="structvart_1_1_npu_tensor_info_1aa3d6656320f1a7278c0c2c7fdf07617c" prot="public" virt="non-virtual"><scope>vart::NpuTensorInfo</scope><name>size</name></member>
+      <member refid="structvart_1_1_npu_tensor_info_1ad5a02330f66e8f949f78c456e0686a51" prot="public" virt="non-virtual"><scope>vart::NpuTensorInfo</scope><name>size_in_bytes</name></member>
+      <member refid="structvart_1_1_npu_tensor_info_1a815021df904d32a73e6c8a8d1bdd7064" prot="public" virt="non-virtual"><scope>vart::NpuTensorInfo</scope><name>strides</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_v_a_r_t_1_1_zebra_embedded_sub_graph" kind="class" language="Python" prot="public">
+    <compoundname>VART::ZebraEmbeddedSubGraph</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1aa0823e1ff851f7526e7fc5487718a051" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>session</definition>
+        <argsstring></argsstring>
+        <name>session</name>
+        <qualifiedname>VART.ZebraEmbeddedSubGraph.session</qualifiedname>
+        <initializer>=  session</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="150" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1a2f9377dbffa52f865d96a98869af5d0d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>inputs_names</definition>
+        <argsstring></argsstring>
+        <name>inputs_names</name>
+        <qualifiedname>VART.ZebraEmbeddedSubGraph.inputs_names</qualifiedname>
+        <initializer>=  inputs_names</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="151" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1a1391594db1578333a4869985ffddf796" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>outputs_names</definition>
+        <argsstring></argsstring>
+        <name>outputs_names</name>
+        <qualifiedname>VART.ZebraEmbeddedSubGraph.outputs_names</qualifiedname>
+        <initializer>=  outputs_names</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="152" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1aa57ebe01934de43865125819a3c4af74" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>stats</definition>
+        <argsstring></argsstring>
+        <name>stats</name>
+        <qualifiedname>VART.ZebraEmbeddedSubGraph.stats</qualifiedname>
+        <initializer>=  None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="153" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1a3323a9a6d1bacd1bf02e51e2b8ef5f4b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>graph_name</definition>
+        <argsstring></argsstring>
+        <name>graph_name</name>
+        <qualifiedname>VART.ZebraEmbeddedSubGraph.graph_name</qualifiedname>
+        <initializer>=  graph_name</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="154" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1a6656561117ec1ab686401179004f53ba" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hash</definition>
+        <argsstring></argsstring>
+        <name>hash</name>
+        <qualifiedname>VART.ZebraEmbeddedSubGraph.hash</qualifiedname>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="155" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1a8f2d5c406005be5a1bf4cc8cfba3c63b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>in_shapes</definition>
+        <argsstring></argsstring>
+        <name>in_shapes</name>
+        <qualifiedname>VART.ZebraEmbeddedSubGraph.in_shapes</qualifiedname>
+        <initializer>=  in_shapes</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="156" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1af4184886177307b35a7b6225093be98c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>out_shapes</definition>
+        <argsstring></argsstring>
+        <name>out_shapes</name>
+        <qualifiedname>VART.ZebraEmbeddedSubGraph.out_shapes</qualifiedname>
+        <initializer>=  out_shapes</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="157" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1a6c5ff8407ad8af04c2c4c1c09fdb5aea" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>in_coeffs</definition>
+        <argsstring></argsstring>
+        <name>in_coeffs</name>
+        <qualifiedname>VART.ZebraEmbeddedSubGraph.in_coeffs</qualifiedname>
+        <initializer>=  in_coeffs</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="158" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1ad9d2968430fcb8b38b4b413e2624ab96" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>out_coeffs</definition>
+        <argsstring></argsstring>
+        <name>out_coeffs</name>
+        <qualifiedname>VART.ZebraEmbeddedSubGraph.out_coeffs</qualifiedname>
+        <initializer>=  out_coeffs</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="159" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1a0179e426b6c01c0a3c99ab2cf2f0dcdd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>out_types</definition>
+        <argsstring></argsstring>
+        <name>out_types</name>
+        <qualifiedname>VART.ZebraEmbeddedSubGraph.out_types</qualifiedname>
+        <initializer>=  out_types</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="160" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1ae844e2133e8fbb8dbb9c83a845546f80" prot="public" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict io_transforms</definition>
+        <argsstring></argsstring>
+        <name>io_transforms</name>
+        <qualifiedname>VART.ZebraEmbeddedSubGraph.io_transforms</qualifiedname>
+        <initializer>=  {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="161" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1ac18d0d34c68179e57f605738246bc27c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>use_raw_outputs</definition>
+        <argsstring></argsstring>
+        <name>use_raw_outputs</name>
+        <qualifiedname>VART.ZebraEmbeddedSubGraph.use_raw_outputs</qualifiedname>
+        <initializer>=  use_raw_outputs</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="162" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1a2bf539a692bb78524bef1eed382f7058" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int use_raw_outputs</definition>
+        <argsstring></argsstring>
+        <name>use_raw_outputs</name>
+        <qualifiedname>VART.ZebraEmbeddedSubGraph.use_raw_outputs</qualifiedname>
+        <initializer>=  1 for coef in self.out_coeffs]):</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="181" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="181" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1aef8dfc75a46f8773778cf6e769bce15a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__init__</definition>
+        <argsstring>(self, session, inputs_names, outputs_names, graph_name, in_shapes, out_shapes, in_coeffs, out_coeffs, use_raw_outputs, out_types)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>VART.ZebraEmbeddedSubGraph.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session</type>
+          <defname>session</defname>
+        </param>
+        <param>
+          <type>inputs_names</type>
+          <defname>inputs_names</defname>
+        </param>
+        <param>
+          <type>outputs_names</type>
+          <defname>outputs_names</defname>
+        </param>
+        <param>
+          <type>graph_name</type>
+          <defname>graph_name</defname>
+        </param>
+        <param>
+          <type>in_shapes</type>
+          <defname>in_shapes</defname>
+        </param>
+        <param>
+          <type>out_shapes</type>
+          <defname>out_shapes</defname>
+        </param>
+        <param>
+          <type>in_coeffs</type>
+          <defname>in_coeffs</defname>
+        </param>
+        <param>
+          <type>out_coeffs</type>
+          <defname>out_coeffs</defname>
+        </param>
+        <param>
+          <type>use_raw_outputs</type>
+          <defname>use_raw_outputs</defname>
+        </param>
+        <param>
+          <type>out_types</type>
+          <defname>out_types</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="137" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="148" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1a35527b20e99c3ae130092a35915b9e80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>run</definition>
+        <argsstring>(self, ios_dict)</argsstring>
+        <name>run</name>
+        <qualifiedname>VART.ZebraEmbeddedSubGraph.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ios_dict</type>
+          <defname>ios_dict</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="164" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="164" bodyend="191"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" line="136" column="1" bodyfile="C:/Users/dachang/work/Vitis-AI/src/vart_ml/zebra_embedded/lib/python/VART.py" bodystart="136" bodyend="191"/>
+    <listofallmembers>
+      <member refid="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1aef8dfc75a46f8773778cf6e769bce15a" prot="public" virt="non-virtual"><scope>VART::ZebraEmbeddedSubGraph</scope><name>__init__</name></member>
+      <member refid="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1a3323a9a6d1bacd1bf02e51e2b8ef5f4b" prot="public" virt="non-virtual"><scope>VART::ZebraEmbeddedSubGraph</scope><name>graph_name</name></member>
+      <member refid="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1a6656561117ec1ab686401179004f53ba" prot="public" virt="non-virtual"><scope>VART::ZebraEmbeddedSubGraph</scope><name>hash</name></member>
+      <member refid="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1a6c5ff8407ad8af04c2c4c1c09fdb5aea" prot="public" virt="non-virtual"><scope>VART::ZebraEmbeddedSubGraph</scope><name>in_coeffs</name></member>
+      <member refid="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1a8f2d5c406005be5a1bf4cc8cfba3c63b" prot="public" virt="non-virtual"><scope>VART::ZebraEmbeddedSubGraph</scope><name>in_shapes</name></member>
+      <member refid="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1a2f9377dbffa52f865d96a98869af5d0d" prot="public" virt="non-virtual"><scope>VART::ZebraEmbeddedSubGraph</scope><name>inputs_names</name></member>
+      <member refid="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1ae844e2133e8fbb8dbb9c83a845546f80" prot="public" virt="non-virtual"><scope>VART::ZebraEmbeddedSubGraph</scope><name>io_transforms</name></member>
+      <member refid="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1ad9d2968430fcb8b38b4b413e2624ab96" prot="public" virt="non-virtual"><scope>VART::ZebraEmbeddedSubGraph</scope><name>out_coeffs</name></member>
+      <member refid="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1af4184886177307b35a7b6225093be98c" prot="public" virt="non-virtual"><scope>VART::ZebraEmbeddedSubGraph</scope><name>out_shapes</name></member>
+      <member refid="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1a0179e426b6c01c0a3c99ab2cf2f0dcdd" prot="public" virt="non-virtual"><scope>VART::ZebraEmbeddedSubGraph</scope><name>out_types</name></member>
+      <member refid="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1a1391594db1578333a4869985ffddf796" prot="public" virt="non-virtual"><scope>VART::ZebraEmbeddedSubGraph</scope><name>outputs_names</name></member>
+      <member refid="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1a35527b20e99c3ae130092a35915b9e80" prot="public" virt="non-virtual"><scope>VART::ZebraEmbeddedSubGraph</scope><name>run</name></member>
+      <member refid="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1aa0823e1ff851f7526e7fc5487718a051" prot="public" virt="non-virtual"><scope>VART::ZebraEmbeddedSubGraph</scope><name>session</name></member>
+      <member refid="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1aa57ebe01934de43865125819a3c4af74" prot="public" virt="non-virtual"><scope>VART::ZebraEmbeddedSubGraph</scope><name>stats</name></member>
+      <member refid="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1ac18d0d34c68179e57f605738246bc27c" prot="public" virt="non-virtual"><scope>VART::ZebraEmbeddedSubGraph</scope><name>use_raw_outputs</name></member>
+      <member refid="class_v_a_r_t_1_1_zebra_embedded_sub_graph_1a2bf539a692bb78524bef1eed382f7058" prot="public" virt="non-virtual"><scope>VART::ZebraEmbeddedSubGraph</scope><name>use_raw_outputs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

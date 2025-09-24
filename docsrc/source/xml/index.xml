@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.7" xml:lang="en-US">
+  <compound refid="classrunner_1_1_v_a_r_t" kind="class"><name>runner::VART</name>
+    <member refid="classrunner_1_1_v_a_r_t_1a5f902080cdaea3e0b5488745da2c9481" kind="variable"><name>runner</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1a382684ca5b6c6b7cb376d543fd1ee4c7" kind="function"><name>__init__</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1a2cb628515116fb559701021f5f64d60a" kind="function"><name>init_out_arrays</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1a80fd0415e14eb50bc3d695a9dffdde8d" kind="function"><name>alloc_native_bufs</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1af5efa7f75dd7942076c652c58b3cf744" kind="function"><name>get_input_shapes</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1a947620d4226b51fc70e32f1adf30fff2" kind="function"><name>get_input_shape_formats</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1afa9da19f54550284b5eae277752cb3ad" kind="function"><name>get_output_shape_formats</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1a0a2fe7b7cca1bc60f10c884ba0a19aeb" kind="function"><name>get_input_types</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1aa54d69fde808dcb1ab783e6c8c826e18" kind="function"><name>set_input_native_formats</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1ac952a22f707fe8d12a6751645bc8014b" kind="function"><name>set_output_native_formats</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1a7f1c53d1fca2aa5518d41fc04633919b" kind="function"><name>get_input_coeffs</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1a4c0b13d223de37f65a74e66a2f205a18" kind="function"><name>get_output_coeffs</name></member>
+    <member refid="classrunner_1_1_v_a_r_t_1aba2fc5ce575ab798a60d6e1ac620833e" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="classvart_1_1_base_runner" kind="class"><name>vart::BaseRunner</name>
+    <member refid="classvart_1_1_base_runner_1a677e6d7a70447e9a747d1f955c490d40" kind="function"><name>~BaseRunner</name></member>
+    <member refid="classvart_1_1_base_runner_1a3a6ebaa53c9250e3c739c3c407c1c20f" kind="function"><name>execute_async</name></member>
+    <member refid="classvart_1_1_base_runner_1a769f0822363e8772852804b429c66326" kind="function"><name>execute</name></member>
+    <member refid="classvart_1_1_base_runner_1a4749da8b1f941dfdecea936f355319b5" kind="function"><name>wait</name></member>
+  </compound>
+  <compound refid="classvart_1_1_device" kind="class"><name>vart::Device</name>
+    <member refid="classvart_1_1_device_1a6b0a545d0502bddb6d4ec2a251017bad" kind="variable"><name>pimpl</name></member>
+    <member refid="classvart_1_1_device_1a4d41b172a672ff3a9e65c8ae3a98e515" kind="function"><name>get_device_hdl</name></member>
+    <member refid="classvart_1_1_device_1a7be415d1274b46fb53157ed1dcf20feb" kind="function"><name>get_pimpl_handle</name></member>
+    <member refid="classvart_1_1_device_1a64c8df9b03cf9634375e7754173f86de" kind="function"><name>get_device_index</name></member>
+    <member refid="classvart_1_1_device_1a0dfdad1a0e50492309cb5af209f060be" kind="function"><name>Device</name></member>
+    <member refid="classvart_1_1_device_1ad8a35430ed29c3b0f822a93ece88ef8d" kind="function"><name>~Device</name></member>
+    <member refid="classvart_1_1_device_1a0a3af57b8f86798b3caddf73a407dd94" kind="function"><name>Device</name></member>
+  </compound>
+  <compound refid="classvart_1_1_infer_result" kind="class"><name>vart::InferResult</name>
+    <member refid="classvart_1_1_infer_result_1ae3db73e4ded07ddb263a83dacc34656d" kind="variable"><name>pimpl</name></member>
+    <member refid="classvart_1_1_infer_result_1a05ec63d7591a8d42059641f43098ee2e" kind="variable"><name>parent</name></member>
+    <member refid="classvart_1_1_infer_result_1a70b2b84350cba3a2a5d2a0cc5c3dcb6e" kind="variable"><name>children</name></member>
+    <member refid="classvart_1_1_infer_result_1a40c75205b74f72f4fe3694680fd28bd2" kind="function"><name>InferResult</name></member>
+    <member refid="classvart_1_1_infer_result_1a1fccbbb6e028e70c1710a98e9405082b" kind="function"><name>InferResult</name></member>
+    <member refid="classvart_1_1_infer_result_1aa08ca11d3c17a20758d9cbc487a0dd44" kind="function"><name>InferResult</name></member>
+    <member refid="classvart_1_1_infer_result_1a674d28db944a9bab9e52db6665c39e32" kind="function"><name>get_pimpl_handle</name></member>
+    <member refid="classvart_1_1_infer_result_1ad8890b05f259543474e3943b923eb46d" kind="function"><name>transform</name></member>
+    <member refid="classvart_1_1_infer_result_1a866f3a855bbacec7b88fcfb5194a61bb" kind="function"><name>get_infer_result</name></member>
+    <member refid="classvart_1_1_infer_result_1ad51994f3245cf8e670af433179aee7e1" kind="function"><name>add_child</name></member>
+    <member refid="classvart_1_1_infer_result_1ad529023061b39b9f69f71a92f57b8cf1" kind="function"><name>add_children</name></member>
+    <member refid="classvart_1_1_infer_result_1a427e8a919b8a5e2b3fd01b5f902a4663" kind="function"><name>get_children</name></member>
+    <member refid="classvart_1_1_infer_result_1add6c64e161fe43bcc67ce02ebb4aba3d" kind="function"><name>get_parent</name></member>
+    <member refid="classvart_1_1_infer_result_1a8ca15c7b7564796d888f207babb92636" kind="function"><name>get_root</name></member>
+    <member refid="classvart_1_1_infer_result_1a956fdbf7b90b96e8488df6d29594a64c" kind="function"><name>traverse</name></member>
+    <member refid="classvart_1_1_infer_result_1a259d3bdaa2c3b008e26cb4c500aad0a1" kind="function"><name>get_depth</name></member>
+  </compound>
+  <compound refid="classvart_1_1_logger" kind="class"><name>vart::Logger</name>
+    <member refid="classvart_1_1_logger_1a3f64d3476d6b9292715933b774733cec" kind="variable"><name>global_log_level</name></member>
+    <member refid="classvart_1_1_logger_1a853c8cf2ecbe6ef4b9cc07263369dbdc" kind="variable"><name>level</name></member>
+    <member refid="classvart_1_1_logger_1a10478adb47906eaf63330d3762bf592f" kind="variable"><name>type</name></member>
+    <member refid="classvart_1_1_logger_1a8a196f44b36100c7fa651b7cd165a8d8" kind="variable"><name>reg_mutex</name></member>
+    <member refid="classvart_1_1_logger_1a7aa000dbc5ce63e0803476366e35c7b7" kind="variable"><name>log_mutex</name></member>
+    <member refid="classvart_1_1_logger_1af89aafa4b0f86c179ba512e1a5a3370e" kind="variable"><name>vart_components</name></member>
+    <member refid="classvart_1_1_logger_1a85af9e393bd6ffd4ae0bf4292a909022" kind="variable"><name>logger_start_time</name></member>
+    <member refid="classvart_1_1_logger_1a075c7553f10c046a5a62eb5d77645f32" kind="variable"><name>log_file</name></member>
+    <member refid="classvart_1_1_logger_1a331ac3fbdf05c568da9fe4bc1c5c401a" kind="function"><name>get_instance</name></member>
+    <member refid="classvart_1_1_logger_1ad95f94e5e95cff5398d4335ce053214e" kind="function"><name>mod_register</name></member>
+    <member refid="classvart_1_1_logger_1ae8e93aadf416fb3656676e14e842356b" kind="function"><name>vart_logger_log_obj</name></member>
+    <member refid="classvart_1_1_logger_1a4fac0c9f6ee2dce6abd726264b9195f7" kind="function"><name>Logger</name></member>
+    <member refid="classvart_1_1_logger_1a0d77f27eb95c246d555904aaf08018eb" kind="function"><name>~Logger</name></member>
+    <member refid="classvart_1_1_logger_1aa7f3dbfbd2426b4874750f08bd23bd7f" kind="function"><name>Logger</name></member>
+    <member refid="classvart_1_1_logger_1ab86c892f2ae9d88f225aa70942ce2ec3" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="classvart_1_1_memory" kind="class"><name>vart::Memory</name>
+    <member refid="classvart_1_1_memory_1aeac4fcd82a210781dc0126949585a628" kind="variable"><name>pimpl</name></member>
+    <member refid="classvart_1_1_memory_1a508a6b343dd636419c7b645c85b64f9d" kind="function"><name>Memory</name></member>
+    <member refid="classvart_1_1_memory_1a2f989258fc49f318cdee3a2614802224" kind="function"><name>Memory</name></member>
+    <member refid="classvart_1_1_memory_1afc6711942fbcdf4b1b57f74603cd143b" kind="function"><name>Memory</name></member>
+    <member refid="classvart_1_1_memory_1abd08190d617cd67090de17133f039bfd" kind="function"><name>~Memory</name></member>
+    <member refid="classvart_1_1_memory_1aa674b2bbfb94a4dfce6fd7fa239f3580" kind="function"><name>map</name></member>
+    <member refid="classvart_1_1_memory_1a1ffeb3b5abb3d61f62b58a391816201c" kind="function"><name>unmap</name></member>
+    <member refid="classvart_1_1_memory_1a661b0eb9c472322a969f95132fb2adaf" kind="function"><name>get_pimpl_handle</name></member>
+    <member refid="classvart_1_1_memory_1a629f2a78e1eb19353b5dd2eb2dd933af" kind="function"><name>get_device_handle</name></member>
+    <member refid="classvart_1_1_memory_1adf55ed6a1edf8e1aa4f3f5f97936ad1e" kind="function"><name>get_size</name></member>
+    <member refid="classvart_1_1_memory_1a56d78b7e78e875c7a8a5be0402edbb9c" kind="function"><name>get_physical_addr</name></member>
+  </compound>
+  <compound refid="classvart_1_1_meta_convert" kind="class"><name>vart::MetaConvert</name>
+    <member refid="classvart_1_1_meta_convert_1a7ffb6e9ff28b9dcc8af22320d2c800ad" kind="variable"><name>pimpl</name></member>
+    <member refid="classvart_1_1_meta_convert_1a1f55e801d83de519d780531ec2a25f34" kind="function"><name>MetaConvert</name></member>
+    <member refid="classvart_1_1_meta_convert_1af7eee8d35b938c1c1fdf00674596f735" kind="function"><name>MetaConvert</name></member>
+    <member refid="classvart_1_1_meta_convert_1aa201fab46d744fad1ed19cfa466abc32" kind="function"><name>MetaConvert</name></member>
+    <member refid="classvart_1_1_meta_convert_1ab19ba71035068427a90b440af81e2666" kind="function"><name>get_pimpl_handle</name></member>
+    <member refid="classvart_1_1_meta_convert_1a08e801e0c679e14a1feb17aa9ac717ca" kind="function"><name>prepare_overlay_meta</name></member>
+  </compound>
+  <compound refid="structvart_1_1npu__tensor" kind="struct"><name>vart::npu_tensor</name>
+    <member refid="structvart_1_1npu__tensor_1a9b45b3e13bd9167aab02e17e08916231" kind="variable"><name>name</name></member>
+    <member refid="structvart_1_1npu__tensor_1a6c9b110dbaa4a97b9b3ca64256608c3f" kind="variable"><name>shape</name></member>
+    <member refid="structvart_1_1npu__tensor_1a7c83402ee11bc0975db5c8b37ee7968d" kind="variable"><name>strides</name></member>
+    <member refid="structvart_1_1npu__tensor_1a6118865e7371b107bd5fb4dd4a9e99a3" kind="variable"><name>data_type</name></member>
+    <member refid="structvart_1_1npu__tensor_1a854352f53b148adc24983a58a1866d66" kind="variable"><name>size</name></member>
+    <member refid="structvart_1_1npu__tensor_1a1c534d25f051c690dfca7d53d487813a" kind="variable"><name>native_size</name></member>
+    <member refid="structvart_1_1npu__tensor_1a0604593d2719ef7171622c27fe56fe93" kind="variable"><name>native_format</name></member>
+    <member refid="structvart_1_1npu__tensor_1a31defd2070218572b20268f42fed598f" kind="variable"><name>coeff</name></member>
+    <member refid="structvart_1_1npu__tensor_1a085ef2a302cd98a04c9965ad80ab1999" kind="variable"><name>big_pixel</name></member>
+  </compound>
+  <compound refid="classvart_1_1_overlay" kind="class"><name>vart::Overlay</name>
+    <member refid="classvart_1_1_overlay_1a252f34ce60c3f08525b02b21a2cc70d5" kind="variable"><name>pimpl</name></member>
+    <member refid="classvart_1_1_overlay_1a0247a26bc475d7ecfdd98b49197e9477" kind="function"><name>Overlay</name></member>
+    <member refid="classvart_1_1_overlay_1ab1ade41d89d4cf7cadd503088067e60e" kind="function"><name>Overlay</name></member>
+    <member refid="classvart_1_1_overlay_1a7a8fd1e4f8aca8cf55cafc8d318de557" kind="function"><name>Overlay</name></member>
+    <member refid="classvart_1_1_overlay_1a26c7c14b0a527826f53381942d0d3b5b" kind="function"><name>get_pimpl_handle</name></member>
+    <member refid="classvart_1_1_overlay_1a0db0bec75af3c8d88450f50516cfd154" kind="function"><name>draw_overlay</name></member>
+  </compound>
+  <compound refid="classvart_1_1_p_l_kernel" kind="class"><name>vart::PLKernel</name>
+    <member refid="classvart_1_1_p_l_kernel_1af86527422cfa4fb97021c3204cbd2faa" kind="variable"><name>pimpl</name></member>
+    <member refid="classvart_1_1_p_l_kernel_1a415c928f2d02cf8a20702b68540e2241" kind="variable"><name>enable_profiling</name></member>
+    <member refid="classvart_1_1_p_l_kernel_1a43639f02afc69e4f717b2bb4f34c1cab" kind="variable"><name>profile_start_time</name></member>
+    <member refid="classvart_1_1_p_l_kernel_1a2a754e27965b28aef05cb6165089aceb" kind="variable"><name>profile_end_time</name></member>
+    <member refid="classvart_1_1_p_l_kernel_1a95ca67b3cc0f663b8d5b48454376565c" kind="function"><name>PLKernel</name></member>
+    <member refid="classvart_1_1_p_l_kernel_1a07e55ad90df68fc22cb8baf51f4db9a3" kind="function"><name>PLKernel</name></member>
+    <member refid="classvart_1_1_p_l_kernel_1ae9c9ddc6a61b33b9d84b8f9f2ec5d2d3" kind="function"><name>~PLKernel</name></member>
+    <member refid="classvart_1_1_p_l_kernel_1a71f415b4b8a10348a49bc6b9d44cc749" kind="function"><name>get_pimpl_handle</name></member>
+    <member refid="classvart_1_1_p_l_kernel_1a4dab889a23e0349b5c9583538a378162" kind="function"><name>process</name></member>
+    <member refid="classvart_1_1_p_l_kernel_1a968a65694c55b402e66f3ab2c47b4880" kind="function"><name>wait</name></member>
+    <member refid="classvart_1_1_p_l_kernel_1af23442ffb5aa622ee0fd6bc823527db6" kind="function"><name>set_config</name></member>
+    <member refid="classvart_1_1_p_l_kernel_1a8807f96ef721f62737fda0f7d83512cf" kind="function"><name>get_config</name></member>
+  </compound>
+  <compound refid="classvart_1_1_post_process" kind="class"><name>vart::PostProcess</name>
+    <member refid="classvart_1_1_post_process_1ae9dd0f913c23c94b24ce3b42b7ab959f" kind="variable"><name>pimpl</name></member>
+    <member refid="classvart_1_1_post_process_1ad6fb2a82d51da616f3de83d34bc0a352" kind="function"><name>PostProcess</name></member>
+    <member refid="classvart_1_1_post_process_1ae75a892f41c05f0128ad18fca40d7aa1" kind="function"><name>PostProcess</name></member>
+    <member refid="classvart_1_1_post_process_1abb079c861b30734b7761e18df5eb2964" kind="function"><name>PostProcess</name></member>
+    <member refid="classvart_1_1_post_process_1a2af252246886dd2c49494a2468bd5227" kind="function"><name>get_pimpl_handle</name></member>
+    <member refid="classvart_1_1_post_process_1a1bb33902042b13a4061ffb3adfcac9fe" kind="function"><name>set_config</name></member>
+    <member refid="classvart_1_1_post_process_1a4abf02ff012ec69615a3987dd7e690f4" kind="function"><name>process</name></member>
+    <member refid="classvart_1_1_post_process_1aae8fb9940303b46792907a92ef2d6e4c" kind="function"><name>process</name></member>
+  </compound>
+  <compound refid="classvart_1_1_pre_process" kind="class"><name>vart::PreProcess</name>
+    <member refid="classvart_1_1_pre_process_1a74f8ad9bd33ee943c15793d5a2299aed" kind="variable"><name>pimpl</name></member>
+    <member refid="classvart_1_1_pre_process_1af1fc1b8bd4fdc890f612dacdbe2e8951" kind="function"><name>PreProcess</name></member>
+    <member refid="classvart_1_1_pre_process_1ad9581f50d98a92ed4824eec695635a9c" kind="function"><name>PreProcess</name></member>
+    <member refid="classvart_1_1_pre_process_1ab0356aa946da3c37180168289de8208f" kind="function"><name>PreProcess</name></member>
+    <member refid="classvart_1_1_pre_process_1aace024d7a15c3488af93b3191cd9b949" kind="function"><name>~PreProcess</name></member>
+    <member refid="classvart_1_1_pre_process_1a6505ba42145cb7c1ba6bcb642bbe2d7b" kind="function"><name>process</name></member>
+    <member refid="classvart_1_1_pre_process_1a73283d7a78ab8bb0d63f6dccd4f3c5da" kind="function"><name>get_input_vinfo</name></member>
+    <member refid="classvart_1_1_pre_process_1a6006b538050e1378d076b2c85a351ab1" kind="function"><name>get_output_vinfo</name></member>
+    <member refid="classvart_1_1_pre_process_1a336e987bed512ab6f7f3aa58270da4ca" kind="function"><name>set_preprocess_info</name></member>
+    <member refid="classvart_1_1_pre_process_1a3852e8d7fb414e08d0ca2ec19eac854f" kind="function"><name>get_preprocess_info</name></member>
+    <member refid="classvart_1_1_pre_process_1af9d7a88ae7e498412d7c944a1006ab33" kind="function"><name>get_pimpl_handle</name></member>
+  </compound>
+  <compound refid="classvart_1_1_runner" kind="class"><name>vart::Runner</name>
+    <member refid="classvart_1_1_runner_1aca07d84ba037c97c9aa6774e7b20d12f" kind="function"><name>create_runner</name></member>
+    <member refid="classvart_1_1_runner_1a5682a18df20288c1de981ab2ca71cc3b" kind="function"><name>~Runner</name></member>
+    <member refid="classvart_1_1_runner_1a420b43a5eef175b9c24d4ed5bd7b0d5d" kind="function"><name>execute_async</name></member>
+    <member refid="classvart_1_1_runner_1af67c1630dbd7383cc0c0d9d760eb04f1" kind="function"><name>execute_async</name></member>
+    <member refid="classvart_1_1_runner_1a338d5c08576e8f029b0dbc9ccf4b8f8d" kind="function"><name>execute</name></member>
+    <member refid="classvart_1_1_runner_1af840989c7520672ca3e80df1438f285e" kind="function"><name>execute</name></member>
+    <member refid="classvart_1_1_runner_1aee43aded0e57099283206e4d7d0d820f" kind="function"><name>get_input_tensors</name></member>
+    <member refid="classvart_1_1_runner_1a6005a7ae4c273e3f5fa2d3773fc2a325" kind="function"><name>get_output_tensors</name></member>
+    <member refid="classvart_1_1_runner_1ac774b019fe6640cf4d3ac55e49f06603" kind="function"><name>get_tensor</name></member>
+    <member refid="classvart_1_1_runner_1aa233d73e4c210ecf8f5dae520f82d442" kind="function"><name>get_batch_size</name></member>
+    <member refid="classvart_1_1_runner_1acb3e0a699b7c656da66bcd4a08593993" kind="function"><name>set_input_cacheable_attribute</name></member>
+    <member refid="classvart_1_1_runner_1a52b4de01c3ba4f2bc255d226a83d998a" kind="function"><name>set_output_cacheable_attribute</name></member>
+    <member refid="classvart_1_1_runner_1a6776f6760c98a3144f2944dea38f80b3" kind="function"><name>malloc_buffer</name></member>
+    <member refid="classvart_1_1_runner_1a7e73de3cc0946f9e8c64e4cf56055ff8" kind="function"><name>free_buffer</name></member>
+    <member refid="classvart_1_1_runner_1a60e0c33c66f2761828bececab6ccf360" kind="function"><name>get_physical_addr</name></member>
+    <member refid="classvart_1_1_runner_1a9dd6a9a6c0ba38c38e30d400eeef38c7" kind="function"><name>get_nb_ddrs</name></member>
+    <member refid="classvart_1_1_runner_1ac416f966f36248dc9d8aaf0c7c621171" kind="function"><name>get_shape</name></member>
+    <member refid="classvart_1_1_runner_1a073a093f710fd15077918a9f48c6a45c" kind="function"><name>get_shape_format</name></member>
+    <member refid="classvart_1_1_runner_1aa406a5fd85cb95163bb250c7086484a6" kind="function"><name>set_shape_format</name></member>
+    <member refid="classvart_1_1_runner_1a40137a7108d17778e601be1890f35e90" kind="function"><name>get_native_shape_format</name></member>
+    <member refid="classvart_1_1_runner_1aab726b649192edeb0f599c47bb1a1b51" kind="function"><name>set_input_shape_formats</name></member>
+    <member refid="classvart_1_1_runner_1a69c5e78d1c75acb73cc258a0d2fe9fa2" kind="function"><name>set_output_shape_formats</name></member>
+    <member refid="classvart_1_1_runner_1a60af11177b2806f0255e4052d8eb1235" kind="function"><name>get_data_type</name></member>
+    <member refid="classvart_1_1_runner_1aabfd5550bd9b1c93d3b9cc1c5f0e265a" kind="function"><name>set_data_type</name></member>
+    <member refid="classvart_1_1_runner_1a4520724370bce479d6294b4b6f4fe9d4" kind="function"><name>set_input_data_types</name></member>
+    <member refid="classvart_1_1_runner_1a152bf0041e8da97ff95be1987fe53d05" kind="function"><name>set_output_data_types</name></member>
+    <member refid="classvart_1_1_runner_1adbf25cc0529dd20f5f452839a7cc4945" kind="function"><name>get_type_size</name></member>
+    <member refid="classvart_1_1_runner_1a738fc923bf3bd8be0391161c3ee5f758" kind="function"><name>get_size</name></member>
+    <member refid="classvart_1_1_runner_1a7b1845cf6f9088d85fe1a7d54e17d434" kind="function"><name>get_native_size</name></member>
+    <member refid="classvart_1_1_runner_1af843afda612efe35bb049ebcd52e7bbe" kind="function"><name>set_native_format</name></member>
+    <member refid="classvart_1_1_runner_1afb5c32017fbd216815bf535a78773aa4" kind="function"><name>set_input_native_formats</name></member>
+    <member refid="classvart_1_1_runner_1a88e0006b83414d0438c98dfa80979be5" kind="function"><name>set_output_native_formats</name></member>
+    <member refid="classvart_1_1_runner_1ad0c650f85ea7bfc96a7ad69c5a66fb31" kind="function"><name>get_strides</name></member>
+    <member refid="classvart_1_1_runner_1a3051a4ea3cd39bcf26e6af591e2787cb" kind="function"><name>set_strides</name></member>
+    <member refid="classvart_1_1_base_runner_1a3a6ebaa53c9250e3c739c3c407c1c20f" kind="function"><name>execute_async</name></member>
+    <member refid="classvart_1_1_base_runner_1a769f0822363e8772852804b429c66326" kind="function"><name>execute</name></member>
+    <member refid="classvart_1_1_base_runner_1a4749da8b1f941dfdecea936f355319b5" kind="function"><name>wait</name></member>
+  </compound>
+  <compound refid="classvart_1_1_video_frame" kind="class"><name>vart::VideoFrame</name>
+    <member refid="classvart_1_1_video_frame_1a11c605eea65b5d972911e355491b27a9" kind="variable"><name>pimpl</name></member>
+    <member refid="classvart_1_1_video_frame_1a44b0500f8d03351bf1c39ac91b2411c5" kind="function"><name>VideoFrame</name></member>
+    <member refid="classvart_1_1_video_frame_1aa9847fe9349e0a79fbc99d33f8ed0127" kind="function"><name>VideoFrame</name></member>
+    <member refid="classvart_1_1_video_frame_1a06800799523f29e566f1f6a97bf37b3f" kind="function"><name>VideoFrame</name></member>
+    <member refid="classvart_1_1_video_frame_1a07bca6788c44542253ce454d67619bf8" kind="function"><name>~VideoFrame</name></member>
+    <member refid="classvart_1_1_video_frame_1a902e9fcc865f625a36e1da2c03e74306" kind="function"><name>map</name></member>
+    <member refid="classvart_1_1_video_frame_1a1ffeb3b5abb3d61f62b58a391816201c" kind="function"><name>unmap</name></member>
+    <member refid="classvart_1_1_video_frame_1a01b1129a8663287402f9c033cb4f0665" kind="function"><name>get_video_info</name></member>
+    <member refid="classvart_1_1_video_frame_1a629f2a78e1eb19353b5dd2eb2dd933af" kind="function"><name>get_device_handle</name></member>
+    <member refid="classvart_1_1_video_frame_1ad6387809e274ab2c9fc76906b1d2bbc5" kind="function"><name>get_pimpl_handle</name></member>
+  </compound>
+  <compound refid="namespacecreate__graph__runner" kind="namespace"><name>create_graph_runner</name>
+    <member refid="namespacecreate__graph__runner_1a7d3dc31000dc6f8f07c63b12ff8653eb" kind="function"><name>create_graph_runner</name></member>
+  </compound>
+  <compound refid="namespacecreate__runner" kind="namespace"><name>create_runner</name>
+    <member refid="namespacecreate__runner_1a193166e2ab3849ed53a8f05b150dbe6d" kind="function"><name>create_runner</name></member>
+  </compound>
+  <compound refid="namespaceexecute__async" kind="namespace"><name>execute_async</name>
+    <member refid="namespaceexecute__async_1a9343c2de55549abc41959649eb50ca2b" kind="function"><name>execute_async</name></member>
+  </compound>
+  <compound refid="namespaceget__input__tensors" kind="namespace"><name>get_input_tensors</name>
+    <member refid="namespaceget__input__tensors_1a90cf14f9034ee6ac6a081db034bc67a1" kind="function"><name>get_input_tensors</name></member>
+  </compound>
+  <compound refid="namespaceget__inputs" kind="namespace"><name>get_inputs</name>
+    <member refid="namespaceget__inputs_1a6c36d0087f6a1ec18a438204bbcb01ff" kind="function"><name>get_inputs</name></member>
+  </compound>
+  <compound refid="namespaceget__output__tensors" kind="namespace"><name>get_output_tensors</name>
+    <member refid="namespaceget__output__tensors_1a3d0bbdfb1a80867865b8e89583f9ba7e" kind="function"><name>get_output_tensors</name></member>
+  </compound>
+  <compound refid="namespaceget__outputs" kind="namespace"><name>get_outputs</name>
+    <member refid="namespaceget__outputs_1aa5a4b5dbfba1fb50a4b67b8d8322f74f" kind="function"><name>get_outputs</name></member>
+  </compound>
+  <compound refid="namespacerunner" kind="namespace"><name>runner</name>
+  </compound>
+  <compound refid="namespacerunner__example" kind="namespace"><name>runner_example</name>
+  </compound>
+  <compound refid="namespacerunnerext__example" kind="namespace"><name>runnerext_example</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="namespacevart" kind="namespace"><name>vart</name>
+    <member refid="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6" kind="enum"><name>DataType</name></member>
+    <member refid="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6ada138aad097eaac8697fe3661c91af95" kind="enumvalue"><name>INT8</name></member>
+    <member refid="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a2644b741f40df4c4c3a83bbdcf7124b3" kind="enumvalue"><name>FLOAT32</name></member>
+    <member refid="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a13759b5b800cc50a6e10f73681f6fe9b" kind="enumvalue"><name>UINT8</name></member>
+    <member refid="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a86a4d027dff711bdd1e3ab36e6765761" kind="enumvalue"><name>BF16</name></member>
+    <member refid="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a423a1db7cbc915478f654b15f87f3aac" kind="enumvalue"><name>INT64</name></member>
+    <member refid="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a6ce26a62afab55d7606ad4e92428b30c" kind="enumvalue"><name>UNKNOWN</name></member>
+    <member refid="runner_8h_1a49894c283baf5d1997e9005d0c2d49d4" kind="typedef"><name>npu_tensor_t</name></member>
+    <member refid="vart__logger_8hpp_1a06b7a21010cd34876dc2ec9f5d8c2247" kind="variable"><name>sys_log_level</name></member>
+    <member refid="vart__logger_8hpp_1a788ab0467284356567ff480a80a668de" kind="variable"><name>obj</name></member>
+  </compound>
+  <compound refid="namespacewait" kind="namespace"><name>wait</name>
+    <member refid="namespacewait_1a9dd979228e0a14a50ef3e2ee0206a5f6" kind="function"><name>wait</name></member>
+  </compound>
+  <compound refid="runner_8h" kind="file"><name>runner.h</name>
+    <member refid="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6" kind="enum"><name>DataType</name></member>
+    <member refid="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6ada138aad097eaac8697fe3661c91af95" kind="enumvalue"><name>INT8</name></member>
+    <member refid="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a2644b741f40df4c4c3a83bbdcf7124b3" kind="enumvalue"><name>FLOAT32</name></member>
+    <member refid="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a13759b5b800cc50a6e10f73681f6fe9b" kind="enumvalue"><name>UINT8</name></member>
+    <member refid="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a86a4d027dff711bdd1e3ab36e6765761" kind="enumvalue"><name>BF16</name></member>
+    <member refid="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a423a1db7cbc915478f654b15f87f3aac" kind="enumvalue"><name>INT64</name></member>
+    <member refid="runner_8h_1ad8ed01ff3ff33333d8e19db4d2818bb6a6ce26a62afab55d7606ad4e92428b30c" kind="enumvalue"><name>UNKNOWN</name></member>
+    <member refid="runner_8h_1a49894c283baf5d1997e9005d0c2d49d4" kind="typedef"><name>npu_tensor_t</name></member>
+  </compound>
+  <compound refid="vart__device_8hpp" kind="file"><name>vart_device.hpp</name>
+  </compound>
+  <compound refid="vart__inferresult_8hpp" kind="file"><name>vart_inferresult.hpp</name>
+  </compound>
+  <compound refid="vart__logger_8hpp" kind="file"><name>vart_logger.hpp</name>
+    <member refid="vart__logger_8hpp_1abfb1efa87be1fdc2c964aca667e70f80" kind="define"><name>VART_LOG_REGISTER</name></member>
+    <member refid="vart__logger_8hpp_1a20317ba421cf3e188ee6706e4a2a5e5a" kind="define"><name>VART_LOG_ERR_OBJ</name></member>
+    <member refid="vart__logger_8hpp_1a0db86a140bd4ec928bd16baf06863d3a" kind="define"><name>VART_LOG_WARN_OBJ</name></member>
+    <member refid="vart__logger_8hpp_1aac345d2d8d6eaa55446698d0e7b98313" kind="define"><name>VART_LOG_FIXME_OBJ</name></member>
+    <member refid="vart__logger_8hpp_1aba940db0b541a771f4680197e74563c1" kind="define"><name>VART_LOG_INFO_OBJ</name></member>
+    <member refid="vart__logger_8hpp_1ae1a9c038c7c7d39debbc9103d34eadf3" kind="define"><name>VART_LOG_DEBUG_OBJ</name></member>
+    <member refid="vart__logger_8hpp_1a06b7a21010cd34876dc2ec9f5d8c2247" kind="variable"><name>sys_log_level</name></member>
+    <member refid="vart__logger_8hpp_1a788ab0467284356567ff480a80a668de" kind="variable"><name>obj</name></member>
+  </compound>
+  <compound refid="vart__memory_8hpp" kind="file"><name>vart_memory.hpp</name>
+  </compound>
+  <compound refid="vart__metaconvert_8hpp" kind="file"><name>vart_metaconvert.hpp</name>
+  </compound>
+  <compound refid="vart__overlay_8hpp" kind="file"><name>vart_overlay.hpp</name>
+  </compound>
+  <compound refid="vart__plkernel_8hpp" kind="file"><name>vart_plkernel.hpp</name>
+  </compound>
+  <compound refid="vart__postprocess_8hpp" kind="file"><name>vart_postprocess.hpp</name>
+  </compound>
+  <compound refid="vart__preprocess_8hpp" kind="file"><name>vart_preprocess.hpp</name>
+  </compound>
+  <compound refid="vart__videoframe_8hpp" kind="file"><name>vart_videoframe.hpp</name>
+  </compound>
+  <compound refid="create__graph__runner_8py" kind="file"><name>create_graph_runner.py</name>
+    <member refid="namespacecreate__graph__runner_1a7d3dc31000dc6f8f07c63b12ff8653eb" kind="function"><name>create_graph_runner</name></member>
+  </compound>
+  <compound refid="create__runner_8py" kind="file"><name>create_runner.py</name>
+    <member refid="namespacecreate__runner_1a193166e2ab3849ed53a8f05b150dbe6d" kind="function"><name>create_runner</name></member>
+  </compound>
+  <compound refid="execute__async_8py" kind="file"><name>execute_async.py</name>
+    <member refid="namespaceexecute__async_1a9343c2de55549abc41959649eb50ca2b" kind="function"><name>execute_async</name></member>
+  </compound>
+  <compound refid="get__input__tensors_8py" kind="file"><name>get_input_tensors.py</name>
+    <member refid="namespaceget__input__tensors_1a90cf14f9034ee6ac6a081db034bc67a1" kind="function"><name>get_input_tensors</name></member>
+  </compound>
+  <compound refid="get__inputs_8py" kind="file"><name>get_inputs.py</name>
+    <member refid="namespaceget__inputs_1a6c36d0087f6a1ec18a438204bbcb01ff" kind="function"><name>get_inputs</name></member>
+  </compound>
+  <compound refid="get__output__tensors_8py" kind="file"><name>get_output_tensors.py</name>
+    <member refid="namespaceget__output__tensors_1a3d0bbdfb1a80867865b8e89583f9ba7e" kind="function"><name>get_output_tensors</name></member>
+  </compound>
+  <compound refid="get__outputs_8py" kind="file"><name>get_outputs.py</name>
+    <member refid="namespaceget__outputs_1aa5a4b5dbfba1fb50a4b67b8d8322f74f" kind="function"><name>get_outputs</name></member>
+  </compound>
+  <compound refid="runner_8py" kind="file"><name>runner.py</name>
+  </compound>
+  <compound refid="runner__example_8py" kind="file"><name>runner_example.py</name>
+  </compound>
+  <compound refid="runnerext__example_8py" kind="file"><name>runnerext_example.py</name>
+  </compound>
+  <compound refid="wait_8py" kind="file"><name>wait.py</name>
+    <member refid="namespacewait_1a9dd979228e0a14a50ef3e2ee0206a5f6" kind="function"><name>wait</name></member>
+  </compound>
+  <compound refid="dir_c8195319c423143631ce95767fadc48a" kind="dir"><name>cppdoc</name>
+  </compound>
+  <compound refid="dir_6a3d52cad6588f4578ad9af4d2ee7abf" kind="dir"><name>pydoc</name>
+  </compound>
+</doxygenindex>

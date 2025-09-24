@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_9cbd6d9068e03342208ab26a1ac0ea0c" kind="dir">
+    <compoundname>vart_ml</compoundname>
+    <innerdir refid="dir_a4a501198cc0f844caa6a6d23745e649">zebra_embedded</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/dachang/work/Vitis-AI/src/vart_ml/"/>
+  </compounddef>
+</doxygen>

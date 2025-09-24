@@ -65,8 +65,8 @@ extensions = [
     'sphinx.ext.githubpages',
     'linuxdoc.rstFlatTable',
     "notfound.extension",
-	#'recommonmark',
-	#'sphinx_markdown_tables',
+	'recommonmark',
+	'sphinx_markdown_tables',
 	#'edit_on_github',
     # Auto-generate section labels.
     #'sphinx.ext.autosectionlabel',

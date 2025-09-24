@@ -3,3 +3,4 @@ sphinx-notfound-page
 linuxdoc
 breathe
 rocm-docs-core
+markdown

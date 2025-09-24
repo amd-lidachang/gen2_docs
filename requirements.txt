@@ -1,4 +1,4 @@
 sphinx
-notfound
+sphinx-notfound-page
 linuxdoc
 breathe

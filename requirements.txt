@@ -1,3 +1,4 @@
 sphinx
+notfound
 linuxdoc
 breathe
